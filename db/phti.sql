@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 11 2016 г., 09:12
+-- Время создания: Янв 12 2016 г., 08:01
 -- Версия сервера: 5.6.20
 -- Версия PHP: 5.5.15
 
@@ -47,13 +47,13 @@ INSERT INTO `department` (`id`, `parent_id`, `type`, `name_ru`, `name_en`, `url`
 (2, 0, 0, 'Лаборатория микрокристаллических и аморфных материалов', '', 'laboratory-micro-crystalline-and-amorphous-materials', 0, '', ''),
 (3, 0, 0, 'Лаборатория прикладной механики', '', 'laboratory-of-applied-mechanics', 0, '', ''),
 (4, 0, 0, 'Лаборатория фиизики тонких плёнок и равновесных систем', '', 'laboratory-of-thin-films-and-equilibrium-systems', 0, '', ''),
-(5, 0, 1, 'Беспилотных авиационных комплексов и технологий', '', 'unmanned-aircraft-systems-and-technology', 0, '', ''),
+(5, 0, 1, 'Беспилотных авиационных комплексов и технологий', 'Unmanned aircraft system and technology', 'unmanned-aircraft-systems-and-technology', 0, '', ''),
 (6, 0, 1, 'Индукционных технологий и проблем термической обработки', '', 'induction-technology-and-heat-treatment-problems', 0, '', ''),
 (7, 0, 1, 'Деформационных и литейных технологий', '', 'deformation-and-foundry-technologies', 0, '', ''),
 (8, 0, 1, 'Объемных гетерогенных систем', '', 'obemnye-geterogennye-sistemy', 0, '', ''),
 (9, 0, 1, 'Пучковых и плазменных технологий', '', 'puchkovye-i-plazmennye-tehnologii', 0, '', ''),
 (10, 0, 1, 'Электронно-лучевых технологий и физики плазмы', '', 'jelektronno-luchevyh-tehnologij-i-fiziki-plaz', 0, '', ''),
-(11, 0, 1, 'маркетинга и сопровождения государственных программ', '', 'marketing-i-soprovozhdenie-gosudarstvennyh-programm', 0, '', ''),
+(11, 0, 1, 'Маркетинга и сопровождения государственных программ', '', 'marketing-i-soprovozhdenie-gosudarstvennyh-programm', 0, '', ''),
 (12, 5, 1, 'Сектор системного проектирования и математического моделирования', '', 'sektor-sistemnogo-proektirovanija-i-matematicheskogo-modelirovanija', 0, '', ''),
 (13, 5, 1, 'Сектор разработки программного обеспечения', '', 'sektor-razrabotki-programmnogo-obespechenija', 0, '', ''),
 (14, 5, 1, 'Лаборатория разработки НТД и оперативного исполнения НИОКР', '', 'lab-razrabotki-NTD-i-operativnogo-ispolnenija-NIOKR', 0, '', ''),
