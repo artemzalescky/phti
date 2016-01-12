@@ -1,13 +1,13 @@
 <?php $ph->include_css('title.css') ?>
 <?php $ph->include_css('department.css') ?>
-<br><br><br>
+
 
 <div class="container marketing">
-    <br/>
+    <hr>
     <h2 class="title text-center">Научные центры и отделы</h2>
 
     <div class="row">
-    <?php for($i =0; $i < count($mainDepartments); $i++) { ?>
+    <?php for($i = 0; $i < count($mainDepartments); $i++) { ?>
         <div class="col-lg-4 box-container">
             <div class="box">
                     <?php $ph->image('department/'.$mainDepartments[$i]['url'].'.jpg', [

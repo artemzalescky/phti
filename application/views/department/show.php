@@ -1,8 +1,7 @@
 <?php $ph->include_css('title.css') ?>
 <?php $ph->include_css('department.css') ?>
 
-
-<div class="container marketing">
+<div class="container marketing" style="margin-left: -15px">
     <h2 class="title text-center">Научные центры и отделы</h2>
 
     <div class="row">
@@ -37,13 +36,6 @@
                                 </a>
                             </li>
                         <?php } ?>
-                        <!--если в научном центре 2 лаборатории, то -->
-                        <?php if ($kol == 2) { ?>
-                            <li>
-                                <div style="display: block; position: relative; height: 45px"></div>
-                            </li>
-                        <?php }?>
-                            <?php ?>
                         <li class="more">
                             <a href="#" >Подробнее <i class="glyphicon glyphicon-th-list"></i></a>
                         </li>

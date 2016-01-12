@@ -30,10 +30,7 @@
 <body>
 
 <?php $this->renderTemplate('header') ?>
-
-<hr>
-<?php //var_dump($baseLaboratories) ?>
-
+<br><br><br><br><br>
 <?php $this->renderTemplate('department')?>
 
 <?php $this->renderTemplate('footer') ?>
