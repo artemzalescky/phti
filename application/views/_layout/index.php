@@ -36,12 +36,9 @@
 <?php $this->renderTemplate('laboratory')?>
 
 
-<div class="container marketing">
-    <hr>
+<div style="width: 100%; height: 400px;outline: 0; border: 0;" id="map">
     <h2 class="title text-center">Местоположение</h2>
-</div>
-<div style="width: 100%; height: 370px;outline: 0; border: 0;" id="map">
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=427&lang=ru_RU&sourceType=constructor"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=370&lang=ru_RU&sourceType=constructor"></script>
 </div>
 
 <?php $this->renderTemplate('footer') ?>

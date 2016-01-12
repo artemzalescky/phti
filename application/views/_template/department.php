@@ -39,7 +39,7 @@
                     <?php } ?>
 
                     <li class="more">
-                        <a href="#" >Подробнее <i class="glyphicon glyphicon-th-list"></i></a>
+                        <a href="#" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
                     </li>
                 </ul>
             </div>

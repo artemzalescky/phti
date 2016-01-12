@@ -28,6 +28,7 @@
     <hr>
     <?php $this->renderContent() ?>
     <hr>
+
 </div>
 
 <?php $this->renderTemplate('footer') ?>
