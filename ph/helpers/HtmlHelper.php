@@ -228,8 +228,17 @@ class HtmlHelper {
         return $this;
     }
 
-    public function cut_text($text, $count) {
-        echo mb_substr($text, 0, $count, 'UTF-8');
+    public function cut_text($text, $count, $finishWithThreeDots = false) {
+        $convertedText = iconv(mb_detect_encoding($text, mb_detect_order(), true), "UTF-8", $text);
+        if (mb_strlen($convertedText) > $count) {
+            if ($finishWithThreeDots) {
+                echo mb_substr($convertedText, 0, $count - 3, 'UTF-8') . '...';
+            } else {
+                echo mb_substr($convertedText, 0, $count, 'UTF-8');
+            }
+        } else {
+            echo $convertedText;
+        }
         return $this;
     }
 
