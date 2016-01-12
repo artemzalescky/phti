@@ -11,18 +11,18 @@ class IndexController extends BaseController {
         // получение всех научных центров(department)
         $this->setViewVariable('mainDepartments', DepartmentModel::getInstance()->getMainDepartments());
 
-
         // получение всех подлабораторий
-        if (!empty($mainDepartments)) {
-            for ($i = 0; $i < count($mainDepartments); $i++) {
-                $children = DepartmentModel::getInstance()->getDepartmentChildren($mainDepartments[$i]['id']);
-                if (!empty($children)) {
-                    $mainDepartments[$i]['children'] = $children;
+        $listLab = DepartmentModel::getInstance()->getMainDepartments();
+
+        if (!empty($listLab)) {
+            for ($i = 0; $i < count($listLab); $i++) {
+                $children = DepartmentModel::getInstance()->getDepartmentChildren($listLab[$i]['id']);
+                 if (!empty($children)) {
+                     $listLab[$i]['children'] = $children;
                 }
             }
         }
-
-        $this->setViewVariable('departmentList', $departmentList);
+        $this->setViewVariable('listLab', $listLab);
         //----------------------------------------------------------------------------------------
 
         // получение всех независимых лабораторий

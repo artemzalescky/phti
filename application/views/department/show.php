@@ -1,6 +1,7 @@
 <?php $ph->include_css('title.css') ?>
 <?php $ph->include_css('department.css') ?>
 
+
 <div class="container marketing">
     <h2 class="title text-center">Научные центры и отделы</h2>
 
