@@ -1,7 +1,6 @@
 <?php $ph->include_css('title.css') ?>
 <?php $ph->include_css('department.css') ?>
 
-
 <div class="container marketing">
 
     <h2 class="title text-center">Научные центры и отделы</h2>
@@ -13,7 +12,11 @@
                     <?php $ph->image('department/' . $departmentList[$i]['url'] . '.jpg', [
                         'class' => 'square-image',
                     ]);?>
-                <h2 class="department-name"><?=$departmentList[$i]['nameRu']?></h2>
+                <?php  $ph->link_open('department/' . $departmentList[$i]['url'])
+                    ->tag('h4', $departmentList[$i]['nameRu'], ['class' => 'department-name'])
+                    ->tag_close('a');
+                ?>
+
                 <ul class="child-list">
                     <?php for ($j = 0; $j < min(count($departmentList[$i]['children']), 3); $j++) {  //выводим лаборатории, максимальное количесво лабораторий в департаменте == 3
                             $ph->tag_open('li')
@@ -24,7 +27,7 @@
                             ->tag_close('li');
                     } ?>
                     <li class="more-link">
-                        <a href="#" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
+                        <a href="department/<?= $departmentList[$i]['url']?>" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
                     </li>
                 </ul>
             </div>

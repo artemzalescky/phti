@@ -6,14 +6,15 @@
 
     <div class="row">
         <?php foreach($baseLaboratory as $baseLab) {?>
-            <div class="col-lg-4 box-container">
-                <div class="box">
-                    <?php $ph->image('laboratory/'.$baseLab['url'].'.jpg', [
-                        'class' => 'imageCube',
+            <div class="col-lg-4 laboratory-box-container">
+
+                <div class="laboratory-border">
+                    <?php $ph->image('laboratory/' . $baseLab['url'] . '.jpg', [
+                        'class' => 'square-image',
                     ]);?>
-                    <h2 class="title-class"><?=$baseLab['nameRu']?></h2>
-                    <ul class="block-list">
-                        <li class="more">
+                    <h2 class="laboratory-name"><?=$baseLab['nameRu']?></h2>
+                    <ul class="laboratory-child-list">
+                        <li class="laboratory-more-link">
                             <a href="#" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
                         </li>
                     </ul>

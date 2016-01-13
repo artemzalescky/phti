@@ -18,12 +18,6 @@
         /*Footer*/
         ->include_css('footer/footer.css')
 
-        /*Carousel*/
-        ->include_css('carousel.css')
-
-        /*index*/
-        ->include_css('catalog.css')
-        ->include_css('logo.css')
     ?>
 </head>
 
@@ -33,11 +27,10 @@
 <br><br><br><br><br>
 <hr>
 <?php $this->renderTemplate('department')?>
-
+<hr>
 <?php $this->renderTemplate('laboratory')?>
-
-
-<div style="width: 100%; height: 400px;outline: 0; border: 0;" id="map">
+<hr>
+<div style="width: 100%; height: 420px;outline: 0; border: 0;" id="map">
     <h2 class="title text-center">Местоположение</h2>
     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=370&lang=ru_RU&sourceType=constructor"></script>
 </div>

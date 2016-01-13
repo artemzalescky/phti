@@ -1,8 +1,8 @@
-.box-container{
-    margin: 0px 0px 20px 0px;
+.laboratory-box-container {
+    margin: 0 0 20px 0;
 }
 
-.box{
+.laboratory-box-container .laboratory-border {
     display: block;
     position: relative;
     list-style: none;
@@ -12,43 +12,42 @@
     border: 2px solid #d1d3d4;
 }
 
-.imageCube{
+.laboratory-box-container .square-image {
     display: block;
     position: relative;
     height: 120px;
     width: 100%;
 }
 
-h2{
+.laboratory-box-container .laboratory-name {
+    display: block;
+    position: relative;
+    margin: 2px 2px 0 10px;
+    height: 52px;
+
     font-family: 'Permian Slab', serif;
     letter-spacing: -0.075em;
     color: #1b365d;
     font-weight: normal;
     font-size: 24px;
 }
-.title-class{
-    display: block;
-    position: relative;
 
-    margin: 2px 2px 0px 10px;
-    height: 60px;
-}
-
-.block-list{
+.laboratory-box-container .laboratory-child-list {
     display: block;
     position: relative;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    height: 50px;
+    margin: 0;
 }
 
-.block-list li{
+.laboratory-box-container .laboratory-child-list li {
     display: block;
     position: relative;
     list-style: none;
     margin-left: -40px;
 }
 
-.block-list a {
+.laboratory-box-container .laboratory-child-list a {
     padding: 15px 40px 15px 15px;
     letter-spacing: -0.05rem;
     white-space: nowrap;
@@ -58,7 +57,7 @@ h2{
     margin-left: 10px;
 }
 
-.block-list li a {
+.laboratory-box-container .laboratory-child-list li a {
     text-decoration: none;
     display: block;
     padding: 12px 15px 12px 0;
@@ -68,26 +67,28 @@ h2{
     color: #131e29;
 }
 
-.block-list li a:hover {
+.laboratory-box-container .laboratory-child-list li a:hover {
     color: #d9272e;
 }
 
-.block-list a i {
+.laboratory-box-container .laboratory-child-list li a i {
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-.more{
-    position: absolute;
-    bottom: 0px;
+.laboratory-box-container .laboratory-child-list .laboratory-more-link {
+    position: absolute !important;
+    bottom: 0;
     height: 45px;
+    width: 100%;
     background-color: #d1d3d4;
 }
 
-.more a{
+.laboratory-box-container .laboratory-child-list .laboratory-more-link a {
     font-weight: bold;
 }
-.catalog-short-description {
+
+.laboratory-box-container .laboratory-child-list .laboratory-child-name {
     overflow:hidden;
 }
