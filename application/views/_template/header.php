@@ -5,7 +5,7 @@
         <div class="navbar-header">
             <!-- Button for smallest screens -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <?php $ph->image_link('logo_145.png', '/', ['alt' => 'phti.by'], [
+            <?php $ph->image_link('logo.png', '/', ['alt' => 'phti.by'], [
                 'class' => 'navbar-brand',
                 'data-src' => 'holder.js/140x140'
             ]) ?>
@@ -14,9 +14,6 @@
             <ul class="nav navbar-nav pull-right">
                 <li class="active">
                     <?php $ph->link('Главная', '/') ?>
-                </li>
-                <li>
-                    <?php $ph->link('Новости', '/news') ?>
                 </li>
                 <li>
                     <?php $ph->link('Научные центры и отделы', '/department') ?>
@@ -28,7 +25,13 @@
                     <?php $ph->link('Наша продукция', '/product') ?>
                 </li>
                 <li>
+                    <?php $ph->link('Структура', '/struct') ?>
+                </li>
+                <li>
                     <?php $ph->link('Контакты', '/contacts') ?>
+                </li>
+                <li>
+                    <?php $ph->link('Новости', '/news') ?>
                 </li>
                 <li>
                     <?php $ph->link('О ФТИ', '/about') ?>

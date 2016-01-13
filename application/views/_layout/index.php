@@ -31,6 +31,7 @@
 
 <?php $this->renderTemplate('header') ?>
 <br><br><br><br><br>
+<hr>
 <?php $this->renderTemplate('department')?>
 
 <?php $this->renderTemplate('laboratory')?>
