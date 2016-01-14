@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#phti-description {
+    padding: 10px 30px !important;
+}
+
+#phti-description p {
+    font-size: 1.2em;
+}
+
+.phti-description-list-icon {
+    font-size: 18px;
+}

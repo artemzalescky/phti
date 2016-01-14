@@ -16,6 +16,9 @@
 
         /*Footer*/
         ->include_css('footer/footer.css')
+
+        /*Index*/
+        ->include_css('index.css');
     ?>
 </head>
 
@@ -23,6 +26,29 @@
 
 <?php $this->renderTemplate('header') ?>
 <div class="container">
+
+    <hr>
+
+    <div id="phti-description" class="jumbotron">
+        <h2>Физико-Технический Институт</h2>
+        <hr>
+        <p>
+            Деятельность ФТИ сегодня является примером реализации связи науки с производством. <br>
+            <br>
+            Основные направления фундаментальных и прикладных исследований института на современном этапе: <br>
+            &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-check phti-description-list-icon"></span>&nbsp; Физика прочности и пластичности <br>
+            &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-check phti-description-list-icon"></span>&nbsp; Теория и методы создания многофункциональных и специальных металлических и керамических материалов <br>
+            &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-check phti-description-list-icon"></span>&nbsp; Разработка теоретических основ технологических процессов получения и обработки материалов с использованием высоких давлений, высокоэнергетического воздействия – лазерного, плазменного, электронно- и ионно-лучевого. <br>
+            &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-check phti-description-list-icon"></span>&nbsp; Разработке и организация производства отечественных беспилотных летательных аппаратов. <br>
+            <br>
+            Многие созданные в ФТИ высокоэффективные ресурсо- и энергосберегающие технологии, оборудование и материалы освоены промышленностью Республики Беларусь и других стран. <br>
+        </p>
+        <hr>
+        <p>
+            <?php $ph->link('Подробнее о ФТИ', '/about', ['class' => 'btn btn-primary btn-lg']) ?>
+        </p>
+    </div>
+
     <hr>
     <?php $this->renderTemplate('department')?>
     <hr>
