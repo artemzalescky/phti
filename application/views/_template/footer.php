@@ -1,3 +1,5 @@
+<?php use \application\models\DepartmentModel as DepartmentModel; ?>
+
 <div id="footer" class="navbar-default">
     <div class="container">
         <div class="progress progress-striped active" style="margin-bottom: 0">
@@ -8,8 +10,14 @@
                 <h3>Научные центры и отделы</h3>
                 <p>
                     <?php
-                        foreach($departmentList as $list){
-                            $ph->link($list['nameRu'], '/department/$list["url"]')->single_tag('br');
+                        // чтобы не создавать отдельные контроллеры для статических страниц, где будут получаться департаменты,
+                        // будем проверять здесь их наличие. Если их нет - тянем из базы
+                        if (empty($mainDepartments)) {
+                            $mainDepartments = DepartmentModel::getInstance()->getMainDepartments();
+                        }
+                        foreach($mainDepartments as $mainDepartment){
+                            $ph->link($mainDepartment['nameRu'], "/department/{$mainDepartment['url']}")
+                                ->single_tag('br');
                         }
                     ?>
                 </p>
@@ -89,5 +97,6 @@
                 </p>
             </div>
         </div>
+        <hr style="border-color: rgb(28, 216, 179)">
     </div>
 </div>
