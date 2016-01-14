@@ -54,6 +54,13 @@ class DepartmentModel {
         }
     }
 
+    public function calculateChildrenFullUrl($parentDepartment, &$childDepartments) {
+        $baseUrl = !empty($parentDepartment) ? $parentDepartment['url'] . '/' : '';
+        for ($i = 0; $i < count($childDepartments); $i++) {
+            $childDepartments[$i]['fullUrl'] = "$baseUrl{$childDepartments[$i]['url']}";
+        }
+    }
+
     // base laboratories
 
     public function getBaseLaboratories() {
