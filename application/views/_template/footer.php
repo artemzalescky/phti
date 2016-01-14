@@ -1,41 +1,41 @@
 <div id="divFooter" class="footerArea">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h3>Каталог</h3>
+            <div class="col-md-4">
+                <h3>Научные центры и отделы</h3>
                 <p>
                     <?php
-                        $ph
-                            ->link('Кабель и провод', '/catalog/kabel-i-provod')->single_tag('br')
-                            ->link('Розетки и выключатели', '/catalog/rozetki-i-vykljuchateli')->single_tag('br')
-                            ->link('Корпуса металлические, боксы', '/catalog/korpusa-metallicheskie-i-boksy')->single_tag('br')
-                            ->link('Коробки распределительные', '/catalog/korobki-raspredelitelnye-raspajachnye')->single_tag('br')
-                            ->link('Модульное оборудование', '/catalog/modulnoe-oborudovanie')->single_tag('br')
-                            ->link('Светотехника', '/catalog/svetotehnika')->single_tag('br')
-                            ->link('Силовые разъемы', '/catalog/silovye-razjomy')->single_tag('br')
-                            ->link('Счётчики', '/catalog/schjotchiki')->single_tag('br')
-                            ->link('Стабилизаторы напряжения', '/catalog/stabilizatory-naprjazhenija')->single_tag('br')
-                            ->link('Системы для прокладки кабеля', '/catalog/sistemy-dlja-prokladki-kabelja')->single_tag('br')
-                            ->link('Аксессуары для монтажа', '/catalog/aksesuary-dlja-montazha')->single_tag('br')
-                            ->link('Труба ПНД', '/catalog/truba-pnd')->single_tag('br')
+                        foreach($departmentList as $list){
+                            $ph->link($list['nameRu'], '/department/$list["url"]')->single_tag('br');
+                        }
                     ?>
                 </p>
+<!--                <h3>Лаборатории</h3>-->
+<!--                <p>-->
+<!--                    --><?php
+//                    foreach($baseLaboratory as $baseList){
+//                        $ph->link($baseList['nameRu'], '/department/$baseList["url"]')->single_tag('br');
+//                    }
+//                    ?>
+<!--                </p>-->
+
+
             </div>
-            <div class="col-md-3">
-                <h3>Последние новости</h3>
+            <div class="col-md-2">
+                <h3>Новости</h3>
                 <p>
                     <?php $ph->link('Мобильная версия сайта', '/news') ?>
                     <br>
-                    <span style="text-transform:none;">20.12.2015</span>
+                    <span style="text-transform:none;">20.01.2016 </span>
                 </p>
                 <p>
                     <?php $ph->link('Новый дизайн сайта', '/news') ?>
                     <br>
-                    <span style="text-transform:none;">05.12.2015</span>
+                    <span style="text-transform:none;">15.01.2016 </span>
                 </p>
                 <p>
-                    <?php $ph->link('Снижение цен на кабели и провода', '/news') ?><br>
-                    <span style="text-transform:none;">03.11.2015</span>
+                    <?php $ph->link('Запуск сайта', '/news') ?><br>
+                    <span style="text-transform:none;">09.01.2016 </span>
                 </p>
                 <p>
                     <?php $ph->link('Все новости', '/news') ?>
@@ -43,14 +43,14 @@
             </div>
             <div class="col-md-3">
                 <h3>График работы</h3>
-                Понедельник     Выходной <br>
-                Вторник 08:00 — 18:00 <br>
-                Среда   08:00 — 18:00 <br>
-                Четверг 08:00 — 18:00 <br>
-                Пятница 08:00 — 18:00 <br>
-                Суббота 08:00 — 18:00 <br>
-                Воскресенье     08:00 — 15:00 <br>
-                для того чтобы заказать товар на завтра звоните до 20-00 <br>
+                Понедельник 08.30 - 17.30 <br>
+                Вторник 08.30 - 17.30 <br>
+                Среда   08.30 - 17.30 <br>
+                Четверг 08.30 - 17.30 <br>
+                Пятница 08:30 — 16:15 <br>
+                Выходные дни: суббота, воскресенье <br>
+
+                Обеденный перерыв: с 13.00 до 13.45 <br>
             </div>
             <div class="col-md-3">
                 <h3>Контакты</h3>
@@ -59,21 +59,29 @@
                         <span class="glyphicon glyphicon-phone-alt"></span>
                         <span class="field">Телефон:</span>
                         <br>
-                        <?php $ph->link('8 029 850 40 85', '/contacts')
+                        <?php $ph->link('8 017 267-60-10', '/contacts')
                             ->single_tag('br')
-                            ->link('8 044 461 09 06', '/contacts') ?>
+                            ->link('8 017 267 42 75', '/contacts')
+                            ->single_tag('br')
+                            ->link('Факс: (017) 263-76-93', '/contacts')
+                            ->single_tag('br')
+                            ->link('Факс: (017) 267-42-75', '/contacts')
+                        ?>
                     </li>
                     <li>
                         <span class="glyphicon glyphicon-envelope"></span>
                         <span class="field">Email:</span>
                         <br>
-                        <?php $ph->link('north-s@tut.by', '/contacts') ?>
+                        <?php $ph->link('phti@belhost.by', '/contacts')
+                                 ->single_tag('br')
+                                 ->link('market_phti@belhost.by', '/contacts')
+                        ?>
                     </li>
                     <li>
                         <span class="glyphicon glyphicon-home"></span>
                         <span class="field">Адрес:</span>
                         <br>
-                        <?php $ph->link('г.Минск ул. Малинина 35а <br> рынок “Свелта” павильон 2/7-50', '/contacts') ?>
+                        <?php $ph->link('г. Минск, ул. Купревича 10', '/contacts') ?>
                     </li>
                 </ul>
             </div>
@@ -84,7 +92,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright">
-                    Copyright © 2015 &nbsp; 220minsk.by. &nbsp; All Rights Reserved.
+                    Copyright © 2016 &nbsp; phti.by. &nbsp; All Rights Reserved.
                 </p>
             </div>
         </div>
