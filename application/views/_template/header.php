@@ -1,58 +1,59 @@
-
-<!-- Fixed navbar -->
-<div id="top-menu" class="navbar navbar-inverse navbar-fixed-top headroom" >
-    <div class="container">
+<nav id="top-menu" class="navbar navbar-default">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <!-- Button for smallest screens -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <?php $ph->image_link('logo.png', '/', ['alt' => 'phti.by'], [
-                'class' => 'navbar-brand',
-                'data-src' => 'holder.js/140x140'
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu-content">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <?php $ph->image_link('logo.png', '/', [
+                'alt' => 'phti.by',
+                'id' => 'top-menu-logo',
+                'class' => 'navbar-brand'
+            ], [
+                'id' => 'top-menu-logo-holder',
             ]) ?>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
+
+        <div class="collapse navbar-collapse" id="top-menu-content">
+            <ul class="nav navbar-nav">
                 <li class="active">
                     <?php $ph->link('Главная', '/') ?>
                 </li>
-                <li>
-                    <?php $ph->link('Научные центры и отделы', '/department') ?>
+                <li> <?php $ph->link('Новости', '/news') ?> </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Структура <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li> <?php $ph->link('Научные центры и отделы', '/department') ?> </li>
+                        <li class="divider"></li>
+                        <li> <?php $ph->link('Лаборатории', '/laboratory') ?> </li>
+                    </ul>
                 </li>
-                <li>
-                    <?php $ph->link('Лаборатории', '/laboratory') ?>
+                <li> <?php $ph->link('Наша продукция', '/production') ?> </li>
+                <li> <?php $ph->link('Контакты', '/contacts') ?> </li>
+                <li> <?php $ph->link('О ФТИ', '/about') ?> </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EN / RU <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li> <?php $ph->link('English', '#') ?> </li>
+                        <li class="divider"></li>
+                        <li> <?php $ph->link('Русский', '#') ?> </li>
+                    </ul>
                 </li>
-                <li>
-                    <?php $ph->link('Наша продукция', '/product') ?>
-                </li>
-                <li>
-                    <?php $ph->link('Структура', '/struct') ?>
-                </li>
-                <li>
-                    <?php $ph->link('Контакты', '/contacts') ?>
-                </li>
-                <li>
-                    <?php $ph->link('Новости', '/news') ?>
-                </li>
-                <li>
-                    <?php $ph->link('О ФТИ', '/about') ?>
-                </li>
-                            </ul>
+            </ul>
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Строка для поиска">
+                </div>
+                <button type="submit" class="btn btn-default">Поиск</button>
+            </form>
+
+
         </div>
     </div>
-</div>
-
-<!-- динамическое подменю Каталога -->
-<!--                <li id="catalog-menu-item" class="dropdown">-->
-<!--                    --><?php
-//                        $ph->link('Каталог <b class="caret"></b>', 'catalog', ['class' => 'dropdown-toggle', 'data-toggle' => 'dropdown']);
-//                        if (!empty($mainCatalogs)) {
-//                            $ph->tag_open('ul', ['class' => 'dropdown-menu', 'id' => 'catalog-dropdown-menu']);
-//                            foreach ($mainCatalogs as $mainCatalog) {
-//                                $ph->tag_open('li');
-//                                $ph->link($mainCatalog['name'], '/catalog/' . $mainCatalog['url']);
-//                                $ph->tag_close('li');
-//                            }
-//                            $ph->tag_close('ul');
-//                        }
-//                    ?>
-<!--                </li>-->
+</nav>

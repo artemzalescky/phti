@@ -1,9 +1,13 @@
+@charset "UTF-8";
+
 #top-menu {
-    background-color: #000 !important;
-    opacity: 0.7;
-    transition: opacity 0.3s;
+    border-radius: 0;
 }
 
-#top-menu:hover {
-    opacity: 1;
+#top-menu-logo-holder {
+
+}
+
+#top-menu-logo {
+    padding: 10px 30px;
 }

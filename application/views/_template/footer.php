@@ -1,5 +1,8 @@
-<div id="divFooter" class="footerArea">
+<div id="footer" class="navbar-default">
     <div class="container">
+        <div class="progress progress-striped active" style="margin-bottom: 0">
+            <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <h3>Научные центры и отделы</h3>
@@ -10,16 +13,6 @@
                         }
                     ?>
                 </p>
-<!--                <h3>Лаборатории</h3>-->
-<!--                <p>-->
-<!--                    --><?php
-//                    foreach($baseLaboratory as $baseList){
-//                        $ph->link($baseList['nameRu'], '/department/$baseList["url"]')->single_tag('br');
-//                    }
-//                    ?>
-<!--                </p>-->
-
-
             </div>
             <div class="col-md-2">
                 <h3>Новости</h3>
