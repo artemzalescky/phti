@@ -5,10 +5,13 @@ namespace application\controllers;
 use application\models\DepartmentModel;
 use ph\controller\BaseController;
 
-// контроллер для центров и отделов + дочерние лаборатории
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ + пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 class DepartmentController extends BaseController {
 
     public function show($departmentUrlList) {
+
+        $this->setViewVariable('url', $departmentUrlList);
+
         if (empty($departmentUrlList)){
             $parentId = 0;
         } else {
