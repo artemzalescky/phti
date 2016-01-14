@@ -1,21 +1,28 @@
 <?php $ph->include_css('title.css') ?>
-<?php $ph->include_css('laboratory.css') ?>
+<?php $ph->include_css('department.css') ?>
 
-<div class="container marketing">
+<div class="container">
+
     <h2 class="title text-center">Лаборатории</h2>
 
     <div class="row">
-        <?php foreach($baseLaboratory as $baseLab) {?>
-            <div class="col-lg-4 laboratory-box-container">
 
-                <div class="laboratory-border">
-                    <?php $ph->image('laboratory/' . $baseLab['url'] . '.jpg', [
+        <?php for ($i = 0; $i < count( $baseLaboratories ); $i++) { ?>
+            <div class="col-lg-4 department-box-container">
+                <div class="border">
+                    <?php $ph->image('laboratory/' . $baseLaboratories[$i]['url'] . '.jpg', [
                         'class' => 'square-image',
-                    ]);?>
-                    <h2 class="laboratory-name"><?=$baseLab['nameRu']?></h2>
-                    <ul class="laboratory-child-list">
-                        <li class="laboratory-more-link">
-                            <a href="#" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
+                    ])
+                        ->link_open('/laboratory/' . $baseLaboratories[$i]['url'])
+                        ->tag('h4', $baseLaboratories[$i]['nameRu'], ['class' => 'department-name'])
+                        ->tag_close('a'); ?>
+
+                    <ul class="child-list-empty">
+                        <li class="more-link">
+                            <?php $ph->link(
+                                '<strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i>',
+                                '/laboratory/' . $baseLaboratories[$i]['url']
+                            ) ?>
                         </li>
                     </ul>
                 </div>
@@ -23,3 +30,9 @@
         <?php } ?>
     </div>
 </div>
+
+<script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>

@@ -1,7 +1,7 @@
 <?php $ph->include_css('title.css') ?>
 <?php $ph->include_css('department.css') ?>
 
-<div class="container marketing">
+<div class="container">
 
     <?php $ph->tag('h2', empty($currentDepartment) ? 'Научные центры и отделы' : 'Лаборатории', [
             'class' => 'title text-center'
@@ -34,7 +34,10 @@
                                 ->tag_close('li');
                         } ?>
                         <li class="more-link">
-                            <a href="department/<?= $departmentList[$i]['url']?>" ><strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i></a>
+                            <?php $ph->link(
+                                '<strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i>',
+                                '/department/' . $departmentList[$i]['fullUrl']
+                            ) ?>
                         </li>
                     </ul>
                 <?php } else {?>

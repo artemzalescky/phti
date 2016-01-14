@@ -29,7 +29,7 @@ class IndexController extends BaseController {
         //----------------------------------------------------------------------------------------
 
         // получение всех независимых лабораторий
-        $this->setViewVariable('baseLaboratory', DepartmentModel::getInstance()->getBaseLaboratories());
+        $this->setViewVariable('baseLaboratories', DepartmentModel::getInstance()->getBaseLaboratories());
 
         $this->render([
             'layout' => 'index'

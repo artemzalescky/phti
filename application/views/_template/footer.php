@@ -27,16 +27,16 @@
                 <p>
                     <?php $ph->link('Мобильная версия сайта', '/news') ?>
                     <br>
-                    <span style="text-transform:none;">20.01.2016 </span>
+                    <span>20.01.2016 </span>
                 </p>
                 <p>
                     <?php $ph->link('Новый дизайн сайта', '/news') ?>
                     <br>
-                    <span style="text-transform:none;">15.01.2016 </span>
+                    <span>15.01.2016 </span>
                 </p>
                 <p>
                     <?php $ph->link('Запуск сайта', '/news') ?><br>
-                    <span style="text-transform:none;">09.01.2016 </span>
+                    <span>09.01.2016 </span>
                 </p>
                 <p>
                     <?php $ph->link('Все новости', '/news') ?>
