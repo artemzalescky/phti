@@ -6,3 +6,12 @@ h2.title {
     margin: 0 15px 30px;
     position: relative;
 }
+
+h2.title a{
+    color: #374a5c;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 15px 30px;
+    position: relative;
+}
