@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 12 2016 г., 08:01
+-- Время создания: Янв 15 2016 г., 13:24
 -- Версия сервера: 5.6.20
 -- Версия PHP: 5.5.15
 
@@ -47,12 +47,12 @@ INSERT INTO `department` (`id`, `parent_id`, `type`, `name_ru`, `name_en`, `url`
 (2, 0, 0, 'Лаборатория микрокристаллических и аморфных материалов', '', 'laboratory-micro-crystalline-and-amorphous-materials', 0, '', ''),
 (3, 0, 0, 'Лаборатория прикладной механики', '', 'laboratory-of-applied-mechanics', 0, '', ''),
 (4, 0, 0, 'Лаборатория фиизики тонких плёнок и равновесных систем', '', 'laboratory-of-thin-films-and-equilibrium-systems', 0, '', ''),
-(5, 0, 1, 'Беспилотных авиационных комплексов и технологий', 'Unmanned aircraft system and technology', 'unmanned-aircraft-systems-and-technology', 0, '', ''),
-(6, 0, 1, 'Индукционных технологий и проблем термической обработки', '', 'induction-technology-and-heat-treatment-problems', 0, '', ''),
-(7, 0, 1, 'Деформационных и литейных технологий', '', 'deformation-and-foundry-technologies', 0, '', ''),
-(8, 0, 1, 'Объемных гетерогенных систем', '', 'obemnye-geterogennye-sistemy', 0, '', ''),
-(9, 0, 1, 'Пучковых и плазменных технологий', '', 'puchkovye-i-plazmennye-tehnologii', 0, '', ''),
-(10, 0, 1, 'Электронно-лучевых технологий и физики плазмы', '', 'jelektronno-luchevyh-tehnologij-i-fiziki-plaz', 0, '', ''),
+(5, 0, 1, 'Центр беспилотных авиационных комплексов и технологий', 'Unmanned aircraft system and technology', 'unmanned-aircraft-systems-and-technology', 0, '', ''),
+(6, 0, 1, 'Центр индукционных технологий и проблем термической обработки', '', 'induction-technology-and-heat-treatment-problems', 0, '', ''),
+(7, 0, 1, 'Центр деформационных и литейных технологий', '', 'deformation-and-foundry-technologies', 0, '', ''),
+(8, 0, 1, 'Отдел объемных гетерогенных систем', '', 'obemnye-geterogennye-sistemy', 0, '', ''),
+(9, 0, 1, 'Отдел пучковых и плазменных технологий', '', 'puchkovye-i-plazmennye-tehnologii', 0, '', ''),
+(10, 0, 1, 'Центр электронно-лучевых технологий и физики плазмы', '', 'jelektronno-luchevyh-tehnologij-i-fiziki-plaz', 0, '', ''),
 (11, 0, 1, 'Маркетинга и сопровождения государственных программ', '', 'marketing-i-soprovozhdenie-gosudarstvennyh-programm', 0, '', ''),
 (12, 5, 1, 'Сектор системного проектирования и математического моделирования', '', 'sektor-sistemnogo-proektirovanija-i-matematicheskogo-modelirovanija', 0, '', ''),
 (13, 5, 1, 'Сектор разработки программного обеспечения', '', 'sektor-razrabotki-programmnogo-obespechenija', 0, '', ''),
@@ -81,6 +81,546 @@ INSERT INTO `department` (`id`, `parent_id`, `type`, `name_ru`, `name_en`, `url`
 (36, 11, 1, 'Патентно-информационный сектор', '', 'patentno-informacionnyj-sektor', 0, '', ''),
 (37, 11, 1, 'Сектор маркетинга и внедрения научно-технических разработок', '', 'sektor-marketinga-i-vnedrenija-nauchno-tehnicheskih-razrabotok', 0, '', '');
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_1`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_1` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_2`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_2` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_3`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_3` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_4`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_4` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_12`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_12` (
+`id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_13`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_13` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_14`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_14` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_15`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_15` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_16`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_16` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_17`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_17` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_18`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_18` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_19`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_19` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_20`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_20` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_21`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_21` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_22`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_22` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_23`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_23` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_24`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_24` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_25`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_25` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_26`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_26` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_27`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_27` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_28`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_28` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_29`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_29` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_30`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_30` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_31`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_31` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_32`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_32` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_33`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_33` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_34`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_34` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_35`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_35` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_36`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_36` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `laboratory_37`
+--
+
+CREATE TABLE IF NOT EXISTS `laboratory_37` (
+  `id` int(6) NOT NULL,
+  `manager_ru` varchar(150) NOT NULL,
+  `manager_en` varchar(150) NOT NULL,
+  `description_ru` varchar(1000) NOT NULL,
+  `description_en` varchar(1000) NOT NULL,
+  `contact_ru` varchar(1000) NOT NULL,
+  `contact_en` varchar(1000) NOT NULL,
+  `service_ru` varchar(1000) NOT NULL,
+  `service_en` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Indexes for dumped tables
 --
@@ -92,6 +632,12 @@ ALTER TABLE `department`
  ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `url` (`url`);
 
 --
+-- Indexes for table `laboratory_12`
+--
+ALTER TABLE `laboratory_12`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -100,6 +646,11 @@ ALTER TABLE `department`
 --
 ALTER TABLE `department`
 MODIFY `id` int(6) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
+--
+-- AUTO_INCREMENT for table `laboratory_12`
+--
+ALTER TABLE `laboratory_12`
+MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
