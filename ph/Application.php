@@ -4,7 +4,7 @@ namespace ph;
 
 use config\Config;
 use config\Dictionary;
-use ph\locale\Dictionary as SystemDictionary;
+use ph\dictionary\SystemDictionary;
 use ph\db\Database;
 use ph\phAdmin\application\models\LocaleModel;
 use ph\sessions\SessionStorage;
@@ -44,8 +44,8 @@ class Application {
     private function setupLocale() {
         if (Config::useLocale()) {
             $this->locale = new LocaleModel(null, Config::getDefaultLang());
-            $this->locale->addDictionary(SystemDictionary::getLexicon());
-            $this->locale->addDictionary(Dictionary::getLexicon());
+            $this->locale->addDictionary(new SystemDictionary());
+            $this->locale->addDictionary(new Dictionary());
         }
     }
 

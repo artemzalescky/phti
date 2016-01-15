@@ -56,14 +56,14 @@ class LocaleModel {
 
     public function getText($textName) {
         foreach ($this->dictionaries as $dictionary) {
-            $text = $dictionary[$this->lang][$textName];
-            if (isset($text)) {
+            $text = $dictionary->getText($textName, $this->lang);
+            if ($text != null) {
                 return $text;
             }
         }
         foreach ($this->dictionaries as $dictionary) {
-            $text = $dictionary[$this->defaultLang][$textName];
-            if (isset($text)) {
+            $text = $dictionary->getText($textName, $this->defaultLang);
+            if ($text != null) {
                 return $text;
             }
         }

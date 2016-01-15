@@ -19,23 +19,23 @@
         <div class="collapse navbar-collapse" id="top-menu-content">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <?php $ph->link('Главная', '/') ?>
+                    <?php $ph->link($ph->lang->TopMenu_Home, '/') ?>
                 </li>
-                <li> <?php $ph->link('Новости', '/news') ?> </li>
+                <li> <?php $ph->link($ph->lang->TopMenu_News, '/news') ?> </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Структура <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_Structure ?> <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li> <?php $ph->link('Научные центры и отделы', '/department') ?> </li>
+                        <li> <?php $ph->link($ph->lang->TopMenu_Structure_Departments, '/department') ?> </li>
                         <li class="divider"></li>
-                        <li> <?php $ph->link('Лаборатории', '/laboratory') ?> </li>
+                        <li> <?php $ph->link($ph->lang->TopMenu_Structure_Laboratories, '/laboratory') ?> </li>
                     </ul>
                 </li>
-                <li> <?php $ph->link('Наша продукция', '/production') ?> </li>
-                <li> <?php $ph->link('Контакты', '/contacts') ?> </li>
+                <li> <?php $ph->link($ph->lang->TopMenu_Production, '/production') ?> </li>
+                <li> <?php $ph->link($ph->lang->TopMenu_Contacts, '/contacts') ?> </li>
                  <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">О ФТИ <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_About ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li> <?php $ph->link('Руководство', '/managment') ?> </li>
+                    <li> <?php $ph->link($ph->lang->TopMenu_About_Governance, '/managment') ?> </li>
                 </ul>
                 </li>
 
@@ -45,18 +45,18 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EN / RU <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li> <?php $ph->link('English', '#') ?> </li>
+                        <li> <?php $ph->system_link('English', '/locale/change/en') ?> </li>
                         <li class="divider"></li>
-                        <li> <?php $ph->link('Русский', '#') ?> </li>
+                        <li> <?php $ph->system_link('Русский', '/locale/change/ru') ?> </li>
                     </ul>
                 </li>
             </ul>
 
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Строка для поиска">
+                    <input type="text" class="form-control" placeholder="<?= $ph->lang->TopMenu_SearchFormPlaceHolder ?>">
                 </div>
-                <button type="submit" class="btn btn-default">Поиск</button>
+                <button type="submit" class="btn btn-default"><?= $ph->lang->Button_Search ?></button>
             </form>
 
 
