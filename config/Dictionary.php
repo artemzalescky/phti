@@ -19,6 +19,7 @@ class Dictionary extends BaseDictionary {
             "TopMenu_Contacts" => ["Контакты", "Contacts"],
             "TopMenu_About" => ["О ФТИ", "About PhTI"],
             "TopMenu_About_Governance" => ["Руководство", "Governance"],
+            "TopMenu_About_History" => ["История", "History"],
             "TopMenu_SearchFormPlaceHolder" => ["Строка для поиска", "Enter text to search"]
         ]);
     }

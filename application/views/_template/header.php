@@ -36,6 +36,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_About ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li> <?php $ph->link($ph->lang->TopMenu_About_Governance, '/managment') ?> </li>
+                    <li> <?php $ph->link($ph->lang->TopMenu_About_History, '/about') ?> </li>
                 </ul>
                 </li>
 
