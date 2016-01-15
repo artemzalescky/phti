@@ -32,7 +32,13 @@
                 </li>
                 <li> <?php $ph->link('Наша продукция', '/production') ?> </li>
                 <li> <?php $ph->link('Контакты', '/contacts') ?> </li>
-                <li> <?php $ph->link('О ФТИ', '/about') ?> </li>
+                 <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">О ФТИ <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li> <?php $ph->link('Руководство ФТИ', '/managment') ?> </li>
+                </ul>
+                </li>
+
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
