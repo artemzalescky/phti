@@ -1,0 +1,45 @@
+
+.managment-box-container {
+    margin: 0px  0px  20px 0px ;
+}
+.managment-box-container .border {
+    display: block;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.struct-photo {
+    display: block;
+    position: relative;
+    height: 250px;
+    width: 150px;
+    float: left;
+}
+
+.managment-image {
+    display: block;
+    position: relative;
+    height: 200px;
+    width: 120px;
+    margin: 0px auto ;
+
+}
+
+.struct-description {
+    display: block;
+    position: relative;
+    float: left;
+    height: 250px;
+    width: 300px;
+
+
+}
+.struct-description h2 {
+     font-size: 18px ;
+ }
+.struct-description h3 {
+    font-size: 14px ;
+}

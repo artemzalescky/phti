@@ -35,7 +35,7 @@
                  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">О ФТИ <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li> <?php $ph->link('Руководство ФТИ', '/managment') ?> </li>
+                    <li> <?php $ph->link('Руководство', '/managment') ?> </li>
                 </ul>
                 </li>
 
