@@ -15,3 +15,8 @@ h2.title a{
     margin: 0 15px 30px;
     position: relative;
 }
+
+h2.title a:hover {
+    color: #18bc9c;
+    text-decoration: none;
+}

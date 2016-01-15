@@ -57,7 +57,9 @@
 
     <div class="container">
         <hr>
-        <h2 class="title text-center"><a href="/managment">Руководство ФТИ</a> </h2>
+        <h2 class="title text-center">
+            <?php $ph->link('Руководство ФТИ', '/managment') ?>
+        </h2>
     </div>
     <!-- Руководство -->
     <div class="section">
@@ -132,7 +134,7 @@
 
 
 <div class="container">
-    <h2 style="text-align: center">Мы сотрудничаем </h2>
+    <h2 class="title text-center">Мы сотрудничаем </h2>
 </div>
 
 <section class="section section--medium">
@@ -179,9 +181,10 @@
 </section>
 <br>
 
+
 <div class="container">
     <hr>
-    <h2 style="text-align: center">Местоположение </h2>
+    <h2 class="title text-center"> Местоположение </h2>
 </div>
 <div style="width: 100%; height: 370px;outline: 0; border: 0;" id="map">
 
