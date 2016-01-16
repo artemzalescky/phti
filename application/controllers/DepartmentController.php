@@ -18,8 +18,14 @@ class DepartmentController extends BaseController {
             if (empty($currentDepartment)) {
                 $this->redirect('404');
             }
-            $this->setViewVariable('currentDepartment', $currentDepartment);
             $currentDepartmentId = $currentDepartment['id'];
+        }
+
+        if (!empty($currentDepartment)) {
+            $pathToDepartment = DepartmentModel::getInstance()->getPathToDepartment($currentDepartment);
+            DepartmentModel::getInstance()->calculateFullPathUrl($pathToDepartment);
+        } else {
+            $pathToDepartment = [DepartmentModel::getInstance()->gerRootDepartment()];
         }
 
         $childDepartments = DepartmentModel::getInstance()->getDepartmentChildren($currentDepartmentId);
@@ -37,6 +43,8 @@ class DepartmentController extends BaseController {
             }
         }
 
+        $this->setViewVariable('currentDepartment', $currentDepartment);
+        $this->setViewVariable('pathToDepartment', $pathToDepartment);
         $this->setViewVariable('departmentList', $childDepartments);
         $this->render();
     }

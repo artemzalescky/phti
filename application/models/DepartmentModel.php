@@ -54,10 +54,48 @@ class DepartmentModel {
         }
     }
 
+    public function gerRootDepartment() {
+        return [
+            'id' => 0,
+            'parentId' => null,
+            'nameRu' => 'Научные центры и отделы',
+            'name' => 'Research centers and departments',
+            'url' => 'department',
+            'fullUrl' => 'department'
+        ];
+    }
+
     public function calculateChildrenFullUrl($parentDepartment, &$childDepartments) {
         $baseUrl = !empty($parentDepartment) ? $parentDepartment['url'] . '/' : '';
         for ($i = 0; $i < count($childDepartments); $i++) {
             $childDepartments[$i]['fullUrl'] = "$baseUrl{$childDepartments[$i]['url']}";
+        }
+    }
+
+    public function getPathToDepartment($department) {
+        try {
+            $res = [];
+            $parent = $department;
+            if (!empty($department)) {
+                $res[] = $parent;
+                while (!empty($parent) && !empty($parent['parentId'])) {
+                    $parent = $this->getDepartmentById($parent['parentId']);
+                    $res[] = $parent;
+                }
+            }
+            $res[] = $this->gerRootDepartment();
+            $res = array_reverse($res);
+            return $res;
+        } catch (\Exception $e) {
+            return [];
+        }
+    }
+
+    public function calculateFullPathUrl(&$pathToDepartment) {
+        $currentUrl = '';
+        for ($i = 0; $i < count($pathToDepartment); $i++) {
+            $currentUrl .= '/' . $pathToDepartment[$i]['url'];
+            $pathToDepartment[$i]['fullUrl'] = $currentUrl;
         }
     }
 
