@@ -1,11 +1,15 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Lenovo
- * Date: 09.01.2016
- * Time: 15:41
- */
+<ol class="breadcrumb custom-breadcrumb">
+    <li>
+        <?php $ph->link($ph->lang->Label_FTI, '/') ?>
+    </li>
+    <li>
+        <?php $ph->link($ph->lang->Label_Laboratories, '/laboratory') ?>
+    </li>
+    <li class="active">
+        <?= $ph->localisedField($currentLaboratory, 'name') ?>
+    </li>
+</ol>
 
-var_dump($currentLaboratory);
+<hr>
 
-?>
+<?php var_dump($currentLaboratory);

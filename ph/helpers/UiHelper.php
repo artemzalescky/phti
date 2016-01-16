@@ -4,6 +4,7 @@ namespace ph\helpers;
 
 use ph\config\Settings;
 use ph\sessions\flash\FlashMessagesAccessorImpl;
+use ph\utils\StringUtil;
 
 class UiHelper extends HtmlHelper {
     private $locale;
@@ -42,5 +43,14 @@ class UiHelper extends HtmlHelper {
             $this->message_info($this->lang->getMessage($k, $v));
         }
         return $this;
+    }
+
+    public function localisedField($object, $key) {
+        $localisedKey = $key . StringUtil::startWithUpperCase($this->locale->getLang());
+        if (!empty($object[$localisedKey])) {
+            return $object[$localisedKey];
+        }
+        $localisedKey = $key . StringUtil::startWithUpperCase($this->locale->getDefaultLang());
+        return $object[$localisedKey];
     }
 }

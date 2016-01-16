@@ -9,6 +9,8 @@ class Dictionary extends BaseDictionary {
     public function __construct() {
         parent::__construct(["ru", "en"], [
             "Label_FTI" => ["ФТИ", "FTI"],
+            "Label_Departments" => ["Научные центры и отделы", "Research centers and departments"],
+            "Label_Laboratories" => ["Лаборатории", "Laboratories"],
 
             "Button_Search" => ["Поиск", "Search"],
 

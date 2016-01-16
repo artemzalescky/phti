@@ -4,10 +4,10 @@
     </li>
     <?php foreach ($pathToDepartment as $part) {
         if ($part['id'] == $currentDepartment['id']) {
-            $ph->tag('li', $part['nameRu'], ['class' => 'active']);
+            $ph->tag('li', $ph->localisedField($part, 'name'), ['class' => 'active']);
         } else {
             $ph->tag_open('li')
-                ->link($part['nameRu'], $part['fullUrl'])
+                ->link($ph->localisedField($part, 'name'), $part['fullUrl'])
                 ->tag_close('li');
         }
     } ?>

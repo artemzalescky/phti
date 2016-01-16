@@ -28,6 +28,10 @@ class LocaleModel {
         $this->lang = $lang;
     }
 
+    public function getDefaultLang() {
+        return $this->defaultLang;
+    }
+
     public static function saveLang($lang) {
         CookieStorage::add(self::$COOKIE_NAME, $lang);
     }
