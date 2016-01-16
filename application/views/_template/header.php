@@ -35,7 +35,8 @@
                  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_About ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li> <?php $ph->link($ph->lang->TopMenu_About_Governance, '/managment') ?> </li>
+                    <li> <?php $ph->link($ph->lang->TopMenu_About_Management, '/managment') ?> </li>
+                    <li class="divider"></li>
                     <li> <?php $ph->link($ph->lang->TopMenu_About_History, '/about') ?> </li>
                 </ul>
                 </li>
@@ -59,8 +60,6 @@
                 </div>
                 <button type="submit" class="btn btn-default"><?= $ph->lang->Button_Search ?></button>
             </form>
-
-
         </div>
     </div>
 </nav>

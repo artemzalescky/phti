@@ -17,8 +17,8 @@ class Dictionary extends BaseDictionary {
             "TopMenu_Structure_Laboratories" => ["Лаборатории", "Laboratories"],
             "TopMenu_Production" => ["Наша продукция", "Our production"],
             "TopMenu_Contacts" => ["Контакты", "Contacts"],
-            "TopMenu_About" => ["О ФТИ", "About PhTI"],
-            "TopMenu_About_Governance" => ["Руководство", "Governance"],
+            "TopMenu_About" => ["О ФТИ", "About"],
+            "TopMenu_About_Management" => ["Руководство", "Management"],
             "TopMenu_About_History" => ["История", "History"],
             "TopMenu_SearchFormPlaceHolder" => ["Строка для поиска", "Enter text to search"]
         ]);

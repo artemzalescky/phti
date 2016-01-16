@@ -49,7 +49,7 @@
         </p>
         <hr>
         <p>
-            <?php $ph->link('Подробнее о ФТИ', '/about', ['class' => 'btn btn-primary btn-lg']) ?>
+            <?php $ph->link('Подробнее', '/about', ['class' => 'btn btn-primary btn-lg']) ?>
         </p>
     </div>
 
