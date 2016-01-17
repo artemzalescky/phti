@@ -3,7 +3,7 @@
 
 <div class="container">
 
-    <h2 class="title text-center">Лаборатории</h2>
+    <h2 class="title text-center"><?= $ph->lang->Label_Laboratories ?></h2>
 
     <div class="row">
 
@@ -14,7 +14,7 @@
                         'class' => 'square-image',
                     ])
                         ->link_open('/laboratory/' . $baseLaboratories[$i]['url'])
-                        ->tag('h4', $baseLaboratories[$i]['nameRu'], ['class' => 'department-name'])
+                        ->tag('h4', $ph->localisedField($baseLaboratories[$i], 'name'), ['class' => 'department-name'])
                         ->tag_close('a'); ?>
 
                     <ul class="child-list-empty">

@@ -3,7 +3,7 @@
 
 <div class="container">
 
-    <?php $ph->tag('h2', empty($currentDepartment) ? 'Научные центры и отделы' : 'Лаборатории', [
+    <?php $ph->tag('h2', empty($currentDepartment) ? $ph->lang->Label_Departments : $ph->lang->Label_Laboratories, [
             'class' => 'title text-center'
         ]); ?>
 
@@ -16,7 +16,7 @@
                         'class' => 'square-image',
                     ])
                     ->link_open('/department/' . $departmentList[$i]['fullUrl'])
-                    ->tag('h4', $departmentList[$i]['nameRu'], ['class' => 'department-name'])
+                    ->tag('h4', $ph->localisedField($departmentList[$i], 'name'), ['class' => 'department-name'])
                     ->tag_close('a');
 
                 if (!empty($departmentList[$i]['children'])) { // есть дети ?>
@@ -26,9 +26,9 @@
                                     ->link_open('/department/' . $departmentList[$i]['children'][$j]['fullUrl'], [
                                         'class' => 'child-name',
                                         'data-toggle' => 'tooltip',
-                                        'title' => $departmentList[$i]['children'][$j]['nameRu']
+                                        'title' => $ph->localisedField($departmentList[$i]['children'][$j], 'name')
                                     ])
-                                    ->cut_text( $departmentList[$i]['children'][$j]['nameRu'], 40, true)
+                                    ->cut_text( $ph->localisedField($departmentList[$i]['children'][$j], 'name'), 40, true)
                                     ->tag('i', null, ['class' => 'glyphicon glyphicon-menu-right'])
                                     ->link_close()
                                 ->tag_close('li');
