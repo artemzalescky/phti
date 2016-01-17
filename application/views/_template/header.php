@@ -30,7 +30,7 @@
                         <li> <?php $ph->link($ph->lang->TopMenu_Structure_Laboratories, '/laboratory') ?> </li>
                     </ul>
                 </li>
-                <li> <?php $ph->link($ph->lang->TopMenu_Production, '/production') ?> </li>
+                <li> <?php $ph->link($ph->lang->TopMenu_Production, '/product') ?> </li>
                 <li> <?php $ph->link($ph->lang->TopMenu_Contacts, '/contacts') ?> </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_About ?> <span class="caret"></span></a>

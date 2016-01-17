@@ -11,6 +11,8 @@ class Dictionary extends BaseDictionary {
             "Label_FTI" => ["ФТИ", "FTI"],
             "Label_Departments" => ["Научные центры и отделы", "Research centers and departments"],
             "Label_Laboratories" => ["Лаборатории", "Laboratories"],
+            "Label_Production" => ["Продукция и услуги", "Production and services"],
+            "Label_OurProduction" => ["Наша продукция", "Our production"],
 
             "Button_Search" => ["Поиск", "Search"],
 
@@ -24,7 +26,9 @@ class Dictionary extends BaseDictionary {
             "TopMenu_About" => ["О ФТИ", "About"],
             "TopMenu_About_Management" => ["Руководство", "Management"],
             "TopMenu_About_History" => ["История", "History"],
-            "TopMenu_SearchFormPlaceHolder" => ["Строка для поиска", "Enter text to search"]
+            "TopMenu_SearchFormPlaceHolder" => ["Строка для поиска", "Enter text to search"],
+
+            "Product_Label_Varieties" =>["Разновидности", "Varieties"]
         ]);
     }
 }

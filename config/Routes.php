@@ -31,18 +31,19 @@ class Routes extends Filter {
             return new RouteData($controllerName, $actionName, $pathParams);
         }
 
-        if (count($tokenArr) > 0 && $tokenArr[0] == 'product') {
+        if (count($tokenArr) == 1 && $tokenArr[0] == 'product') {
             $controllerName = 'product';
-            $actionName = 'show';
+            $actionName = 'index';
             $pathParams = [$this->fillPathParamArr($tokenArr, 1)];
             return new RouteData($controllerName, $actionName, $pathParams);
         }
-//        if (count($tokenArr) > 0 && $tokenArr[0] == 'product') {
-//            $controllerName = 'product';
-//            $actionName = 'show';
-//            $pathParams = [$this->fillPathParamArr($tokenArr, 1)];
-//            return new RouteData($controllerName, $actionName, $pathParams);
-//        }
+
+        if (count($tokenArr) == 2 && $tokenArr[0] == 'product') {
+            $controllerName = 'product';
+            $actionName = 'show';
+            $pathParams = [$tokenArr[1]];
+            return new RouteData($controllerName, $actionName, $pathParams);
+        }
 
         return null;
     }

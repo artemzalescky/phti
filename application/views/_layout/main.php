@@ -16,6 +16,9 @@
 
         /*Footer*/
         ->include_css('footer/footer.css')
+
+        /*Extra*/
+        ->include_css('title.css')
     ?>
 </head>
 
