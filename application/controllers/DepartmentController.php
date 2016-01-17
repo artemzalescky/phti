@@ -3,6 +3,7 @@
 namespace application\controllers;
 
 use application\models\DepartmentModel;
+use application\models\ProductModel;
 use ph\controller\BaseController;
 
 class DepartmentController extends BaseController {
@@ -24,6 +25,8 @@ class DepartmentController extends BaseController {
         if (!empty($currentDepartment)) {
             $pathToDepartment = DepartmentModel::getInstance()->getPathToDepartment($currentDepartment);
             DepartmentModel::getInstance()->calculateFullPathUrl($pathToDepartment);
+
+            $products = ProductModel::getInstance()->getByDepartmentId($currentDepartment['id']);
         } else {
             $pathToDepartment = [DepartmentModel::getInstance()->gerRootDepartment()];
         }
@@ -46,6 +49,7 @@ class DepartmentController extends BaseController {
         $this->setViewVariable('currentDepartment', $currentDepartment);
         $this->setViewVariable('pathToDepartment', $pathToDepartment);
         $this->setViewVariable('departmentList', $childDepartments);
+        $this->setViewVariable('products', $products);
         $this->render();
     }
 }

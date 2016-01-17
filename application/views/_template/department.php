@@ -7,6 +7,8 @@
             'class' => 'title text-center'
         ]); ?>
 
+    <hr>
+
     <div class="row">
 
     <?php for ($i = 0; $i < count( $departmentList ); $i++) { ?>

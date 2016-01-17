@@ -5,6 +5,8 @@
 
     <h2 class="title text-center"><?= $ph->lang->Label_Laboratories ?></h2>
 
+    <hr>
+
     <div class="row">
 
         <?php for ($i = 0; $i < count( $baseLaboratories ); $i++) { ?>

@@ -15,4 +15,12 @@
 
 <hr>
 
-<?php $this->renderTemplate('department'); ?>
+<?php if (!empty($departmentList)) {
+    $this->renderTemplate('department');
+} ?>
+
+<?php if (!empty($products)) {
+    $ph->single_tag('hr')
+        ->tag('h2', $ph->lang->Label_Production, ['class' => 'text-center title']);
+    $this->renderTemplate('product-list');
+} ?>
