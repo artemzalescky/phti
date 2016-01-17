@@ -4,10 +4,16 @@
     border-radius: 0;
 }
 
-#top-menu-logo-holder {
-
-}
-
 #top-menu-logo {
     padding: 10px 30px;
+}
+
+#top-menu form[role="search"] {
+    margin: 12px 0 11px 0 !important;
+}
+
+#top-menu form[role="search"] input[type="text"] {
+    height: 36px;
+    margin-top: 1px;
+    padding:0 15px;
 }
