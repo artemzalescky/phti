@@ -21,6 +21,8 @@ class ProductController extends BaseController {
             $this->redirect('404');
         }
 
+        ProductModel::getInstance()->fillFullInfoAboutProduct($currentProduct);
+
         $pathToProduct = ProductModel::getInstance()->getPathToProduct($currentProduct);
         $productChildren = ProductModel::getInstance()->getChildren($currentProduct['id']);
 

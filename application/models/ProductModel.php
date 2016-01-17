@@ -3,6 +3,7 @@
 namespace application\models;
 
 use application\models\dao\ProductDAO;
+use application\models\dao\ProductFieldDAO;
 
 class ProductModel {
     private static $instance;
@@ -70,5 +71,10 @@ class ProductModel {
         } catch (\Exception $e) {
             return [];
         }
+    }
+
+    public function fillFullInfoAboutProduct(&$product) {
+        $fieldList = ProductFieldDAO::getInstance()->getByProductId($product['id']);
+        $product['extraFields'] = !empty($fieldList) ? $fieldList : [];
     }
 }

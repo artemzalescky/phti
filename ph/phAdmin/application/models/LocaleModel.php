@@ -4,6 +4,7 @@ namespace ph\phAdmin\application\models;
 
 use config\Config;
 use ph\cookie\CookieStorage;
+use ph\utils\StringUtil;
 
 class LocaleModel {
     private static $COOKIE_NAME = 'locale';
@@ -24,12 +25,20 @@ class LocaleModel {
         return $this->lang;
     }
 
+    public function getLangCapitalised() {
+        return StringUtil::startWithUpperCase($this->lang);
+    }
+
     public function setLang($lang) {
         $this->lang = $lang;
     }
 
     public function getDefaultLang() {
         return $this->defaultLang;
+    }
+
+    public function getDefaultLangCapitalised() {
+        return StringUtil::startWithUpperCase($this->defaultLang);
     }
 
     public static function saveLang($lang) {

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Янв 17 2016 г., 11:06
+-- Время создания: Янв 17 2016 г., 11:57
 -- Версия сервера: 5.6.20
 -- Версия PHP: 5.5.15
 
@@ -112,6 +112,38 @@ INSERT INTO `product` (`id`, `parent_id`, `department_id`, `name_ru`, `name_en`,
 (2, 1, 0, 'Беспилотный авиационный комплекс видеомониторинга местности «бусел»', 'Unmanned aircraft systems video monitoring area "Busel"', 'busel', 0, 'Беспилотный летательный аппарат (2 шт.) мобильный или переносной наземный пункт управления (1 шт.) модуль приемо-передающей аппаратуры (2 к-та)', 'Unmanned aerial vehicles (2 pcs.), Mobile or a portable ground control station (1 pc.) Module receiving and transmitting equipment (2-ta)'),
 (3, 1, 0, 'Беспилотный авиационный комплекс дальнего действия для мониторинга местности и объектов БУРЕВЕСТНИК', 'Unmanned aircraft systems for long-range monitoring of terrain and objects BUREVESTNIK', 'burevestnik', 0, 'Область применения: энергосбережение, предупреждение чрезвычайных ситуаций, контроль общественного порядка, охрана природы.', 'Scope: energy saving, prevention of emergency situations, control of public order, the protection of nature.');
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `product_field`
+--
+
+CREATE TABLE IF NOT EXISTS `product_field` (
+`id` int(8) unsigned NOT NULL,
+  `product_id` int(6) NOT NULL,
+  `key_ru` varchar(150) NOT NULL,
+  `key_en` varchar(150) NOT NULL,
+  `value_ru` text NOT NULL,
+  `value_en` text NOT NULL,
+  `priority` int(2) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- Дамп данных таблицы `product_field`
+--
+
+INSERT INTO `product_field` (`id`, `product_id`, `key_ru`, `key_en`, `value_ru`, `value_en`, `priority`) VALUES
+(1, 2, 'Тип БЛА', 'UAS Type', 'Электролет "Бусел"', 'UAS "Busel"', 0),
+(2, 2, 'Взлетная масса, кг', 'Takeoff weight, kg', '6+1,3', '', 0),
+(3, 2, 'Полный размах крыла, мм', 'Full wingspan, mm', '2 280', '', 0),
+(4, 2, 'Продолжительность полета, мин', 'The duration of the flight, min', 'до 90', '< 90', 0),
+(5, 2, 'Диапазон скоростей полета, км/ч', 'Flight speed range, km / h', '40–100', '', 0),
+(6, 2, 'Максимальная высота полета, м', 'Maximum flight altitude, m', 'до 3 000', '< 3000', 0),
+(7, 2, 'Дальность применения, км', 'Range of applications, km', 'до 25', '< 25', 0),
+(8, 2, 'Целевая нагрузка', 'The target load', 'Гиростабилизированный модуль оптико-электронного мониторинга в составе ТВ, Фото, ИК, лазерный дальномер, модуль радиационного мониторинга', 'Gyrostabilized module opto-electronic monitoring as a part of TV, photo, infrared, laser rangefinder, radiation monitoring module', 0),
+(9, 2, 'Пилотажно-навигационный комплекс', 'Flight navigation system', 'GPS и САУ', 'GPS and САУ', 0),
+(10, 2, 'Способ старта / посадки', 'The method of start / landing', 'С руки / парашют', 'From hand / parachute', 0);
+
 --
 -- Indexes for dumped tables
 --
@@ -129,6 +161,12 @@ ALTER TABLE `product`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `product_field`
+--
+ALTER TABLE `product_field`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -142,6 +180,11 @@ MODIFY `id` int(6) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
 --
 ALTER TABLE `product`
 MODIFY `id` int(6) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `product_field`
+--
+ALTER TABLE `product_field`
+MODIFY `id` int(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

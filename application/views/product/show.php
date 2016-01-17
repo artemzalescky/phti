@@ -1,4 +1,8 @@
-<?php $ph->include_css('product-view.css') ?>
+<?php
+$ph->include_css('product-view.css');
+$currentLang = $ph->lang->getLangCapitalised();
+$defaultLang = $ph->lang->getDefaultLangCapitalised();
+?>
 
 
     <ol class="breadcrumb custom-breadcrumb">
@@ -37,7 +41,17 @@
             <blockquote>
                 <p><?= $ph->localisedField($currentProduct, 'shortDescription') ?></p>
             </blockquote>
-
+            <?php foreach ($currentProduct['extraFields'] as $field) { ?>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3 text-right">
+                        <?= !empty($field["key$currentLang"]) ? $field["key$currentLang"] : $field["key$defaultLang"] ?>
+                    </div>
+                    <div class="col-md-9">
+                        <?= !empty($field["value$currentLang"]) ? $field["value$currentLang"] : $field["value$defaultLang"] ?>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </div>
