@@ -37,7 +37,7 @@
                         } ?>
                         <li class="more-link">
                             <?php $ph->link(
-                                '<strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i>',
+                                '<strong>'. $ph->lang->Slider_Learn_More .' </strong> <i class="glyphicon glyphicon-th-list"></i>',
                                 '/department/' . $departmentList[$i]['fullUrl']
                             ) ?>
                         </li>

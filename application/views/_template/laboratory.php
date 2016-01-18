@@ -22,7 +22,7 @@
                     <ul class="child-list-empty">
                         <li class="more-link">
                             <?php $ph->link(
-                                '<strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i>',
+                                '<strong>'. $ph->lang->Slider_Learn_More.'</strong> <i class="glyphicon glyphicon-th-list"></i>',
                                 '/laboratory/' . $baseLaboratories[$i]['url']
                             ) ?>
                         </li>
