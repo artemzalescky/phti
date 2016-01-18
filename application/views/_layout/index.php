@@ -84,11 +84,19 @@
             </div>
         </section>
 
+    <hr>
+    <?php $this->renderTemplate('department')?>
+    <hr>
+    <?php $this->renderTemplate('laboratory')?>
+    <hr>
+</div>
+
 <div class="container">
 
-    <hr>
     <h2 class="title text-center">
-        <?php $ph->link('Руководство ФТИ', '/managment') ?>
+        <?php $ph->link( $ph->lang->Label_Managment , '/managment') ?>
+        <h3></h3>
+        <hr>
     </h2>
 </div>
 <!-- Руководство -->
@@ -104,9 +112,9 @@
                 <div class="testimonial-bubble">
                     <blockquote>
                         <!-- Quote -->
-                        <p class="quote">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
-                        </p>
+                        <!--                        <p class="quote">-->
+                        <!---->
+                        <!--                        </p>-->
                         <!-- Author Info -->
                         <cite class="author-info">
                             - Томило Вячеслав Анатольевич,<br> Директор ФТИ НАН Беларуси
@@ -122,9 +130,9 @@
                 </div>
                 <div class="testimonial-bubble">
                     <blockquote>
-                        <p class="quote">
-                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-                        </p>
+                        <!--                        <p class="quote">-->
+                        <!---->
+                        <!--                        </p>-->
                         <cite class="author-info">
                             - Белый Алексей Владимирович,<br>Зам. директора по научной работе
                         </cite>
@@ -138,9 +146,9 @@
                 </div>
                 <div class="testimonial-bubble">
                     <blockquote>
-                        <p class="quote">
-                            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                        </p>
+                        <!--                        <p class="quote">-->
+                        <!--                           -->
+                        <!--                        </p>-->
                         <cite class="author-info">
                             - Михлюк Анатолий Игнатьевич,<br>Зам. директора по научной работе
                         </cite>
@@ -152,19 +160,12 @@
     </div>
 </div>
 <!-- Руководство -->
-
-    <hr>
-    <?php $this->renderTemplate('department')?>
-    <hr>
-    <?php $this->renderTemplate('laboratory')?>
-    <hr>
-</div>
-
-
+<hr>
 <div class="container">
-    <h2 class="title text-center">Мы сотрудничаем </h2>
-</div>
 
+    <h2 class="title text-center"><?= $ph->lang->Label_Cooperate ?> </h2>
+    <hr>
+</div>
 <section class="section section--medium">
     <div class="container">
         <ul class="logo-bar">
@@ -212,7 +213,7 @@
 
 <div class="container">
     <hr>
-    <h2 class="title text-center"> Местоположение </h2>
+    <h2 class="title text-center"> <?= $ph->lang->Label_Location ?> </h2>
 </div>
 <div style="width: 100%; height: 370px;outline: 0; border: 0;" id="map">
 

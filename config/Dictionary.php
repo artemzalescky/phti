@@ -13,6 +13,9 @@ class Dictionary extends BaseDictionary {
             "Label_Laboratories" => ["Лаборатории", "Laboratories"],
             "Label_Production" => ["Продукция и услуги", "Production and services"],
             "Label_OurProduction" => ["Наша продукция", "Our production"],
+            "Label_Managment" => ["Руководство ФТИ","Managment PHTI"],
+            "Label_Cooperate" => ["Мы сотрудничаем","We cooperate"],
+            "Label_Location" => ["Местоположение","Location"],
 
             /* ---slider--- */
             "Slider_Learn_More" => ["Подробнее", "Learn More"],

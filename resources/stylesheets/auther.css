@@ -21,7 +21,7 @@
     background-clip: padding-box;
     padding: 0 20px 20px 20px;
     margin: 35px 10px 20px 10px;
-    background: #BBBBBB;
+    background: #eee;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -32,7 +32,7 @@
     color: inset 0 1px #fff,0 1px 2px #c8cfe6;
 }
 .testimonial .testimonial-bubble::before {
-    background-color: #BBBBBB;
+    background-color: #eee;
     content: "\00a0";
     display: block;
     height: 20px;
