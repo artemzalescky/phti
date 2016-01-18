@@ -1,95 +1,89 @@
 <?php $ph->include_css('managment.css') ?>
 <?php $ph->include_css('title.css') ?>
 
-<div class="container">
+<div id="manager-list">
     <h2 class="title text-center ">Руководство ФТИ НАН Беларуси</h2>
-
-     <div class="col-lg-6 managment-box-container">
-         <div class="border">
-                <div class="struct-photo">
-                    <?php $ph->image('struct/tomilo.jpg', [
-                        'class' => 'managment-image',
-                    ]);?>
-                </div>
-
-                <div class="struct-description">
-                    <h2>Томило Вячеслав Анатольевич </h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <?php $ph->image('struct/tomilo.jpg', ['class' => 'managment-image']);?>
+            </div>
+            <div class="col-md-9">
+                <h3 class="managment-name"> Томило Вячеслав Анатольевич </h3>
+                <p>
                     <h3><b>Должность:</b> Директор ГНУ «ФТИ НАН Беларуси»</h3>
                     <h3><b>Время приема:</b> вторник 16.00-17.30</h3>
                     <h3><b>Номер кабинета:</b> каб. 301</h3>
                     <h3><b>Номер телефона:</b> тел. 267-60-10</h3>
-                </div>
-            </div>
-         </div>
-        <div class="col-lg-6 managment-box-container">
-            <div class="border">
-                <div class="struct-photo">
-                    <?php $ph->image('struct/mihluk.jpg', [
-                        'class' => 'managment-image',
-                    ]);?>
-                </div>
-
-                <div class="struct-description">
-                    <h2>Михлюк Анатолий Игнатьевич </h2>
-                    <h3><b>Должность:</b> Зам. директора по научной работе</h3>
-                    <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>
-                    <h3><b>Номер кабинета:</b> каб. 325</h3>
-                    <h3><b>Номер телефона:</b> тел. 267-42-75</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 managment-box-container">
-            <div class="border">
-                <div class="struct-photo">
-                    <?php $ph->image('struct/biely.jpg', [
-                        'class' => 'managment-image',
-                    ]);?>
-                </div>
-
-                <div class="struct-description">
-                    <h2>Белый Алексей Владимирович </h2>
-                    <h3><b>Должность:</b> Зам. директора по научной работе</h3>
-                    <h3><b>Время приема:</b> четверг 16.00-17.30</h3>
-                    <h3><b>Номер кабинета:</b> каб. 317</h3>
-                    <h3><b>Номер телефона:</b> тел. 265-07-98</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 managment-box-container">
-            <div class="border">
-                <div class="struct-photo">
-                    <?php $ph->image('struct/poko.jpg', [
-                        'class' => 'managment-image',
-                    ]);?>
-                </div>
-
-                <div class="struct-description">
-                    <h2>Поко Ольга Александровна </h2>
-                    <h3><b>Должность:</b> Ученый секретарь</h3>
-                    <h3><b>Время приема:</b> среда 16.00-17.30</h3>
-                    <h3><b>Номер кабинета:</b> каб. 304</h3>
-                    <h3><b>Номер телефона:</b> тел.  267-64-53</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 managment-box-container">
-            <div class="border">
-                <div class="struct-photo">
-                    <?php $ph->image('struct/mlinov.jpg', [
-                        'class' => 'managment-image',
-                    ]);?>
-                </div>
-
-                <div class="struct-description">
-                    <h2>Малиновский Александр Иосифович</h2>
-                    <h3><b>Должность:</b> Главный  инженер</h3>
-                    <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>
-                    <h3><b>Номер кабинета:</b> каб. 325</h3>
-                    <h3><b>Номер телефона:</b> тел. 267-36-55</h3>
-                </div>
+                </p>
             </div>
         </div>
 
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <?php $ph->image('struct/biely.jpg', ['class' => 'managment-image']);?>
+        </div>
+        <div class="col-md-9">
+            <h3 class="managment-name"> Белый Алексей Владимирович </h3>
+            <p>
+            <h3><b>Должность:</b> Зам. директора по научной работе</h3>
+            <h3><b>Время приема:</b> четверг 16.00-17.30</h3>
+            <h3><b>Номер кабинета:</b> каб. 317</h3>
+            <h3><b>Номер телефона:</b> тел. 265-07-98</h3>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <?php $ph->image('struct/poko.jpg', ['class' => 'managment-image']);?>
+        </div>
+        <div class="col-md-9">
+            <h3 class="managment-name"> Поко Ольга Александровна </h3>
+            <p>
+            <h3><b>Должность:</b> Ученый секретарь</h3>
+            <h3><b>Время приема:</b> среда 16.00-17.30</h3>
+            <h3><b>Номер кабинета:</b> каб. 304</h3>
+            <h3><b>Номер телефона:</b> тел.  267-64-53</h3>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <?php $ph->image('struct/mihluk.jpg', ['class' => 'managment-image']);?>
+        </div>
+        <div class="col-md-9">
+            <h3 class="management-name"> Михлюк Анатолий Игнатьевич </h3>
+            <p>
+            <h3><b>Должность:</b> Зам. директора по научной работе</h3>
+            <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>
+            <h3><b>Номер кабинета:</b> каб. 325</h3>
+            <h3><b>Номер телефона:</b> тел. 267-42-75</h3>
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <?php $ph->image('struct/mlinov.jpg', ['class' => 'managment-image']);?>
+        </div>
+        <div class="col-md-9">
+            <h3 class="managment-name"> Малиновский Александр Иосифович </h3>
+            <p>
+            <h3><b>Должность:</b> Главный  инженер</h3>
+            <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>
+            <h3><b>Номер кабинета:</b> каб. 325</h3>
+            <h3><b>Номер телефона:</b> тел. 267-36-55</h3>
+            </p>
+        </div>
+    </div>
+
+</div>
 
 <div style="clear:both;"> </div>
 
@@ -145,5 +139,5 @@
     <li><em><strong>Научно-технический отдел маркетинга и сопровождения государственных программ.</strong> </em>Заведующий отделом<em> – Замыслов Александр Сергеевич</em></li>
     <li><strong><em>Опытное производство.</em> </strong>Заведующий опытным производством<strong>&nbsp;− </strong>Пряженик&nbsp; Владимир Андреевич</li>
 </ul>
-</div>
+
 
