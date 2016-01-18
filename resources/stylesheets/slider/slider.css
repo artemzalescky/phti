@@ -1,0 +1,76 @@
+
+/* ===================================
+5. Section: Featured
+==================================== */
+
+#featured{
+    width: 100%;
+    background:#fcfcfc;
+    position:relative;
+    margin:0px;
+    padding:0;
+
+    margin-top: -20px;
+
+}
+
+/* ===================================
+6. Sliders
+==================================== */
+/* --- flexslider --- */
+
+#featured .flexslider {
+    padding:0;
+    margin: 50px 0 30px;
+    background: #fff;
+    position: relative;
+    zoom: 1;
+}
+
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption { bottom: 35px; background-color: rgba(0, 0, 0, 0.8); color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; right: 45px; width: 295px;}
+.flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
+.flex-caption p {margin: 0 0 15px;}
+
+
+
+.btn-theme {
+    color: #fff;
+}
+.btn-theme:hover {
+    color: #eee;
+}
+
+
+
+
+
+/* =============================
+21. Media queries
+============================= */
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+}
+
+@media (max-width: 767px) {
+    #featured .flexslider .slide-caption {
+        width: 90%;
+        padding: 2%;
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .flexslider .flex-caption {
+        display:none;
+    }
+}
+
+@media (max-width: 360px) {
+
+}

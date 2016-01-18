@@ -2,6 +2,7 @@
 
 #top-menu {
     border-radius: 0;
+    z-index: 9999;
 }
 
 #top-menu-logo {

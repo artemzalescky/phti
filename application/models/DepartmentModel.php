@@ -124,4 +124,4 @@ class DepartmentModel {
             return null;
         }
     }
-}
+ }

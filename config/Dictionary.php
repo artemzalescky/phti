@@ -14,6 +14,16 @@ class Dictionary extends BaseDictionary {
             "Label_Production" => ["Продукция и услуги", "Production and services"],
             "Label_OurProduction" => ["Наша продукция", "Our production"],
 
+            /* ---slider--- */
+            "Slider_Learn_More" => ["Подробнее", "Learn More"],
+            "Slider_First_Name" => ["БАК и Технологии" , "UAS and Technology"],
+            "Slider_First_Description" => ["Лаборатория Беспилотных Летальных Аппаратов и Технологий производит беспилотники" , "Laboratory unmanned aircraft systems and technology produces drones"],
+            "Slider_Second_Name" => ["Руководство ФТИ" , "managment PHTI"],
+            "Slider_Second_Description" => ["Руководство ФТИ НАН Беларуси" , "Managment PHTI NAN Belarus"],
+            "Slider_Third_Name" => ["Деятельность ФТИ" , "Activities PHTI"],
+            "Slider_Third_Description" => ["Деятельность ФТИ является примером реализации связи науки с производством" , "Activity PHTI is an example of the implementation of links between science and production"],
+            /*---------*/
+
             "Button_Search" => ["Поиск", "Search"],
 
             "TopMenu_Home" => ["Главная", 'Home'],
