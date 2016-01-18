@@ -34,7 +34,7 @@ class Dictionary extends BaseDictionary {
             "TopMenu_Structure" => ["Структура", "Structure"],
             "TopMenu_Structure_Departments" => ["Научные центры и отделы", "Research centers and departments"],
             "TopMenu_Structure_Laboratories" => ["Лаборатории", "Laboratories"],
-            "TopMenu_Production" => ["Наша продукция", "Our production"],
+            "TopMenu_Production" => ["Продукция & Услуги", "Our production & services"],
             "TopMenu_Contacts" => ["Контакты", "Contacts"],
             "TopMenu_About" => ["О ФТИ", "About"],
             "TopMenu_About_Management" => ["Руководство", "Management"],

@@ -21,7 +21,7 @@
                     ->tag('h4', $ph->localisedField($departmentList[$i], 'name'), ['class' => 'department-name'])
                     ->tag_close('a');
 
-                if (!empty($departmentList[$i]['children'])) { // есть дети ?>
+                if (!empty($departmentList[$i]['children']) || $departmentList[$i]['id'] == 38) { // есть дети, кросе ТЕХНОМАГ - в нём нет лабораторий ?>
                     <ul class="child-list">
                         <?php for ($j = 0; $j < min(count($departmentList[$i]['children']), 3); $j++) {  //выводим лаборатории, максимальное количесво лабораторий в департаменте == 3
                                 $ph->tag_open('li')
@@ -46,7 +46,7 @@
                     <ul class="child-list-empty">
                         <li class="more-link">
                             <?php $ph->link(
-                                '<strong>Подробнее</strong> <i class="glyphicon glyphicon-th-list"></i>',
+                                '<strong>'. $ph->lang->Slider_Learn_More.'</strong> <i class="glyphicon glyphicon-th-list"></i>',
                                 '/department/' . $departmentList[$i]['fullUrl']
                             ) ?>
                         </li>
@@ -55,6 +55,7 @@
             </div>
         </div>
     <?php } ?>
+
 </div>
 </div>
 

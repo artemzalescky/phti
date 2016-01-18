@@ -9,6 +9,6 @@
 
 <hr>
 
-<h2 class="title text-center"> <?= $ph->lang->Label_OurProduction ?> </h2>
+<h2 class="title text-center"> <?= $ph->lang->Label_Production ?> </h2>
 
 <?php $this->renderTemplate('product-list') ?>

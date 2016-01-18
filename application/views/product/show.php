@@ -24,7 +24,6 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
 </ol>
 
 <hr>
-
 <div id="product-container">
     <h3><?= $ph->localisedField($currentProduct, 'name') ?></h3>
 
