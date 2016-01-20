@@ -37,6 +37,10 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
             ]) ?>
         </div>
         <div class="col-md-7">
+            <?php if (!empty($parentDepartment)) {
+                $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
+                    ->single_tag('hr');
+            } ?>
             <blockquote>
                 <p><?= $ph->localisedField($currentProduct, 'shortDescription') ?></p>
             </blockquote>
