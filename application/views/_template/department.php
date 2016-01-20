@@ -3,6 +3,19 @@
 
 <div class="container">
 
+
+    <!--Вывод общей инормации, контактов, руководителей-->
+    <?php
+
+    if (!empty($currentDepartment)) {
+       $ph->tag('h4', $ph->localisedField($currentDepartment, 'name'), ['class' => 'department-name']);
+       $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
+       $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'department-name']);
+    }
+
+    ?>
+
+
     <?php $ph->tag('h2', empty($currentDepartment) ? $ph->lang->Label_Departments : $ph->lang->Label_Laboratories, [
             'class' => 'title text-center'
         ]); ?>

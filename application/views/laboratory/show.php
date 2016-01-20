@@ -12,4 +12,5 @@
 
 <hr>
 
-<?php var_dump($currentLaboratory);
+<?php var_dump($currentLaboratory); ?>
+

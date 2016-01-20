@@ -16,6 +16,8 @@ class Dictionary extends BaseDictionary {
             "Label_Managment" => ["Руководство ФТИ","Managment PHTI"],
             "Label_Cooperate" => ["Мы сотрудничаем","We cooperate"],
             "Label_Location" => ["Местоположение","Location"],
+            "Label_News" => ["Новости","News"],
+            "Label_Schedule" => ["График работы","Schedule"],
 
             /* ---slider--- */
             "Slider_Learn_More" => ["Подробнее", "Learn More"],
@@ -41,7 +43,8 @@ class Dictionary extends BaseDictionary {
             "TopMenu_About_History" => ["История", "History"],
             "TopMenu_SearchFormPlaceHolder" => ["Строка для поиска", "Enter text to search"],
 
-            "Product_Label_Varieties" =>["Разновидности", "Varieties"]
+            "Product_Label_Varieties" =>["Разновидности", "Varieties"],
+
         ]);
     }
 }

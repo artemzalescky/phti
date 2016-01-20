@@ -16,14 +16,14 @@
                             $mainDepartments = DepartmentModel::getInstance()->getMainDepartments();
                         }
                         foreach($mainDepartments as $mainDepartment){
-                            $ph->link($mainDepartment['nameRu'], "/department/{$mainDepartment['url']}")
+                             $ph->link($ph->localisedField($mainDepartment, 'name'), "/department/{$mainDepartment['url']}")
                                 ->single_tag('br');
                         }
                     ?>
                 </p>
             </div>
             <div class="col-md-2">
-                <h3>Новости</h3>
+                <h3> <?= $ph->lang->Label_News ?> </li></h3>
                 <p>
                     <?php $ph->link('Мобильная версия сайта', '/news') ?>
                     <br>
@@ -43,7 +43,7 @@
                 </p>
             </div>
             <div class="col-md-3">
-                <h3>График работы</h3>
+                <h3> <?=$ph->lang->Label_Schedule ?></h3>
                 Понедельник 08.30 - 17.30 <br>
                 Вторник 08.30 - 17.30 <br>
                 Среда   08.30 - 17.30 <br>
@@ -54,7 +54,7 @@
                 Обеденный перерыв: с 13.00 до 13.45 <br>
             </div>
             <div class="col-md-3">
-                <h3>Контакты</h3>
+                <h3><?=$ph->lang->TopMenu_Contacts?></h3>
                 <ul id="contact-info">
                     <li>
                         <span class="glyphicon glyphicon-phone-alt"></span>
