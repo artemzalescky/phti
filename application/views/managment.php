@@ -35,21 +35,21 @@
         </div>
     </div>
 
-    <hr>
-    <div class="row">
-        <div class="col-md-3">
-            <?php $ph->image('struct/poko.jpg', ['class' => 'managment-image']);?>
-        </div>
-        <div class="col-md-9">
-            <h3 class="managment-name"> Поко Ольга Александровна </h3>
-            <p>
-            <h3><b>Должность:</b> Ученый секретарь</h3>
-            <h3><b>Время приема:</b> среда 16.00-17.30</h3>
-            <h3><b>Номер кабинета:</b> каб. 304</h3>
-            <h3><b>Номер телефона:</b> тел.  267-64-53</h3>
-            </p>
-        </div>
-    </div>
+<!--    <hr>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-3">-->
+<!--            --><?php //$ph->image('struct/poko.jpg', ['class' => 'managment-image']);?>
+<!--        </div>-->
+<!--        <div class="col-md-9">-->
+<!--            <h3 class="managment-name"> Поко Ольга Александровна </h3>-->
+<!--            <p>-->
+<!--            <h3><b>Должность:</b> Ученый секретарь</h3>-->
+<!--            <h3><b>Время приема:</b> среда 16.00-17.30</h3>-->
+<!--            <h3><b>Номер кабинета:</b> каб. 304</h3>-->
+<!--            <h3><b>Номер телефона:</b> тел.  267-64-53</h3>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <hr>
     <div class="row">
@@ -70,18 +70,50 @@
     <hr>
     <div class="row">
         <div class="col-md-3">
-            <?php $ph->image('struct/mlinov.jpg', ['class' => 'managment-image']);?>
+            <?php $ph->image('struct/povarov.jpg', ['class' => 'managment-image']);?>
         </div>
         <div class="col-md-9">
-            <h3 class="managment-name"> Малиновский Александр Иосифович </h3>
+            <h3 class="management-name"> Поваров -----  ------------ </h3>
             <p>
-            <h3><b>Должность:</b> Главный  инженер</h3>
-            <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>
-            <h3><b>Номер кабинета:</b> каб. 325</h3>
-            <h3><b>Номер телефона:</b> тел. 267-36-55</h3>
+            <h3><b>Должность:</b> </h3>
+            <h3><b>Время приема:</b> </h3>
+            <h3><b>Номер кабинета:</b> </h3>
+            <h3><b>Номер телефона:</b></h3>
             </p>
         </div>
     </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <?php $ph->image('struct/leonov.jpg', ['class' => 'managment-image']);?>
+        </div>
+        <div class="col-md-9">
+            <h3 class="management-name"> Леоновец -----  ------------ </h3>
+            <p>
+            <h3><b>Должность:</b> </h3>
+            <h3><b>Время приема:</b> </h3>
+            <h3><b>Номер кабинета:</b> </h3>
+            <h3><b>Номер телефона:</b></h3>
+            </p>
+        </div>
+    </div>
+
+<!--    <hr>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-3">-->
+<!--            --><?php //$ph->image('struct/mlinov.jpg', ['class' => 'managment-image']);?>
+<!--        </div>-->
+<!--        <div class="col-md-9">-->
+<!--            <h3 class="managment-name"> Малиновский Александр Иосифович </h3>-->
+<!--            <p>-->
+<!--            <h3><b>Должность:</b> Главный  инженер</h3>-->
+<!--            <h3><b>Время приема:</b> понедельник 16.00-17.30</h3>-->
+<!--            <h3><b>Номер кабинета:</b> каб. 325</h3>-->
+<!--            <h3><b>Номер телефона:</b> тел. 267-36-55</h3>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>
 
