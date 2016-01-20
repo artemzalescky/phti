@@ -24,10 +24,12 @@ class ProductController extends BaseController {
         ProductModel::getInstance()->fillFullInfoAboutProduct($currentProduct);
 
         $pathToProduct = ProductModel::getInstance()->getPathToProduct($currentProduct);
+        $parentDepartment = ProductModel::getInstance()->getDepartment($pathToProduct);
         $productChildren = ProductModel::getInstance()->getChildren($currentProduct['id']);
 
         $this->setViewVariable('currentProduct', $currentProduct);
         $this->setViewVariable('pathToProduct', $pathToProduct);
+        $this->setViewVariable('parentDepartment', $parentDepartment);
         $this->setViewVariable('products', $productChildren);
         $this->render();
     }

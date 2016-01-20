@@ -49,7 +49,7 @@ class DepartmentController extends BaseController {
         $this->setViewVariable('currentDepartment', $currentDepartment);
         $this->setViewVariable('pathToDepartment', $pathToDepartment);
         $this->setViewVariable('departmentList', $childDepartments);
-        $this->setViewVariable('products', $products);
+        $this->setViewVariable('products', isset($products) ? $products : []);
         $this->render();
     }
 }

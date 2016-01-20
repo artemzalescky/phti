@@ -73,6 +73,16 @@ class ProductModel {
         }
     }
 
+    public function getDepartment($pathToProduct) {
+        for ($i = count($pathToProduct) - 1; $i >= 0; $i--) {
+            $product = $pathToProduct[$i];
+            if (intval($product['departmentId']) != 0) {
+                return DepartmentModel::getInstance()->getDepartmentById($product['departmentId']);
+            }
+        }
+        return null;
+    }
+
     public function fillFullInfoAboutProduct(&$product) {
         $fieldList = ProductFieldDAO::getInstance()->getByProductId($product['id']);
         $product['extraFields'] = !empty($fieldList) ? $fieldList : [];
