@@ -1,3 +1,5 @@
+<?php $ph->include_css('department.css') ?>
+
 <ol class="breadcrumb custom-breadcrumb">
     <li>
         <?php $ph->link($ph->lang->Label_FTI, '/') ?>
@@ -23,4 +25,14 @@
     $ph->single_tag('hr')
         ->tag('h2', $ph->lang->Label_Production, ['class' => 'text-center title']);
     $this->renderTemplate('product-list');
-} ?>
+}
+?>
+
+<?php if (empty($products) && empty($departmentList)) {
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'name'), ['class' => 'active']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'active']);
+}
+?>
+
+
