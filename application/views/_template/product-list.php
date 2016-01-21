@@ -5,7 +5,9 @@
         <hr>
         <div class="row">
             <div class="col-md-3">
-                <?php $ph->image("product/{$product['id']}.jpeg" , ['class' => 'product-image']) ?>
+                <?php $ph->link_open("/product/{$product['url']}")
+                    ->image("product/{$product['id']}.jpeg" , ['class' => 'product-image'])
+                    ->link_close() ?>
             </div>
             <div class="col-md-9">
                 <h3 class="product-name">

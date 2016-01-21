@@ -17,22 +17,26 @@
 
 <hr>
 
-<?php if (!empty($departmentList)) {
-    $this->renderTemplate('department');
-} ?>
+<!--Вывод общей инормации, контактов, руководителей-->
+<?php
+if (!empty($currentDepartment)) {
+    $ph->tag('h4', $ph->localisedField($currentDepartment, 'name'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'department-name']);
+}
 
-<?php if (!empty($products)) {
+if (!empty($departmentList)) {
+    $this->renderTemplate('department');
+}
+
+if (!empty($products)) {
     $ph->single_tag('hr')
         ->tag('h2', $ph->lang->Label_Production, ['class' => 'text-center title']);
     $this->renderTemplate('product-list');
 }
-?>
 
-<?php if (empty($products) && empty($departmentList)) {
+if (empty($products) && empty($departmentList)) {
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'name'), ['class' => 'active']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'active']);
 }
-?>
-
-
