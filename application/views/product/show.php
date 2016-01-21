@@ -40,12 +40,19 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
             <?php if (!empty($parentDepartment)) {
                 $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
                     ->single_tag('hr');
+            }
+            if (!empty($ph->localisedField($currentProduct, 'shortDescription'))) {
+                $ph->tag_open('blockquote')
+                    ->tag_open('p')
+                    ->text($ph->localisedField($currentProduct, 'shortDescription'))
+                    ->tag_close('p')
+                    ->tag_close('blockquote')
+                    ->single_tag('hr');
             } ?>
-            <blockquote>
-                <p><?= $ph->localisedField($currentProduct, 'shortDescription') ?></p>
-            </blockquote>
-            <?php foreach ($currentProduct['extraFields'] as $field) { ?>
-                <hr>
+            <?php foreach ($currentProduct['extraFields'] as $i => $field) { ?>
+                <?php if($i != 0) {
+                    $ph->single_tag('hr');
+                } ?>
                 <div class="row">
                     <div class="col-md-3 text-right">
                         <?= !empty($field["key$currentLang"]) ? $field["key$currentLang"] : $field["key$defaultLang"] ?>
