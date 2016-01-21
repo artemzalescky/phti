@@ -3,6 +3,7 @@
 namespace application\controllers;
 
 use application\models\DepartmentModel;
+use application\models\ProductModel;
 use ph\controller\BaseController;
 
 class LaboratoryController extends BaseController {
@@ -21,7 +22,10 @@ class LaboratoryController extends BaseController {
             $this->redirect('404');
         }
 
+        $products = ProductModel::getInstance()->getByDepartmentId($currentLaboratory['id']);
+
         $this->setViewVariable('currentLaboratory', $currentLaboratory);
+        $this->setViewVariable('products', $products);
         $this->render();
     }
 }
