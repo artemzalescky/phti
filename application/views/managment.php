@@ -73,7 +73,7 @@
             <?php $ph->image('struct/povarov.jpg', ['class' => 'managment-image']);?>
         </div>
         <div class="col-md-9">
-            <h3 class="management-name"> Поваров -----  ------------ </h3>
+            <h3 class="management-name"> Поваров Олег Евгеньевич </h3>
             <p>
             <h3><b>Должность:</b> </h3>
             <h3><b>Время приема:</b> </h3>
@@ -89,7 +89,7 @@
             <?php $ph->image('struct/leonov.jpg', ['class' => 'managment-image']);?>
         </div>
         <div class="col-md-9">
-            <h3 class="management-name"> Леоновец -----  ------------ </h3>
+            <h3 class="management-name"> Леоновец Юрий Александрович </h3>
             <p>
             <h3><b>Должность:</b> </h3>
             <h3><b>Время приема:</b> </h3>

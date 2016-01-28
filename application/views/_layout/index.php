@@ -52,14 +52,7 @@
                 <!-- Slider -->
                 <div id="main-slider" class="flexslider">
                     <ul class="slides">
-                        <li>
-                            <?php $ph->image('slider/1.jpg')?>
-                            <div class="flex-caption">
-                                <h3><?=$ph->lang->Slider_First_Name ?></h3>
-                                <p><?=$ph->lang->Slider_First_Description ?></p>
-                                <?php $ph->link($ph->lang->Slider_Learn_More, '/product/unmanned-aircraft-systems',['class' => 'btn btn-theme']) ?>
-                            </div>
-                        </li>
+
                         <li>
                             <?php $ph->image('slider/2.jpg')?>
                             <div class="flex-caption">
@@ -74,6 +67,14 @@
                                 <h3> <h3><?=$ph->lang->Slider_Third_Name ?></h3></h3>
                                 <p><?=$ph->lang->Slider_Third_Description ?></p>
                                 <?php $ph->link($ph->lang->Slider_Learn_More, '/about',['class' => 'btn btn-theme']) ?>
+                            </div>
+                        </li>
+                        <li>
+                            <?php $ph->image('slider/1.jpg')?>
+                            <div class="flex-caption">
+                                <h3><?=$ph->lang->Slider_First_Name ?></h3>
+                                <p><?=$ph->lang->Slider_First_Description ?></p>
+                                <?php $ph->link($ph->lang->Slider_Learn_More, '/contacts',['class' => 'btn btn-theme']) ?>
                             </div>
                         </li>
                     </ul>

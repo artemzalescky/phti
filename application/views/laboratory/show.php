@@ -18,6 +18,7 @@
 if (!empty($currentLaboratory)) {
     $ph->tag('h4', $ph->localisedField($currentLaboratory, 'name'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentLaboratory, 'desсription'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentLaboratory, 'manager'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentLaboratory, 'contact'), ['class' => 'department-name']);
 }
 

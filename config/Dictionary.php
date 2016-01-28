@@ -21,8 +21,8 @@ class Dictionary extends BaseDictionary {
 
             /* ---slider--- */
             "Slider_Learn_More" => ["Подробнее", "Learn More"],
-            "Slider_First_Name" => ["БАК и Технологии" , "UAS and Technology"],
-            "Slider_First_Description" => ["Лаборатория Беспилотных Летальных Аппаратов и Технологий производит беспилотники" , "Laboratory unmanned aircraft systems and technology produces drones"],
+            "Slider_First_Name" => ["Контакты" , "contacts"],
+            "Slider_First_Description" => ["Для получения информации о местоположении ФТИ НАН Беларуси и графике работы" , "For information about the location of the Ioffe Institute of NAS of Belarus and work schedule"],
             "Slider_Second_Name" => ["Руководство ФТИ" , "managment PHTI"],
             "Slider_Second_Description" => ["Руководство ФТИ НАН Беларуси" , "Managment PHTI NAN Belarus"],
             "Slider_Third_Name" => ["Деятельность ФТИ" , "Activities PHTI"],

@@ -22,6 +22,7 @@
 if (!empty($currentDepartment)) {
     $ph->tag('h4', $ph->localisedField($currentDepartment, 'name'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'manager'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'department-name']);
 }
 
@@ -35,8 +36,9 @@ if (!empty($products)) {
     $this->renderTemplate('product-list');
 }
 
-if (empty($products) && empty($departmentList)) {
+if (empty($products) && empty($departmentList) && empty($currentDepartment)) {
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'name'), ['class' => 'active']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'desсription'), ['class' => 'department-name']);
+    $ph->tag('h5', $ph->localisedField($currentDepartment, 'manager'), ['class' => 'department-name']);
     $ph->tag('h5', $ph->localisedField($currentDepartment, 'contact'), ['class' => 'active']);
 }
