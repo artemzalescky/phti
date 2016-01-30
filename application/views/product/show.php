@@ -37,18 +37,26 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
             ]) ?>
         </div>
         <div class="col-md-7">
-            <?php if (!empty($parentDepartment)) {
-                $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
-                    ->single_tag('hr');
-            }
-            if (!empty($ph->localisedField($currentProduct, 'shortDescription'))) {
+            <?php if (!empty($ph->localisedField($currentProduct, 'shortDescription'))) {
                 $ph->tag_open('blockquote')
                     ->tag_open('p')
                     ->text($ph->localisedField($currentProduct, 'shortDescription'))
                     ->tag_close('p')
                     ->tag_close('blockquote')
                     ->single_tag('hr');
-            } ?>
+            }
+            if (!empty($parentDepartment)) {
+                $ph->tag_open('div', ['style' => 'padding-left: 25px']);
+                $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
+                    ->single_tag('br');
+                $departmentContacts = $ph->localisedField($parentDepartment, 'contact');
+                if (!empty($departmentContacts)) {
+                    $ph->text($departmentContacts)
+                        ->single_tag('hr');
+                }
+                $ph->tag_close('div');
+            }
+            ?>
             <?php foreach ($currentProduct['extraFields'] as $i => $field) { ?>
                 <?php if($i != 0) {
                     $ph->single_tag('hr');
