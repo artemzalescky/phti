@@ -51,10 +51,9 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
                     ->single_tag('br');
                 $departmentContacts = $ph->localisedField($parentDepartment, 'contact');
                 if (!empty($departmentContacts)) {
-                    $ph->text($departmentContacts)
-                        ->single_tag('hr');
+                    $ph->text($departmentContacts);
                 }
-                $ph->tag_close('div');
+                $ph->tag_close('div')->single_tag('hr');
             }
             ?>
             <?php foreach ($currentProduct['extraFields'] as $i => $field) { ?>
