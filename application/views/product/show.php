@@ -37,10 +37,11 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
             ]) ?>
         </div>
         <div class="col-md-7">
-            <?php if (!empty($ph->localisedField($currentProduct, 'shortDescription'))) {
+            <?php $localisedShortDescription = $ph->localisedField($currentProduct, 'shortDescription');
+            if (!empty($localisedShortDescription)) {
                 $ph->tag_open('blockquote')
                     ->tag_open('p')
-                    ->text($ph->localisedField($currentProduct, 'shortDescription'))
+                    ->text($localisedShortDescription)
                     ->tag_close('p')
                     ->tag_close('blockquote')
                     ->single_tag('hr');
