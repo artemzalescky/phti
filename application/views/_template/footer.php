@@ -24,20 +24,7 @@
             </div>
             <div class="col-md-2">
                 <h3> <?= $ph->lang->Label_News ?> </li></h3>
-                <p>
-                    <?php $ph->link('Мобильная версия сайта', '/news') ?>
-                    <br>
-                    <span>20.01.2016 </span>
-                </p>
-                <p>
-                    <?php $ph->link('Новый дизайн сайта', '/news') ?>
-                    <br>
-                    <span>15.01.2016 </span>
-                </p>
-                <p>
-                    <?php $ph->link('Запуск сайта', '/news') ?><br>
-                    <span>09.01.2016 </span>
-                </p>
+                
                 <p>
                     <?php $ph->link('Все новости', '/news') ?>
                 </p>
@@ -64,7 +51,7 @@
                             ->single_tag('br')
                             ->link('8 017 267 42 75', '/contacts')
                             ->single_tag('br')
-                            ->link('Факс: (017) 263-76-93', '/contacts')
+                            ->link('Факс: (017) 369-76-93', '/contacts')
                             ->single_tag('br')
                             ->link('Факс: (017) 267-42-75', '/contacts')
                         ?>

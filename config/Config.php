@@ -9,14 +9,14 @@ class Config {
     private static $properties = [
 
         //  ------------- path ----------------
-        'app.basePath' => '/phti/',
+        'app.basePath' => '/',
 
         //  ------------- db ----------------
         'db.use' => true,
         'db.host' => '127.0.0.1',
-        'db.user' => 'root',
-        'db.password' => '',
-        'db.name' => 'phti',
+        'db.user' => 'phtiby_phtiby',
+        'db.password' => 'goldmagnat347',
+        'db.name' => 'phtiby_phti',
 
         // ------------- session ----------------
         'session.use' => true,

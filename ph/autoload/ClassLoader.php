@@ -12,7 +12,7 @@ class ClassLoader {
 
     public static function getClassPathFromClassName($className) {
         // TODO fix for all systems
-        // return $_SERVER['DOCUMENT_ROOT'] . str_replace('\\', '/', '/' . $className . '.php');
-        return str_replace('\\', '/', '/' . $className . '.php');
+        return $_SERVER['DOCUMENT_ROOT'] . str_replace('\\', '/', '/' . $className . '.php');
+        // return str_replace('\\', '/', '/' . $className . '.php');
     }
 }
