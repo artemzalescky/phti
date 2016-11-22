@@ -6,6 +6,7 @@ use config\Config;
 use config\Dictionary;
 use ph\dictionary\SystemDictionary;
 use ph\db\Database;
+use ph\logging\Logger;
 use ph\phAdmin\application\models\LocaleModel;
 use ph\sessions\SessionStorage;
 use ph\utils\ClassNameResolver;
@@ -19,7 +20,8 @@ class Application {
     private $controller;
 
     public function __construct() {
-        Config::apply();
+        Config::load(ENV);
+        Logger::initialize();
         $this->setupSession();
         $this->setupRouteData();
         $this->setupLocale();
