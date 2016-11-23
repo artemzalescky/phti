@@ -161,6 +161,8 @@
 
 <div class="container">
     <hr>
+    <h2 class="title text-center"><?php $ph->link( $ph->lang->Label_Managment , '/managment') ?></h2>
+    <hr>
     <div class="ph-infinite-slider management">
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
             <div class="title">Залесский Виталий Геннадьевич</div>
