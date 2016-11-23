@@ -117,7 +117,7 @@
         this.$rightArrow.hover(this.startMoving.bind(this, this.MOVING_LEFT), this.stopMoving.bind(this));
 
         this.$plate.on('click', 'img', function (e) {
-            var index = $(e.toElement).data('index');
+            var index = $(e.target).data('index');
             var data = this._dataItems[index];
             this.$modal.find('.modal-body img').attr({
                 src: data.imageUrl,
