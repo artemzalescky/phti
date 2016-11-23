@@ -1,0 +1,54 @@
+.ph-infinite-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.ph-infinite-slider .data-item {
+    display: none;
+}
+
+.ph-infinite-slider .plate {
+    position: relative;
+}
+
+.ph-infinite-slider .plate img {
+    display: block;
+    float: left;
+    position: absolute;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.ph-infinite-slider .plate img.round {
+    border-radius: 50%;
+}
+
+.ph-infinite-slider .plate img:hover {
+    filter: brightness(120%);
+    /*opacity: 0.7;*/
+}
+
+.ph-infinite-slider .arrow {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity, 0.3s;
+}
+
+.ph-infinite-slider .arrow:hover {
+    opacity: 0.6;
+}
+
+.ph-infinite-slider .arrow.left-arrow {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.ph-infinite-slider .arrow.right-arrow {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php
-        $ph->include_system_css('/themes/flatly-bootstrap.min.css')
+    $ph->include_system_css('/themes/flatly-bootstrap.min.css')
         ->include_system_css('glyphicon.css')
         ->include_system_js_lib('jquery-2.1.4.min.js')
         ->include_system_js_lib('bootstrap-3.3.5-dist/bootstrap.min.js')
@@ -36,6 +36,10 @@
         ->include_system_js_lib('slider/jquery.flexslider.js')
         ->include_system_js_lib('slider/animate.js')
         ->include_system_js_lib('slider/custom.js')
+
+        /* Infinite Slider */
+        ->include_js_lib('ph-infinite-slider.js')
+        ->include_css('lib/ph-infinite-slider.css')
 
     ?>
     <style></style>
@@ -155,6 +159,42 @@
     </div>
 </div>
 
+<div class="container">
+    <hr>
+    <div class="ph-infinite-slider management">
+        <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
+            Залесский Виталий Геннадьевич
+            Директор ФТИ НАН Беларуси
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('struct/biely.jpg') ?>">
+            Белый Алексей Владимирович
+            Заместитель директора по научной работе
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('struct/mihluk.jpg') ?>">
+            Михлюк Анатолий Игнатьевич
+            Заместитель директора по научной и инновационной работе
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('struct/povarov.jpg') ?>">
+            Поваров Олег Евгеньевич
+            Заместитель директора по общим вопросам
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('struct/Poko_mini.jpg') ?>">
+            Поко Ольга Александровна
+            Ученый секретарь
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.ph-infinite-slider.management').ph_infinite_slider({
+            imgHeight: 200,
+            imgWidth: 200,
+            padding: 15,
+            roundImages: true
+        });
+    });
+</script>
 
 <!-- Продукция -->
 
@@ -280,7 +320,6 @@
 			<li>
                 <?php $ph->image('logo/mtz.png', ['style' => 'height="52px; width="140px'])?>
             </li>
-            
         </ul>
     </div>
 </section>
