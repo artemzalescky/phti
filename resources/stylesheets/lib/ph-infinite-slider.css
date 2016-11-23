@@ -52,3 +52,18 @@
     right: 0;
     background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
+.ph-infinite-slider .modal .modal-body img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ph-infinite-slider .modal .modal-body img.left {
+    float: left;
+    margin-right: 15px;
+}
+
+.ph-infinite-slider .modal .modal-body img.center {
+    margin: 0 auto;
+}

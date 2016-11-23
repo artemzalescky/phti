@@ -163,24 +163,48 @@
     <hr>
     <div class="ph-infinite-slider management">
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
-            Залесский Виталий Геннадьевич
-            Директор ФТИ НАН Беларуси
+            <div class="title">Залесский Виталий Геннадьевич</div>
+            <div class="description">
+                Должность: Директор ФТИ НАН Беларуси<br>
+                Время приема: среда 16.00-17.30<br>
+                Номер кабинета: каб. 301<br>
+                Номер телефона: тел. 267-60-10<br>
+                e-mail: V.Zalesski@mail.ru
+            </div>
         </div>
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/biely.jpg') ?>">
-            Белый Алексей Владимирович
-            Заместитель директора по научной работе
+            <div class="title">Белый Алексей Владимирович</div>
+            <div class="description">
+                Должность: Заместитель директора по научной работе<br>
+                Время приема: четверг 16.00-17.30<br>
+                Номер кабинета: каб. 317<br>
+                Номер телефона: тел. 265-07-98
+            </div>
         </div>
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/mihluk.jpg') ?>">
-            Михлюк Анатолий Игнатьевич
-            Заместитель директора по научной и инновационной работе
+            <div class="title">Михлюк Анатолий Игнатьевич</div>
+            <div class="description">
+                Должность: Заместитель директора по научной и инновационной работе<br>
+                Время приема: понедельник 16.00-17.30<br>
+                Номер кабинета: каб. 325<br>
+                Номер телефона: тел. 267-42-75
+            </div>
         </div>
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/povarov.jpg') ?>">
-            Поваров Олег Евгеньевич
-            Заместитель директора по общим вопросам
+            <div class="title">Поваров Олег Евгеньевич</div>
+            <div class="description">
+                Должность: Зам. директора по общим вопросам<br>
+                Номер кабинета: 303 к. 2<br>
+                Номер телефона: 8029 6836474
+            </div>
         </div>
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/Poko_mini.jpg') ?>">
-            Поко Ольга Александровна
-            Ученый секретарь
+            <div class="title">Поко Ольга Александровна</div>
+            <div class="description">
+                Должность: Ученый секретарь<br>
+                Номер телефона: 267-64-53<br>
+                Номер мобильного телефона: 8-0296-19-60-15
+            </div>
         </div>
     </div>
 </div>

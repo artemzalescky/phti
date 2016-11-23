@@ -20,6 +20,7 @@
         this.$plate = null;
         this.$leftArrow = null;
         this.$rightArrow = null;
+        this.$modal = null;
 
         this._animationId = null;
         this._direction = this.STOPPED;
@@ -48,9 +49,11 @@
     InfiniteSlider.prototype._extractDataItems = function () {
         var scope = this;
         this.$container.find('.data-item').each(function () {
+            var $this = $(this);
             scope._dataItems.push({
-                imageUrl: $(this).data('image-url'),
-                description: $(this).html().trim()
+                imageUrl: $this.data('image-url'),
+                title: $this.find('.title').html().trim(),
+                description: $this.find('.description').html().trim()
             });
         });
     };
@@ -58,6 +61,7 @@
     InfiniteSlider.prototype._render = function () {
         this._renderImages();
         this._renderArrows();
+        this._renderModal();
     };
 
     InfiniteSlider.prototype._renderImages = function () {
@@ -66,7 +70,10 @@
             var currentImgCount = this.$plate.children().size();
             for (var i = 0, ln = this._dataItems.length; i < ln; i++) {
                 var $img = $('<img>')
-                    .attr('src', this._dataItems[i].imageUrl)
+                    .attr({
+                        'src': this._dataItems[i].imageUrl,
+                        'data-index': i
+                    })
                     .css({
                         left: this._imgFullWidth * (currentImgCount + i),
                         width: this._imgWidth,
@@ -84,10 +91,42 @@
         this.$rightArrow = $('<div class="arrow right-arrow"></div>');
         this.$container.append(this.$leftArrow).append(this.$rightArrow);
     };
+    
+    InfiniteSlider.prototype._renderModal = function () {
+        this.$modal = $(
+            '<div class="modal fade">' +
+            '    <div class="modal-dialog">' +
+            '        <div class="modal-content">' +
+            '            <div class="modal-header">' +
+            '                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
+            '                <h4 class="modal-title"></h4>' +
+            '            </div>' +
+            '            <div class="modal-body">' +
+            '                <img>' +
+            '                <p class="description"></p>' +
+            '                <div class="clearfix"></div>' +
+            '            </div>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>'
+        ).appendTo(this.$container);
+    };
 
     InfiniteSlider.prototype._initHandlers = function () {
         this.$leftArrow.hover(this.startMoving.bind(this, this.MOVING_RIGHT), this.stopMoving.bind(this));
         this.$rightArrow.hover(this.startMoving.bind(this, this.MOVING_LEFT), this.stopMoving.bind(this));
+
+        this.$plate.on('click', 'img', function (e) {
+            var index = $(e.toElement).data('index');
+            var data = this._dataItems[index];
+            this.$modal.find('.modal-body img').attr({
+                src: data.imageUrl,
+                class: data.description ? 'left' : 'center'
+            });
+            this.$modal.find('.modal-title').html(data.title);
+            this.$modal.find('.description').html(data.description);
+            this.$modal.modal();
+        }.bind(this));
     };
 
     InfiniteSlider.prototype._movePlate = function (direction) {
