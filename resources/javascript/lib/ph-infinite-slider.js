@@ -53,7 +53,7 @@
             scope._dataItems.push({
                 imageUrl: $this.data('image-url'),
                 title: $this.find('.title').html().trim(),
-                description: $this.find('.description').html().trim()
+                description: ($this.find('.description').html() || '').trim()
             });
         });
     };

@@ -310,10 +310,45 @@
     </div>
 </div>
 
+<div class="container">
+    <hr>
+    <h2 class="title text-center"><?= $ph->lang->Label_Certificate ?> </h2>
+    <hr>
+    <div class="ph-infinite-slider certificate">
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
+            <div class="title">Аттестат Аккредитации</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/2.jpg') ?>">
+            <div class="title">Аттестат Аккредитации</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/3.jpg') ?>">
+            <div class="title">Сертификат Продукции Собственного Производства</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/4.jpg') ?>">
+            <div class="title">Сертификат о Соответствии</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/5.jpg') ?>">
+            <div class="title">Специальное Разрешение</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/6.jpg') ?>">
+            <div class="title">Специальное Разрешение</div>
+        </div>
+        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/7.jpg') ?>">
+            <div class="title">Специальное Разрешение</div>
+        </div>
+    </div>
+    <hr>
+</div>
 
-
-<!-- Руководство -->
-<hr>
+<script>
+    $(document).ready(function () {
+        $('.ph-infinite-slider.certificate').ph_infinite_slider({
+            imgHeight: 289,
+            imgWidth: 200,
+            padding: 15
+        });
+    });
+</script>
 
 <div class="container">
 
