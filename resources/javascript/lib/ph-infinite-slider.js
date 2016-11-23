@@ -11,7 +11,9 @@
         this.SPEED = 3;
 
         this._roundImages = opts.roundImages || false;
-        this._imgFullWidth = opts.imgWidth + 2 * (opts.padding || 0);  // todo extract dims from src
+        this._imgWidth = opts.imgWidth;
+        this._imgHeight = opts.imgHeight;
+        this._imgFullWidth = this._imgWidth + 2 * (opts.padding || 0);  // todo extract dims from src
 
         this._dataItems = [];
         this.$container = container.css('height', opts.imgHeight + 'px');
@@ -30,6 +32,7 @@
     InfiniteSlider.prototype.startMoving = function (direction) {
         if (this._direction === direction) return;
 
+        this._stopSmoothStopAnimation();
         this._direction = direction;
         clearInterval(this._animationId);
 
@@ -64,7 +67,11 @@
             for (var i = 0, ln = this._dataItems.length; i < ln; i++) {
                 var $img = $('<img>')
                     .attr('src', this._dataItems[i].imageUrl)
-                    .css('left', this._imgFullWidth * (currentImgCount + i))
+                    .css({
+                        left: this._imgFullWidth * (currentImgCount + i),
+                        width: this._imgWidth,
+                        height: this._imgHeight
+                    })
                     .addClass(this._roundImages ? 'round' : '');
                 this.$plate.append($img);
             }
@@ -113,7 +120,7 @@
 
     InfiniteSlider.prototype._animateSmoothStop = function (direction) {
         function movePlateWithSpeed(scope, direction, speedScale) {
-            setTimeout(function () {
+            scope._smoothStopAnimationId = setTimeout(function () {
                 scope._movePlate(direction * speedScale);
                 if (speedScale > 0) {
                     movePlateWithSpeed(scope, direction, speedScale - 0.03);
@@ -122,6 +129,10 @@
         }
 
         movePlateWithSpeed(this, direction, 1);
+    };
+
+    InfiniteSlider.prototype._stopSmoothStopAnimation = function () {
+        clearTimeout(this._smoothStopAnimationId);
     };
 
     function _moveX($el, opts) {
