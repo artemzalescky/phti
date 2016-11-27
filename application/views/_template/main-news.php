@@ -44,7 +44,7 @@
             ?>
         </p>
         <?php
-        $ph->link_open('news', ['class' => 'btn btn-default'])
+        $ph->link_open('news#Delegation-From-China', ['class' => 'btn btn-default'])
             ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
             ->text(' Подробнее')
             ->link_close('a');
@@ -64,7 +64,7 @@
             ?>
         </p>
         <?php
-        $ph->link_open('news', ['class' => 'btn btn-default'])
+        $ph->link_open('news#International-Scientific-and-Technical-Conference', ['class' => 'btn btn-default'])
             ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
             ->text(' Подробнее')
             ->link_close('a');

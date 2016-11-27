@@ -61,7 +61,7 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"> 12.11.2016 - Физико-технический институт посетила делегация Института исследования металлов Китайской Академии наук  </h3>
+        <h3 id="Delegation-From-China" class="panel-title"> 12.11.2016 - Физико-технический институт посетила делегация Института исследования металлов Китайской Академии наук  </h3>
     </div>
         <div class="panel-body">
             <div class="row">
@@ -157,7 +157,7 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"> 16.09.2016 -  Cостоялась XI Международная научно-техническая конференция</h3>
+        <h3 id="International-Scientific-and-Technical-Conference" class="panel-title"> 16.09.2016 -  Cостоялась XI Международная научно-техническая конференция</h3>
     </div>
         <div class="panel-body">
             <div class="row">
