@@ -20,6 +20,8 @@ class Dictionary extends BaseDictionary {
             "Label_Certificate" => ["Аттестаты","Certificates"],
             "Label_Location" => ["Местоположение","Location"],
             "Label_News" => ["Новости","PHTI News"],
+            "Label_About_US" => ["Коротко о ФТИ","About PHTI"],
+            "Label_Recall" => ["Отзывы","Recall"],
 
             "Label_Schedule" => ["График работы","Schedule"],
 

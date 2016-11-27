@@ -106,6 +106,15 @@
 </div>
 
 <div class="container">
+    <br>
+    <h2 class="title text-left" > <?= $ph->lang->Label_About_US ?> </h2>
+    <hr style="margin-bottom: 5px; margin-top: -10px">
+    <?php $this->renderTemplate('about-us')?>
+</div>
+
+
+
+<div class="container">
 
   <!--  <hr> -->
     <?php //$this->renderTemplate('department')?>
@@ -115,9 +124,9 @@
 
 
 <div class="container">
-    <hr>
-    <h2 class="title text-center"><?php $ph->link( $ph->lang->Label_Managment , '/managment') ?></h2>
-    <hr>
+    <br>
+    <h2 class="title text-left" style="margin-left: 0px"><?php $ph->link( $ph->lang->Label_Managment , '/managment') ?></h2>
+    <hr style="margin-bottom: 5px; margin-top: -5px">
     <div class="ph-infinite-slider management">
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
             <div class="title">Залесский Виталий Геннадьевич</div>
@@ -192,11 +201,10 @@
 <hr>
 -->
 
-
+<br>
 <div class="container">
-    <hr>
-    <h2 class="title text-center"><?= $ph->lang->Label_Certificate ?> </h2>
-    <hr>
+    <h2 class="title text-left"><?= $ph->lang->Label_Certificate ?> </h2>
+    <hr style="margin-bottom: 5px; margin-top: -5px">
     <div class="ph-infinite-slider certificate">
         <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
             <div class="title">Аттестат Аккредитации</div>
