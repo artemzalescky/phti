@@ -90,19 +90,20 @@
     </div>
 </section>
 
+
 <div class="container" >
-    <h2 class="title text-center" style="margin-top: 25px;">
+    <h2 class="title text-left" style="margin-top: 25px;">
         <?php $ph->link( $ph->lang->Label_News , '/news') ?>
-    </h2>
-    <hr>
+    <hr style="margin-bottom: -10px; margin-top: 5px">
+
 </div>
 
-<div class="main_news"  style="margin-top: -15px">
-    <div class="container">
+<div style="display: block; position: relative; width: 100%; background-color: #fafafa">
+    <div class="container" style="background-color: #fafafa">
         <?php $this->renderTemplate('main-news')?>
         <br>
-        <br>
     </div>
+    <br>
 </div>
 
 <div class="container">

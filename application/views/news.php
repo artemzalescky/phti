@@ -34,7 +34,30 @@
 </style>
 <h4 style="text-align: center"> Новости ФТИ НАН Беларуси </h4>
 
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"> 22.11.2016 - Международная научная конференция «АКТУАЛЬНЫЕ ПРОБЛЕМЫ ФИЗИКИ ТВЕРДОГО ТЕЛА»  </h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
 
+            <div style="clear: both;"></div>
+
+            <blockquote style="margin-left: 15px; padding-top: 20px">
+                <p style="font-size: 0.9em">
+                    22-25 ноября 2016 года в ГО "НПЦ НАН Беларуси по материаловедению" по адресу г. Минск,  ул. П. Бровки, 19 состоятся
+                    2 конференции - VII Международная научная конференция «АКТУАЛЬНЫЕ ПРОБЛЕМЫ ФИЗИКИ ТВЕРДОГО ТЕЛА» (ФТТ-2016) и V
+                    Международная научная конференция «НАНОСТРУКТУРНЫЕ МАТЕРИАЛЫ-2016: БЕЛАРУСЬ-РОССИЯ-УКРАИНА» (НАНО-2016).
+                    С программой и графиком работы конференций можно ознакомиться на сайтах <br>
+                    <a href="http://www.physics.by/e107_files/public/prog_fttnew.pdf" target="_blank"> http://www.physics.by/e107_files/public/prog_fttnew.pdf</a><br>
+                    <a href="http://www.physics.by/e107_files/public/prog_finish.pdf" target="_blank"> http://www.physics.by/e107_files/public/prog_finish.pdf</a>
+                </p>
+                <small><cite title="Source Title">Администрация сайта <?php $ph->link('phti.by', '/') ?></cite></small>
+            </blockquote>
+        </div>
+    </div>
+</div>
+<hr>
 
 <div class="panel panel-primary">
     <div class="panel-heading">
