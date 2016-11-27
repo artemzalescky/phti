@@ -113,51 +113,6 @@
     <?php //$this->renderTemplate('laboratory')?>
 </div>
 
-<div class="container" >
-    <hr>
-    <h2 class="title text-center">
-        <?php $ph->link( $ph->lang->Label_Catalog_Razrabotok , '/product') ?>
-    </h2>
-    <hr>
-</div>
-
-<!-- Видео и Скачка файлов -->
-<div style="display: block; width: 100%; height: 340px; background-color: #f5f5f5; margin-top: -15px;">
-    <div class="col-lg-6 downloads" style=" height: 100%">
-        <h2 class="title" style="margin-top: 20px; margin-left: 50px;">
-            Каталог разработок ФТИ НАН Беларуси
-        </h2>
-
-        <div class="row" style="margin-left: 50px">
-            <div class="col-md-3">
-                <?php $ph->image('pdf.png', ['class' => 'catalog-image']);?>
-            </div>
-            <div class="col-md-9">
-                <h3 class="catalog-name"> <a href="catalog_ru.pdf" target="_blank"> Каталог продукции  </a> </h3>
-                <p>
-                Полный список продукции, выпускаемой Физико-Техническим Институтом
-                </p>
-            </div>
-        </div>
-        <div class="row" style="margin-left: 50px">
-            <div class="col-md-3">
-                <?php $ph->image('pdf.png', ['class' => 'catalog-image']);?>
-            </div>
-            <div class="col-md-9">
-                <h3 class="catalog-name"> <a href="catalog_en.pdf" target="_blank"> Product Catalog  </a> </h3>
-                <p>
-                    Full list of products made by the Institute of Physics and Technology
-                </p>
-            </div>
-        </div>
-
-    </div>
-    <div class="col-lg-6 video">
-        <div class="embed-responsive embed-responsive-16by9" style="height: 100%">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ax_aS2Aodoc"></iframe>
-        </div>
-    </div>
-</div>
 
 <div class="container">
     <hr>
@@ -223,94 +178,20 @@
 </script>
 
 <!-- Продукция -->
-
+<!--
 <div class="container" >
     <hr>
     <h2 class="title text-center">
-        <?php $ph->link( $ph->lang->Label_Production , '/product') ?>
+        <?php// $ph->link( $ph->lang->Label_Production , '/product') ?>
     </h2>
     <hr>
-    <?php $this->renderTemplate('main-product')?>
+    <?php// $this->renderTemplate('main-product')?>
     <br>
 
 </div>
 <hr>
+-->
 
-<div class="container">
-
-    <h2 class="title text-center">
-        <?php $ph->link( $ph->lang->Label_Managment , '/managment') ?>
-        <h3></h3>
-        <hr>
-    </h2>
-</div>
-
-
-
-<!-- Руководство -->
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <!-- Testimonial -->
-      
-            <!-- End Testimonial -->
-            <div class="testimonial col-md-4 col-sm-6">
-                <!-- Author Photo -->
-                <div class="author-photo">
-                    <?php $ph->image('struct/zalescky_small.jpg')?>
-                </div>
-                <div class="testimonial-bubble">
-                    <blockquote>
-                        <!-- Quote -->
-                        <!--                        <p class="quote">-->
-                        <!---->
-                        <!--                        </p>-->
-                        <!-- Author Info -->
-                        <cite class="author-info">
-                            - Залесский Виталий Геннадьевич<br> Директор ФТИ НАН Беларуси
-                            <br><br>
-                        </cite>
-                    </blockquote>
-                    <div class="sprite arrow-speech-bubble"></div>
-                </div>
-            </div>
-
-            <div class="testimonial col-md-4 col-sm-6">
-                <div class="author-photo">
-                    <?php $ph->image('struct/biely_small.jpg')?>
-                </div>
-                <div class="testimonial-bubble">
-                    <blockquote>
-                        <!--                        <p class="quote">-->
-                        <!---->
-                        <!--                        </p>-->
-                        <cite class="author-info">
-                            - Белый Алексей Владимирович<br>Заместитель директора по научной работе
-                        </cite>
-                    </blockquote>
-                    <div class="sprite arrow-speech-bubble"></div>
-                </div>
-            </div>
-            <div class="testimonial col-md-4 col-sm-6">
-                <div class="author-photo">
-                    <?php $ph->image('struct/mihluk_small.jpg')?>
-                </div>
-                <div class="testimonial-bubble">
-                    <blockquote>
-                        <!--                        <p class="quote">-->
-                        <!--                           -->
-                        <!--                        </p>-->
-                        <cite class="author-info">
-                            - Михлюк Анатолий Игнатьевич<br>Заместитель директора по научной и инновационной работе
-                        </cite>
-                    </blockquote>
-                    <div class="sprite arrow-speech-bubble"></div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
 
 <div class="container">
     <hr>
