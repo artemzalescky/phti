@@ -49,7 +49,7 @@
 
 <?php $this->renderTemplate('header') ?>
 
-<section id="featured">
+<section id="featured" style="margin-top: 20px;">
     <!-- start slider -->
     <div class="container">
         <div class="row">
