@@ -36,6 +36,40 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
+        <h3  id="LG" class="panel-title"> 25.11.2016 - Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics </h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-lg-12 main-news">
+                <?php $ph->link_open('news')
+                    ->image('news/LG.jpg', [
+                        'class' => 'news-image-imr',
+                    ])
+                    ->link_close()
+                    ->tag_close('a'); ?>
+
+            </div>
+
+            <div style="clear: both;"></div>
+
+            <blockquote style="margin-left: 15px; padding-top: 20px">
+                <p style="font-size: 0.9em">
+                    25 ноября 2016 года Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics во главе с директором
+                    Московского технологического центра филиала LG Electronics господином Хен Сан Ву. В рамках научных докладов,
+                    переговоров и презентаций со стороны корейских партнеров был проявлен интерес к следующим разработкам:
+                    <a href="/delegacija_lg" target="_blank"> Подробнее</a>
+                </p>
+                <small><cite title="Source Title">Администрация сайта <?php $ph->link('phti.by', '/') ?></cite></small>
+            </blockquote>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
         <h3 class="panel-title"> 22.11.2016 - Международная научная конференция «АКТУАЛЬНЫЕ ПРОБЛЕМЫ ФИЗИКИ ТВЕРДОГО ТЕЛА»  </h3>
     </div>
     <div class="panel-body">

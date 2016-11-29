@@ -4,6 +4,27 @@
 <div class="blog-section-grids">
 
     <div class="col-md-4 blog-section-grid">
+        <?php $ph->image("news/main_news/4.jpg" , ['class' => 'product-image']) ?>
+        <div class="blog-title">
+            <h4 class="text-center">ФТИ НАН Беларуси посетила делегация из компании LG Electronics</h4>
+        </div>
+        <p>
+            <?php
+            $ph->cut_text('25 ноября 2016 года Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics
+            во главе с директором Московского технологического центра филиала LG Electronics господином Хен Сан Ву.
+             В рамках научных докладов, переговоров и презентаций со стороны ', 165)
+                ->text('...');
+            ?>
+        </p>
+        <?php
+        $ph->link_open('news#LG', ['class' => 'btn btn-default'])
+            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
+            ->text(' Подробнее')
+            ->link_close('a');
+        ?>
+    </div>
+
+    <div class="col-md-4 blog-section-grid">
         <?php $ph->image("news/main_news/konference.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
             <h4 class="text-center">22-25 ноября 2016 года Международная научная конференция</h4>
@@ -52,23 +73,6 @@
     </div>
 
 
-    <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/3.jpg" , ['class' => 'product-image']) ?>
-        <div class="blog-title">
-            <h4 class="text-center">Международная научно-техническая конференция</h4>
-        </div>
-        <p>
-            <?php
-            $ph->cut_text('14-16 сентября 2016 в Институте состоялась XI Международная научно-техническая конференция «Современные методы и технологии создания и обработки материалов»', 165)
-                ->text('...');
-            ?>
-        </p>
-        <?php
-        $ph->link_open('news#International-Scientific-and-Technical-Conference', ['class' => 'btn btn-default'])
-            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
-            ->text(' Подробнее')
-            ->link_close('a');
-        ?>
-    </div>
+
 
 </div>
