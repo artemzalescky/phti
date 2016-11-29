@@ -44,14 +44,14 @@
                 </li>
                 
                 <li> <?php $ph->link($ph->lang->TopMenu_Contacts, '/contacts') ?> </li>
-                <li class="dropdown">
+               <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?= $ph->lang->TopMenu_About ?> <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                   <!-- <ul class="dropdown-menu" role="menu">
                      <!--   <li> <?php //$ph->link($ph->lang->TopMenu_About_Management, '/managment') ?> </li> -->
                      <!--   <li class="divider"></li>  -->
-                        <li> <?php $ph->link($ph->lang->TopMenu_About_History, '/about') ?> </li>
-                    </ul>
-                </li>
+                     <!--   <li> <?php// $ph->link($ph->lang->TopMenu_About_History, '/about') ?> </li>
+                    </ul> -->
+              <!--  </li>-->
 
             </ul>
 
