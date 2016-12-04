@@ -14,9 +14,10 @@
         this._imgWidth = opts.imgWidth;
         this._imgHeight = opts.imgHeight;
         this._imgFullWidth = this._imgWidth + 2 * (opts.padding || 0);  // todo extract dims from src
+        this._previewTitleHeight = opts.previewTitleHeight || 0;
 
         this._dataItems = [];
-        this.$container = container.css('height', opts.imgHeight + 'px');
+        this.$container = container.css('height', this._fullHeight());
         this.$plate = null;
         this.$leftArrow = null;
         this.$rightArrow = null;
@@ -53,34 +54,44 @@
             scope._dataItems.push({
                 imageUrl: $this.data('image-url'),
                 title: $this.find('.title').html().trim(),
-                description: ($this.find('.description').html() || '').trim()
+                description: ($this.find('.description').html() || '').trim(),
+                previewTitle: ($this.find('.preview-title').html() || '').trim()
             });
         });
     };
 
     InfiniteSlider.prototype._render = function () {
-        this._renderImages();
+        this._renderPlateItems();
         this._renderArrows();
         this._renderModal();
     };
 
-    InfiniteSlider.prototype._renderImages = function () {
+    InfiniteSlider.prototype._renderPlateItems = function () {
         this.$plate = $('<div class="plate"></div>');
         while (this._imgFullWidth * this.$plate.children().size() < this.$container.width() + this._imgFullWidth) {
             var currentImgCount = this.$plate.children().size();
             for (var i = 0, ln = this._dataItems.length; i < ln; i++) {
-                var $img = $('<img>')
-                    .attr({
-                        'src': this._dataItems[i].imageUrl,
-                        'data-index': i
-                    })
+                var $plateItem = $('<div class="plate-item"></div>')
+                    .attr('data-index', i)
                     .css({
                         left: this._imgFullWidth * (currentImgCount + i),
+                        width: this._imgWidth,
+                        height: this._fullHeight()
+                    });
+                var $img = $('<img>')
+                    .attr('src', this._dataItems[i].imageUrl)
+                    .css({
                         width: this._imgWidth,
                         height: this._imgHeight
                     })
                     .addClass(this._roundImages ? 'round' : '');
-                this.$plate.append($img);
+                $plateItem.append($img);
+                if (this._previewTitleHeight) {
+                    $('<div class="preview-title">' + this._dataItems[i].previewTitle + '</div>')
+                        .css('height', this._previewTitleHeight - 5)
+                        .appendTo($plateItem);
+                }
+                this.$plate.append($plateItem);
             }
         }
         this.$plate.appendTo(this.$container);
@@ -117,7 +128,7 @@
         this.$rightArrow.hover(this.startMoving.bind(this, this.MOVING_LEFT), this.stopMoving.bind(this));
 
         this.$plate.on('click', 'img', function (e) {
-            var index = $(e.target).data('index');
+            var index = $(e.target).parent().data('index');
             var data = this._dataItems[index];
             this.$modal.find('.modal-body img').attr({
                 src: data.imageUrl,
@@ -127,6 +138,10 @@
             this.$modal.find('.description').html(data.description);
             this.$modal.modal();
         }.bind(this));
+    };
+
+    InfiniteSlider.prototype._fullHeight = function () {
+        return this._imgHeight + this._previewTitleHeight;
     };
 
     InfiniteSlider.prototype._movePlate = function (direction) {
