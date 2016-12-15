@@ -53,6 +53,37 @@ class Dictionary extends BaseDictionary {
             "TopMenu_Video" => ["Видео", "Video"],
 
             "Product_Label_Varieties" =>["Разновидности", "Varieties"],
+            "Conference_Label" =>["Конференции ФТИ НАН Беларуси", "Conference PHTI NAN Belarus"],
+            "Conference" =>["Конференции", "Conference"],
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            "Conference_Text" =>["<strong>Уважаемые коллеги!</strong> <br>
+Приглашаем Вас принять участие в ХII Международной научно-технической конференции <br>
+<strong>«Современные методы и технологии создания и обработки материалов»
+13–15 сентября 2017 г., </strong><br>
+г. Минск, ул. Купревича 10, (Физико-технический институт НАН Беларуси)<br>
+Ниже вы можете скачать информационное сообщение и заявку на участие. <br>
+<a href='https://drive.google.com/open?id=0B4ehyaGAtV5TUUhFYTB3cXk2eDQ' target='_blank'> Заявка на участие в конференции </a> <br>
+<a href='https://drive.google.com/open?id=0B4ehyaGAtV5TQzB4cjRXdmljYlU' target='_blank'> 2017 Информационное сообщение XII МНТК</a><br>
+<a href='https://drive.google.com/open?id=0B4ehyaGAtV5TWjJYdXZ3VTBNUW8' target='_blank'> Пример оформления статьи</a>
+
+",
+
+  "<strong>Dear Colleagues!</strong> <br>
+You are welcome to take part in <br>
+ХII International Science and Technology Conference <br>
+Advanced methods and technologies of materials development and processing <br>
+
+September 13–15, 2017, Minsk, Belarus <br>
+<a href='https://drive.google.com/open?id=0B4ehyaGAtV5TeTdaUkIwaTJ0bDQ' target='_blank'> Application form for participation in the XII  International</a> <br>
+<a href='https://drive.google.com/open?id=0B4ehyaGAtV5TSFZ5YmFLblBPY00' target='_blank'> 2017-Announcement XII Conference</a>"]
 
         ]);
     }
