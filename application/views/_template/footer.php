@@ -2,9 +2,6 @@
 
 <div id="footer" class="navbar-default">
     <div class="container">
-        <div class="progress progress-striped active" style="margin-bottom: 0">
-            <div class="progress-bar progress-bar-success" style="width: 100%"></div>
-        </div>
         <div class="row">
             <div class="col-md-4">
                 <h3><?= $ph->lang->Label_Departments ?></h3>
