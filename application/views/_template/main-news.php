@@ -3,7 +3,50 @@
 <br>
 <div class="blog-section-grids">
 
-   <div class="col-md-4 blog-section-grid">
+    <div class="col-md-4 blog-section-grid">
+        <?php $ph->image("news/main_news/china2.jpg" , ['class' => 'product-image']) ?>
+        <div class="blog-title">
+            <h4 class="text-center">Представители ФТИ посетили Пекинский институт авиационных материалов</h4>
+        </div>
+
+        <p>
+            <?php
+            $ph->cut_text('В период с 10 по 13 декабря представители ФТИ посетили Пекинский институт авиационных материалов.
+             Были сделаны презентации о разработках института. Китайские коллеги продемонстрировали собственные разработки, оборудование и лаборатории.', 149)
+                ->text('...');
+            ?>
+        </p>
+        <?php
+        $ph->link_open('news#china2', ['class' => 'btn btn-default','style' => 'target="_blank'])
+            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
+            ->text(' Подробнее')
+            ->link_close('a');
+        ?>
+    </div>
+
+    <div class="col-md-4 blog-section-grid">
+        <?php $ph->image("news/main_news/china1.jpg" , ['class' => 'product-image']) ?>
+        <div class="blog-title">
+            <h4 class="text-center">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</h4>
+        </div>
+
+        <p>
+            <?php
+            $ph->cut_text('В период с 6 по 9 декабря в Томске проходил Международный семинар по междисциплинарным проблемам в аддитивных технологиях.
+            Представители ФТИ выступили с пленарным докладом и приняли участие в работе семинара. В рамках работы семинара посетили научные центры ряда
+            ведущих ', 149)
+                ->text('...');
+            ?>
+        </p>
+        <?php
+        $ph->link_open('news#china1', ['class' => 'btn btn-default','style' => 'target="_blank'])
+            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
+            ->text(' Подробнее')
+            ->link_close('a');
+        ?>
+    </div>
+
+    <div class="col-md-4 blog-section-grid">
         <?php $ph->image("news/main_news/visit_muni_mini.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
             <h4 class="text-center">ФТИ НАН Беларуси посетил руководитель компании MDT </h4>
@@ -22,50 +65,7 @@
             ->link_close('a');
         ?>
     </div>
-    
-    <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/100idej_mini.jpg" , ['class' => 'product-image']) ?>
-        <div class="blog-title">
-            <h4 class="text-center">Участие ФТИ в молодежном проекте «100 идей для Беларуси»</h4>
-        </div>
 
-        <p>
-            <?php
-            $ph->cut_text('24 ноября в РИУП «Научно-технологический парк БНТУ «Политехник» проходил отборочный тур конкурса молодежных инновационных проектов «100 идей для Беларуси» по г.Минску. <br>
-                   Проект Глушакова А.Н «Новая экономно-легированная сталь для зубчатых колес коробки передач автотракторной техники» принял участие в отборочный туре и получил путевку в финал который состоится в начале февраля 2017 года.', 149)
-                ->text('...');
-            ?>
-        </p>
-        <?php
-        $ph->link_open('news#100idej', ['class' => 'btn btn-default','style' => 'target="_blank'])
-            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
-            ->text(' Подробнее')
-            ->link_close('a');
-        ?>
-    </div>
-    
-      <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/bc_forum_mini.jpg" , ['class' => 'product-image']) ?>
-        <div class="blog-title">
-            <h4 class="text-center">Cостоялся Белорусско-Китайский молодежный инновационный форум</h4>
-        </div>
-
-        <p>
-            <?php
-            $ph->cut_text('29-30 ноября 2016 года в г. Минск на базе Белорусского национального технического университета состоялся Белорусско-Китайский молодежный инновационный форум «Новые горизонты – 2016».
-                    Форум проходил одновременно в Белорусском национальном техническом университете и Северо-Восточном университете (Шэньян, Китай).', 149)
-                ->text('...');
-            ?>
-        </p>
-        <?php
-        $ph->link_open('news#bc_forum', ['class' => 'btn btn-default','style' => 'target="_blank'])
-            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
-            ->text(' Подробнее')
-            ->link_close('a');
-        ?>
-    </div> 
-     
-      
 
 <!--
     <div class="col-md-4 blog-section-grid">

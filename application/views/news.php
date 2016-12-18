@@ -36,6 +36,73 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
+        <h3  id="china2" class="panel-title">Представители ФТИ посетили Пекинский институт авиационных материалов</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-lg-12 main-news">
+                <?php $ph->link_open('news')
+                    ->image('news/china2.jpg', [
+                        'class' => 'news-image-imr',
+                    ])
+                    ->link_close()
+                    ->tag_close('a'); ?>
+
+            </div>
+
+            <div style="clear: both;"></div>
+            <blockquote style="margin-left: 15px; padding-top: 20px">
+                <p style="font-size: 0.9em">
+                    В период с 10 по 13 декабря представители ФТИ посетили Пекинский институт авиационных материалов. <br>
+                    Были сделаны презентации о разработках института. Китайские коллеги продемонстрировали собственные разработки, оборудование и
+                    лаборатории.<br>
+                    Были обслужены ряд вопросов касающихся обработки материалов, согласованы планы совместной работы в рамках общих проектов.
+                </p>
+                <small><cite title="Source Title">Администрация сайта <?php $ph->link('phti.by', '/') ?></cite></small>
+            </blockquote>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3  id="china1" class="panel-title">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-lg-12 main-news">
+                <?php $ph->link_open('news')
+                    ->image('news/china1.jpg', [
+                        'class' => 'news-image-imr',
+                    ])
+                    ->link_close()
+                    ->tag_close('a'); ?>
+
+            </div>
+
+            <div style="clear: both;"></div>
+            <blockquote style="margin-left: 15px; padding-top: 20px">
+                <p style="font-size: 0.9em">
+                    В период с 6 по 9 декабря в Томске проходил Международный семинар по междисциплинарным проблемам в аддитивных технологиях.<br>
+                    Представители ФТИ выступили с пленарным докладом и приняли участие в работе семинара. <br>
+                    В рамках работы семинара посетили научные центры ряда ведущих Вузов Томска (ТУСУР, ТПУ, ТГУ) и институтов СО РАН
+                    (Институт сильноточной электроники, Институт физики прочности и материаловедения). Состоялся продуктивный обмен информацией о разработках. <br>
+                    Намечены планы на совместные проекты в рамках государственных программ Союзного государcтва,
+                    отдельных проектов в области проблем материаловедения, металлообработки, медицинской, авиационной и космической техники и материалов.
+                </p>
+                <small><cite title="Source Title">Администрация сайта <?php $ph->link('phti.by', '/') ?></cite></small>
+            </blockquote>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
         <h3  id="muni" class="panel-title"> ФТИ НАН Беларуси посетил руководитель компании MDT (Республика Корея) Moon Hee Lee</h3>
     </div>
     <div class="panel-body">
