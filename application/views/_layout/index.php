@@ -105,12 +105,19 @@
     </div>
     <br>
 </div>
-
+<!--
 <div class="container">
     <br>
-    <h2 class="title text-left" > <?= $ph->lang->Label_About_US ?> </h2>
+    <h2 class="title text-left" > <?//= $ph->lang->Label_About_US ?> </h2>
     <hr style="margin-bottom: 5px; margin-top: -10px">
-    <?php $this->renderTemplate('about-us')?>
+    <?php// $this->renderTemplate('about-us')?>
+</div>
+-->
+<div class="container">
+    <br>
+    <h2 class="title text-left" >Поздравляем с юбилеем Анатолия Илларионовича Гордиенко</h2>
+    <hr style="margin-bottom: 5px; margin-top: -10px">
+    <?php $this->renderTemplate('gardienko')?>
 </div>
 
 
