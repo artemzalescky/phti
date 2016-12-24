@@ -4,6 +4,48 @@
 <div class="blog-section-grids">
 
     <div class="col-md-4 blog-section-grid">
+        <?php $ph->image("news/main_news/lab_elt_mini.jpg" , ['class' => 'product-image']) ?>
+        <div class="blog-title">
+            <h4 class="text-center">Введена в эксплуатацию еще одна установка ионного азотирования.</h4>
+        </div>
+
+        <p>
+            <?php
+            $ph->cut_text('Лабораторией электрофизики НИЦ электронно-лучевых технологий и физики плазмы 22.12.2016 г. введена в эксплуатацию еще одна установка ионного азотирования. На этот раз заказчиком стал Белорусский национальный технический университет. ', 149)
+                ->text('...');
+            ?>
+        </p>
+        <?php
+        $ph->link_open('news#lab_elt', ['class' => 'btn btn-default','style' => 'target="_blank'])
+            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
+            ->text(' Подробнее')
+            ->link_close('a');
+        ?>
+    </div>
+    
+
+     <div class="col-md-4 blog-section-grid">
+        <?php $ph->image("news/main_news/dogovor4_mini.jpg" , ['class' => 'product-image']) ?>
+        <div class="blog-title">
+            <h4 class="text-center">Cостоялось подписание договора о научно-техническом сотрудничестве </h4>
+        </div>
+        <p>
+            <?php
+            $ph->cut_text('20  декабря состоялось подписание договора о научно-техническом сотрудничестве между Белорусским государственным технологическим университетом и Физико-техническим институтом. 
+                    Состоялся продуктивный обмен мнениями по ряду вопросов, касающихся систем защиты, современных аддитивных технологий,  процессов упрочнения различных изделий. ', 150)
+                ->text('...');
+            ?>
+        </p>
+        <?php
+        $ph->link_open('news#bgu', ['class' => 'btn btn-default'])
+            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
+            ->text(' Подробнее')
+            ->link_close('a');
+        ?>
+    </div>
+    
+
+    <div class="col-md-4 blog-section-grid">
         <?php $ph->image("news/main_news/china2.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
             <h4 class="text-center">Представители ФТИ посетили Пекинский институт авиационных материалов</h4>
@@ -24,47 +66,8 @@
         ?>
     </div>
 
-    <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/china1.jpg" , ['class' => 'product-image']) ?>
-        <div class="blog-title">
-            <h4 class="text-center">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</h4>
-        </div>
 
-        <p>
-            <?php
-            $ph->cut_text('В период с 6 по 9 декабря в Томске проходил Международный семинар по междисциплинарным проблемам в аддитивных технологиях.
-            Представители ФТИ выступили с пленарным докладом и приняли участие в работе семинара. В рамках работы семинара посетили научные центры ряда
-            ведущих ', 149)
-                ->text('...');
-            ?>
-        </p>
-        <?php
-        $ph->link_open('news#china1', ['class' => 'btn btn-default','style' => 'target="_blank'])
-            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
-            ->text(' Подробнее')
-            ->link_close('a');
-        ?>
-    </div>
-
-    <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/visit_muni_mini.jpg" , ['class' => 'product-image']) ?>
-        <div class="blog-title">
-            <h4 class="text-center">ФТИ НАН Беларуси посетил руководитель компании MDT </h4>
-        </div>
-        <p>
-            <?php
-            $ph->cut_text('1-2 декабря 2016 года ФТИ НАН Беларуси посетил руководитель компании MDT (Республика Корея) Moon Hee Lee. В рамках визита проведены презентации научных разработок ГНПО «Научно-практический центр НАН Беларуси по материаловедению», 
-                   ГНУ «Институт порошковой металлургии» и ФТИ НАН Беларуси. Особый интерес у г-на Moon Hee Lee вызвали технологии магнитоимпульсной штамповки и получения электроизоляционной керамики. Проведены переговоры о возможном сотрудничестве по эти двум направлениям. ', 150)
-                ->text('...');
-            ?>
-        </p>
-        <?php
-        $ph->link_open('news#muni', ['class' => 'btn btn-default'])
-            ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
-            ->text(' Подробнее')
-            ->link_close('a');
-        ?>
-    </div>
+   
 
 
 <!--
