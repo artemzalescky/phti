@@ -1,0 +1,26 @@
+#footer{
+    background-color: #333333;
+}
+#footer{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footer-nav {
+    background-color:  #333333;
+
+}
+.footer-nav li {
+    text-decoration: none;
+}
+
+.footer-nav>li>a{
+    color: #ffffff !important;
+}
+
+.navbar-brand{
+    padding: 18.5px 7px !important;
+}

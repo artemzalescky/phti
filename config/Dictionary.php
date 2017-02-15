@@ -16,12 +16,13 @@ class Dictionary extends BaseDictionary {
             "Label_Catalog_Razrabotok" => ["Каталог разработок", "Product development"],
             "Label_OurProduction" => ["Наша продукция", "Our production"],
             "Label_Managment" => ["Руководство ФТИ","Managment PHTI"],
-            "Label_Cooperate" => ["Мы сотрудничаем","We cooperate"],
+            "Label_Cooperate" => ["Сотрудничество","We cooperate"],
             "Label_Certificate" => ["Аттестаты","Certificates"],
             "Label_Location" => ["Местоположение","Location"],
             "Label_News" => ["Новости","PHTI News"],
             "Label_About_US" => ["Коротко о ФТИ","About PHTI"],
             "Label_Recall" => ["Отзывы","Recall"],
+            "Label_Useful_Information" => ["Полезная информация","Useful information"],
 
             "Label_Schedule" => ["График работы","Schedule"],
 

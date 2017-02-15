@@ -24,6 +24,7 @@
         ->include_css('auther.css')
         ->include_css('title.css')
         ->include_css('logo.css')
+        ->include_css('main-news.css')
 
         /*slider*/
 
@@ -40,7 +41,9 @@
         /* Infinite Slider */
         ->include_js_lib('ph-infinite-slider.js')
         ->include_css('lib/ph-infinite-slider.css')
-
+        /* forma */
+        ->include_system_js_lib('validator.min.js')
+        ->include_system_js_lib('form-scripts.js')
     ?>
     <style></style>
 </head>
@@ -48,93 +51,60 @@
 <body>
 
 <?php $this->renderTemplate('header') ?>
+<?php $this->renderTemplate('slider-menu') ?>
 
-<section id="featured" style="margin-top: 20px;">
-    <!-- start slider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- Slider -->
-                <div id="main-slider" class="flexslider">
-                    <ul class="slides">
+<style>
+    .news-logo-container{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+        margin-top: -40px;
+        border-bottom-left-radius: 400px 50px;
+        border-bottom-right-radius: 400px 50px;
+    }
+    .title-news {
+        color: #033071 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14pt !important;
+        font-weight: 800 !important;
+    }
+    .title-news-description{
+        margin-top: -5px;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        color: #303030;
+        font-size: 0.85em;
+        font-weight: 200;
+    }
 
-                  <!--      <li>
-                            <?php// $ph->image('slider/2.jpg')?>
-                            <div class="flex-caption">
-                                <h3 style="margin-top: -10px"><?//=$ph->lang->Slider_Second_Name ?></h3>
-                                <p><?//=$ph->lang->Slider_Second_Description ?></p>
-                                <?php// $ph->link($ph->lang->Slider_Learn_More, '/managment',['class' => 'btn btn2 btn-theme']) ?>
-                            </div>
-                        </li> -->
-                        <li>
-                            <?php $ph->image('slider/3.jpg')?>
-                            <div class="flex-caption">
-                                <h3> <h3><?=$ph->lang->Slider_Third_Name ?></h3></h3>
-                                <p><?=$ph->lang->Slider_Third_Description ?></p>
-                                <?php $ph->link($ph->lang->Slider_Learn_More, '/main_directions',['class' => 'btn btn2 btn-theme']) ?>
-                            </div>
-                        </li>
-                        <li>
-                            <?php $ph->image('slider/1.jpg')?>
-                            <div class="flex-caption">
-                                <h3><?=$ph->lang->Slider_First_Name ?></h3>
-                                <p><?=$ph->lang->Slider_First_Description ?></p>
-                                <?php $ph->link($ph->lang->Slider_Learn_More, '/contacts',['class' => 'btn btn2 btn-theme']) ?>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end slider -->
-            </div>
-        </div>
-    </div>
-</section>
+</style>
 
-
-<div class="container" >
-    <h2 class="title text-left" style="margin-top: 25px;">
-        <?php $ph->link( $ph->lang->Label_News , '/news') ?>
-    <hr style="margin-bottom: -10px; margin-top: 5px">
-
-</div>
-
-<div style="display: block; position: relative; width: 100%; background-color: #fafafa">
-    <div class="container" style="background-color: #fafafa">
+<div class="news-logo-container" >
+    <br><br><br>
+    <div class="container" >
+        <h2 class="title text-center title-news">
+            <?php $ph->link( $ph->lang->Label_News , '/news') ?>
+        </h2>
+        <h3 class="title text-center title-news-description"> Самые актуальные новости деятельности ФТИ </h3>
         <?php $this->renderTemplate('main-news')?>
-        <br>
     </div>
     <br>
+    <div class="container" >
+        <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate ?> </h2>
+        <h3 class="title text-center title-news-description"> Наши партнеры сегодня </h3>
+        <br>
+        <?php $this->renderTemplate('logotip') ?>
+    </div>
+    <br><br>
+
 </div>
-<!--
+<br>
 <div class="container">
-    <br>
-    <h2 class="title text-left" > <?//= $ph->lang->Label_About_US ?> </h2>
-    <hr style="margin-bottom: 5px; margin-top: -10px">
-    <?php// $this->renderTemplate('about-us')?>
-</div>
--->
-<div class="container">
-    <br>
-    <h2 class="title text-left" >Поздравляем с юбилеем Анатолия Илларионовича Гордиенко</h2>
-    <hr style="margin-bottom: 5px; margin-top: -10px">
-    <?php $this->renderTemplate('gardienko')?>
-</div>
-
-
-
-<div class="container">
-
-  <!--  <hr> -->
-    <?php //$this->renderTemplate('department')?>
-  <!--  <hr> -->
-    <?php //$this->renderTemplate('laboratory')?>
-</div>
-
-
-<div class="container">
-    <br>
-    <h2 class="title text-left" style="margin-left: 0px"><?php $ph->link( $ph->lang->Label_Managment , '/managment') ?></h2>
-    <hr style="margin-bottom: 5px; margin-top: -5px">
+    <h2 class="title text-center" style="margin-left: 0px">
+        <?php $ph->link( $ph->lang->Label_Managment , '/managment') ?>
+    </h2>
     <div class="ph-infinite-slider management">
         <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
             <div class="title">Залесский Виталий Геннадьевич</div>
@@ -187,6 +157,8 @@
         </div>
     </div>
 </div>
+<br><br>
+<?php //$this->renderTemplate('callBack') ?>
 
 <script>
     $(document).ready(function () {
@@ -200,49 +172,52 @@
     });
 </script>
 
-<!-- Продукция -->
-<!--
-<div class="container" >
-    <hr>
-    <h2 class="title text-center">
-        <?php// $ph->link( $ph->lang->Label_Production , '/product') ?>
-    </h2>
-    <hr>
-    <?php// $this->renderTemplate('main-product')?>
-    <br>
+<style>
+    .attestat-useful-information-container{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+    }
+</style>
 
-</div>
-<hr>
--->
 
 <br>
-<div class="container">
-    <h2 class="title text-left"><?= $ph->lang->Label_Certificate ?> </h2>
-    <hr style="margin-bottom: 5px; margin-top: -5px">
-    <div class="ph-infinite-slider certificate">
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
-            <div class="title">Аттестат Аккредитации</div>
+<div class="attestat-useful-information-container">
+    <div class="container">
+        <br>
+        <h2 class="title text-center title-news"><?= $ph->lang->Label_Certificate ?> </h2>
+        <h3 class="title text-center title-news-description"> АТТЕСТАТЫ АККРЕДИТАЦИИ, СЕРТИФИКАТЫ, ЛИЦЕНЗИИ </h3>
+        <div class="ph-infinite-slider certificate">
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
+                <div class="title">Аттестат Аккредитации</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/2.jpg') ?>">
+                <div class="title">Аттестат Аккредитации</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/3.jpg') ?>">
+                <div class="title">Сертификат Продукции Собственного Производства</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/4.jpg') ?>">
+                <div class="title">Сертификат о Соответствии</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/5.jpg') ?>">
+                <div class="title">Специальное Разрешение</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/6.jpg') ?>">
+                <div class="title">Специальное Разрешение</div>
+            </div>
+            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/7.jpg') ?>">
+                <div class="title">Специальное Разрешение</div>
+            </div>
         </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/2.jpg') ?>">
-            <div class="title">Аттестат Аккредитации</div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/3.jpg') ?>">
-            <div class="title">Сертификат Продукции Собственного Производства</div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/4.jpg') ?>">
-            <div class="title">Сертификат о Соответствии</div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/5.jpg') ?>">
-            <div class="title">Специальное Разрешение</div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/6.jpg') ?>">
-            <div class="title">Специальное Разрешение</div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('attestat/7.jpg') ?>">
-            <div class="title">Специальное Разрешение</div>
-        </div>
+        <hr>
     </div>
-    <hr>
+    <div class="container">
+        <h2 class="title text-center title-news"><?= $ph->lang->Label_Useful_Information ?> </h2>
+    <?php $this->renderTemplate('useful-information') ?>
+    </div>
 </div>
 
 <script>
@@ -255,51 +230,26 @@
     });
 </script>
 
-<div class="container">
+<?php $this->renderTemplate('pozdravlenie') ?>
 
-    <h2 class="title text-center"><?= $ph->lang->Label_Cooperate ?> </h2>
-    <hr>
-</div>
-<section class="section section--medium">
+<div style="background-color: #f9f9f9">
     <div class="container">
-        <ul class="logo-bar">
-            <li>
-                <?php $ph->image('logo/auto-gidro.jpg', ['style' => 'height="52px; width="140px'])?>
-            </li>
-            <li>
-                <?php $ph->image('logo/baz.png', ['style' => 'height="52px; width="140px'])?>
-            </li>
-            <li>
-                <?php $ph->image('logo/bza.jpg', ['style' => 'height="52px; width="140px'])?>
-            </li>
-            <li>
-                <?php $ph->image('logo/integral.png', ['style' => 'height="52px; width="140px'])?>
-            </li>
-            <li>
-                <?php $ph->image('logo/maz.png', ['style' => 'height="52px; width="140px'])?>
-            </li>
-			<li>
-                <?php $ph->image('logo/mmz.jpg', ['style' => 'height="52px; width="140px'])?>
-            </li>
-			<li>
-                <?php $ph->image('logo/mtz.png', ['style' => 'height="52px; width="140px'])?>
-            </li>
-        </ul>
+        <br><br>
+        <h2 class="title text-center title-news"> <?= $ph->lang->Label_Location ?> </h2>
+        <h3 class="title text-center title-news-description"> г.Минск ул.Купревича 10 </h3>
     </div>
-</section>
-<br>
+    <div style="width: 100%; height: 270px;outline: 0; border: 0;" id="map">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=270&lang=ru_RU&sourceType=constructor"></script>
+    </div>
 
+    <?php $this->renderTemplate('forma') ?>
 
-<div class="container">
-    <hr>
-    <h2 class="title text-center"> <?= $ph->lang->Label_Location ?> </h2>
+    <br>
 </div>
-<div style="width: 100%; height: 370px;outline: 0; border: 0;" id="map">
-
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=370&lang=ru_RU&sourceType=constructor"></script>
-</div>
-
 <?php $this->renderTemplate('footer') ?>
 
 </body>
+
+
+
 </html>

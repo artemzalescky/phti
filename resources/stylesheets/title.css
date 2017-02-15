@@ -8,12 +8,10 @@ h2.title {
 }
 
 h2.title a{
-    color: #374a5c;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 15px 30px;
-    position: relative;
+    color: #033071 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14pt !important;
+    font-weight: 800 !important;
 }
 
 h2.title a:hover {

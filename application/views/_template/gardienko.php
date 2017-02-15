@@ -3,10 +3,6 @@
 <!-- about-us -->
 <div id="about-us" class="about-us">
     <div class="container">
-        <div class="about-info">
-            <!--<h2>Коротко о ФТИ</h2> -->
-            <!-- <br><br>-->
-        </div>
         <div class="about-grids">
             <div class="col-md-6 about-left">
                 <?php $ph->image("news/gardienko.jpg" , ['class' => 'product-image']) ?>

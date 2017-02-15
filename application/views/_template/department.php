@@ -11,7 +11,7 @@
 
 <?php for ($i = 0; $i < count( $departmentList ); $i++) { ?>
     <div class="col-lg-4 department-box-container">
-        <div class="border">
+                <div class="border">
             <?php $ph->link_open('/department/' . $departmentList[$i]['fullUrl'])
                 ->image('department/' . $departmentList[$i]['fullUrl'] . '.jpg', [
                     'class' => 'square-image',

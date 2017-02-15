@@ -29,7 +29,7 @@
     <div class="col-lg-12 main-news">
         <div class="news-border">
             <h4 style="text-align:center; font-weight: bold"> АННОТАЦИИ </h4>
-			<h4 style="text-align:center; font-weight: bold">статей, включенных в Сборник научных трудов <br> 
+			<h2 style="text-align:center; font-weight: bold">статей, включенных в Сборник научных трудов <br>
 			«Современные методы и технологии создания и обработки материалов» <br>(2016 год) </h2>
 	<h4 style="text-align:center; font-weight: bold">Том 1 - Материаловедение</h4>
 	<h5 style="text-align:left">УДК 621.98.044</h5>
