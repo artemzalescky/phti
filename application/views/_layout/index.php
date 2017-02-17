@@ -163,8 +163,8 @@
 <script>
     $(document).ready(function () {
         $('.ph-infinite-slider.management').ph_infinite_slider({
-            imgHeight: 200,
-            imgWidth: 200,
+            imgHeight: 188,
+            imgWidth: 188,
             padding: 15,
             roundImages: true,
             previewTitleHeight: 55
@@ -223,9 +223,10 @@
 <script>
     $(document).ready(function () {
         $('.ph-infinite-slider.certificate').ph_infinite_slider({
-            imgHeight: 289,
-            imgWidth: 200,
-            padding: 15
+            imgHeight: 272,
+            imgWidth: 188,
+            padding: 15,
+            arrowsBackgroundColor: '#f9f9f9'
         });
     });
 </script>

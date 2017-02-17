@@ -15,12 +15,13 @@
         this._imgHeight = opts.imgHeight;
         this._imgFullWidth = this._imgWidth + 2 * (opts.padding || 0);  // todo extract dims from src
         this._previewTitleHeight = opts.previewTitleHeight || 0;
+        this._arrowsBackgroundColor = opts.arrowsBackgroundColor || '#fff';
 
         this._dataItems = [];
         this.$container = container.css('height', this._fullHeight());
         this.$plate = null;
-        this.$leftArrow = null;
-        this.$rightArrow = null;
+        this.$leftArrowContainer = null;
+        this.$rightArrowContainer = null;
         this.$modal = null;
 
         this._animationId = null;
@@ -63,6 +64,7 @@
     InfiniteSlider.prototype._render = function () {
         this._renderPlateItems();
         this._renderArrows();
+        this._setInitialPlateOffset();
         this._renderModal();
     };
 
@@ -98,9 +100,18 @@
     };
 
     InfiniteSlider.prototype._renderArrows = function () {
-        this.$leftArrow = $('<div class="arrow left-arrow"></div>');
-        this.$rightArrow = $('<div class="arrow right-arrow"></div>');
-        this.$container.append(this.$leftArrow).append(this.$rightArrow);
+        var $leftArrow = $('<div class="arrow left-arrow"></div>'),
+            $rightArrow = $('<div class="arrow right-arrow"></div>');
+
+        this.$leftArrowContainer = $('<div class="arrow-container left-arrow-container"></div>')
+            .append($leftArrow)
+            .css({backgroundColor: this._arrowsBackgroundColor});
+        this.$rightArrowContainer = $('<div class="arrow-container right-arrow-container"></div>')
+            .append($rightArrow)
+            .css({backgroundColor: this._arrowsBackgroundColor});
+
+        this.$container.append(this.$leftArrowContainer, this.$rightArrowContainer);
+        [$leftArrow, $rightArrow].forEach(_placeInCenterOfParent);
     };
     
     InfiniteSlider.prototype._renderModal = function () {
@@ -124,8 +135,8 @@
     };
 
     InfiniteSlider.prototype._initHandlers = function () {
-        this.$leftArrow.hover(this.startMoving.bind(this, this.MOVING_RIGHT), this.stopMoving.bind(this));
-        this.$rightArrow.hover(this.startMoving.bind(this, this.MOVING_LEFT), this.stopMoving.bind(this));
+        this.$leftArrowContainer.hover(this.startMoving.bind(this, this.MOVING_RIGHT), this.stopMoving.bind(this));
+        this.$rightArrowContainer.hover(this.startMoving.bind(this, this.MOVING_LEFT), this.stopMoving.bind(this));
 
         this.$plate.on('click', 'img', function (e) {
             var index = $(e.target).parent().data('index');
@@ -189,6 +200,10 @@
         clearTimeout(this._smoothStopAnimationId);
     };
 
+    InfiniteSlider.prototype._setInitialPlateOffset = function () {
+        _moveX(this.$plate, {on: this.$leftArrowContainer.width()});
+    };
+
     function _moveX($el, opts) {
         opts.hasOwnProperty('to') && $el.css({left: opts.to});
         opts.hasOwnProperty('on') && $el.css({left: _left($el) + opts.on});
@@ -196,6 +211,13 @@
 
     function _left($el) {
         return $el.position().left;
+    }
+
+    function _placeInCenterOfParent($el) {
+        $el.css({
+            left: ($el.parent().width() - $el.width()) / 2,
+            top: ($el.parent().height() - $el.height()) / 2
+        })
     }
 
     $.fn.ph_infinite_slider = function (opts) {
