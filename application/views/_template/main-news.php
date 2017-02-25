@@ -1,18 +1,18 @@
 
 <div class="blog-section-grids">
     <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/lab_elt_mini.jpg" , ['class' => 'product-image']) ?>
+        <?php $ph->image("news/main_news/orsha-mini.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
-            <h4 class="text-center">Введена в эксплуатацию еще одна установка ионного азотирования.</h4>
+            <h4 class="text-center">ФТИ участвует в модернизации промышленных предприятий</h4>
         </div>
 
         <p class="news-description">
             <?php
-            $ph->cut_text('Лабораторией электрофизики НИЦ электронно-лучевых технологий и физики плазмы 22.12.2016 г. введена в эксплуатацию еще одна установка ионного азотирования. На этот раз заказчиком стал Белорусский национальный технический университет. ', 149)
+            $ph->cut_text('Многоплановость научных направлений в деятельности института позволяет решать ряд сложных комплексных научно-технических задач по модернизации', 155)
                 ->text('...');
             ?>
             <?php
-            $ph->link_open('news#lab_elt', ['class' => 'btn btn-default','style' => 'target="_blank'])
+            $ph->link_open('news#modern', ['class' => 'btn btn-default','style' => 'target="_blank'])
                 ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
                 ->text(' Подробнее')
                 ->link_close('a');
@@ -23,18 +23,17 @@
     
 
      <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/dogovor4_mini.jpg" , ['class' => 'product-image']) ?>
+         <?php $ph->image("news/main_news/seminar2_mini.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
-            <h4 class="text-center">Cостоялось подписание договора о научно-техническом сотрудничестве </h4>
+            <h4 class="text-center"> в Физико-техническом институте прошел семинар</h4>
         </div>
         <p class="news-description">
             <?php
-            $ph->cut_text('20  декабря состоялось подписание договора о научно-техническом сотрудничестве между Белорусским государственным технологическим университетом и Физико-техническим институтом.
-                    Состоялся продуктивный обмен мнениями по ряду вопросов, касающихся систем защиты, современных аддитивных технологий,  процессов упрочнения различных изделий. ', 150)
+            $ph->cut_text('01.02.2017 года в Физико-техническом институте прошел семинар, посвященный теме «Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси», инициатором и докладчиком, которого выступал (к.т.н.) Покровский А.И.', 145)
                 ->text('...');
             ?>
             <?php
-            $ph->link_open('news#bgu', ['class' => 'btn btn-default'])
+            $ph->link_open('news#sem2', ['class' => 'btn btn-default'])
                 ->tag('span', null, ['class' => 'glyphicon glyphicon-list'])
                 ->text(' Подробнее')
                 ->link_close('a');
@@ -45,15 +44,14 @@
     
 
     <div class="col-md-4 blog-section-grid">
-        <?php $ph->image("news/main_news/china2.jpg" , ['class' => 'product-image']) ?>
+        <?php $ph->image("news/main_news/day-knoladge.jpg" , ['class' => 'product-image']) ?>
         <div class="blog-title">
-            <h4 class="text-center">Представители ФТИ посетили Пекинский институт авиационных материалов</h4>
+            <h4 class="text-center">Физико-технический институт отметил День науки</h4>
         </div>
 
         <p>
             <?php
-            $ph->cut_text('В период с 10 по 13 декабря представители ФТИ посетили Пекинский институт авиационных материалов.
-             Были сделаны презентации о разработках института. Китайские коллеги продемонстрировали собственные разработки, оборудование и лаборатории.', 149)
+            $ph->cut_text(' 27 января Физико-технический институт отметил День науки. За многолетний и добросовестный труд, развитие новых направлений исследований, внедрение разработок в производство были отмечены почетными грамотами и словами благодарности ведущие и молодые ученые института: ', 150)
                 ->text('...');
             ?>
             <?php

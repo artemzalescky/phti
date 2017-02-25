@@ -16,7 +16,7 @@ class Dictionary extends BaseDictionary {
             "Label_Catalog_Razrabotok" => ["Каталог разработок", "Product development"],
             "Label_OurProduction" => ["Наша продукция", "Our production"],
             "Label_Managment" => ["Руководство ФТИ","Managment PHTI"],
-            "Label_Cooperate" => ["Сотрудничество","We cooperate"],
+            "Label_Cooperate" => ["Мы сотрудничаем","We cooperate"],
             "Label_Certificate" => ["Аттестаты","Certificates"],
             "Label_Location" => ["Местоположение","Location"],
             "Label_News" => ["Новости","PHTI News"],

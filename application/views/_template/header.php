@@ -26,7 +26,7 @@
                     <li> <?php $ph->link($ph->lang->TopMenu_Production, '/product') ?> </li>
                     <li> <?php $ph->link($ph->lang->TopMenu_News, '/news') ?> </li>
                     <li> <?php $ph->link($ph->lang->TopMenu_Contacts, '/contacts') ?> </li>
-
+                    <li> <?php $ph->link($ph->lang->Conference, '/conference') ?> </li>
                     <li class="dropdown">
 
 
