@@ -1,5 +1,5 @@
 <?php $ph->include_css('children-catalog.css') ?>
-
+<br><br>
       <div class="container">
           <div class="col-lg-8">
                 <div style="width: 100%; height: 370px; outline: 0; border: 0;" id="map">

@@ -4,13 +4,26 @@
         width: 130px;
 
     }
+    .navbar-toggle{
+        background: #033071 !important;
+    }
+    #top-menu{
+        display: block;
+        position: relative;
+        margin: 0px auto;
+    }
 </style>
 <div class="header-menu-container">
-<div class="container">
-    <nav id="top-menu" class="navbar navbar-default">
+<div class="container" style="margin: 0 auto;">
+    <nav id="top-menu" class="navbar navbar-default" >
         <div class="container-fluid">
             <div class="navbar-header" style="margin-left: 10px">
-
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu-content">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <?php $ph->image_link('main/logo_mini.png', '/', [
                     'alt' => 'phti.by',
                     'id' => 'top-menu-logo',
