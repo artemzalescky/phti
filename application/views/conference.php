@@ -4,6 +4,7 @@
     position: relative;
     margin-top:100px;
     font-size: 1.1em;
+    height: 600px;
     }
 </style>
 <div class="conference">

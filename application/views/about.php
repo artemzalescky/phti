@@ -1,7 +1,6 @@
 <?php $ph->include_css('about.css'); ?>
 
 <div id="phti-description">
-    <h2>Физико-Технический Институт Национальной Академии Наук Беларуси</h2>
     <div class="panel-group" id="collapse-group">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -84,7 +83,14 @@
             </div>
             <div id="el4" class="panel-collapse collapse">
                 <div class="panel-body">
-
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TcEpmU0hhNXlqRGs" target="_blank"> Для АвиаПром Москва </a> <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TS3AxN1FZNm1mdDQ" target="_blank"> Штамповка полусфер резонаторов </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TVjhPVzQwb0RqdEk" target="_blank"> Минск ИМАХ </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TQnRlbXBNLUZHYm8" target="_blank"> К визиту сотрудников ОИЯИ </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TaXhaTFFOZnRKMEE" target="_blank"> Hydroforming-for-Shenyang_Eng </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5Tekx2OUtRQ1FhbE0" target="_blank"> Hydroforming Eng </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TUmtFWFpsVHVtMzg" target="_blank"> ГидроударнаяШтамповка-2016 </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TcDFRZkstVnNVeDA" target="_blank"> Коммерциализация гидроудар </a><br>
                 </div>
             </div>
         </div>
@@ -97,7 +103,9 @@
             </div>
             <div id="el5" class="panel-collapse collapse">
                 <div class="panel-body">
-
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TVWxnWXkxZDdRbzg" target="_blank">ВЫПУСК БТ-1 НОВОСТИ</a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TeFBxekdxT2Ywa1E" target="_blank">Видео - штамповка ч-з полиуретан </a><br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TVTdaWmp0VE1rd2c" target="_blank">Видео - штамповка ч-з эмульсию </a><br>
                 </div>
             </div>
         </div>
@@ -113,6 +121,31 @@
                     <a href="https://drive.google.com/open?id=0B4ehyaGAtV5Tcklpd294SG1Rczg" target="_blank">Первый белорусский сверхпроводящий ниобиевый резонатор для ускорителей электронов и позитронов</a>
                     <br>
                     <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TaFlkSUVQWUFUMG8" target="_blank">Белорусские ученые создали один из ключевых элементов Международного линейного коллайдера </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#collapse-group" href="#el7">Публикации</a>
+                </h4>
+            </div>
+            <div id="el7" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TRC1CNkZvQzlnb0E" target="_blank">PhysMet2013_Vol Chaus-Sojka-Pokrovskii_Final</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TbmRPQ2l2NXgxV0U" target="_blank">Газета ВЕДЫ </a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TbTB0dGRuaDFvX0U" target="_blank">МАИ</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TTXhFMnROSmJhQ00" target="_blank">Инженер механик №4</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TRWpiamc2OENWanc" target="_blank">MetSciHeatTr2011v53_No7-8_p311</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TUUZfeFA4RFc5N0k" target="_blank">Pakrouski</a>
+                    <br>
+                    <a href="https://drive.google.com/open?id=0B4ehyaGAtV5TbHFSUkxOUHVJR3c" target="_blank">Pokrovskii_Chaus_Kunovskii_Met. Sci. Heat Treat_53(2011)</a>
                 </div>
             </div>
         </div>

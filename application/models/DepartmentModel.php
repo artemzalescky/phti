@@ -58,8 +58,8 @@ class DepartmentModel {
         return [
             'id' => 0,
             'parentId' => null,
-            'nameRu' => 'Научные центры и отделы',
-            'nameEn' => 'Research centers and departments',
+            'nameRu' => 'ОТДЕЛЫ',
+            'nameEn' => 'DEPARTMENTS',
             'url' => 'department',
             'fullUrl' => 'department'
         ];

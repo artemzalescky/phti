@@ -9,7 +9,7 @@ class Dictionary extends BaseDictionary {
     public function __construct() {
         parent::__construct(["ru", "en"], [
             "Label_FTI" => ["ФТИ", "FTI"],
-            "Label_Departments" => ["Научные центры и отделы", "Research centers and departments"],
+            "Label_Departments" => ["отделы", "departments"],
             "Label_Laboratories" => ["Лаборатории", "Laboratories"],
             "Label_Production" => ["Продукция и услуги", "Production and services"],
             "Label_Catalog" => ["Каталог продукции", "Product Catalog"],
@@ -41,7 +41,7 @@ class Dictionary extends BaseDictionary {
             "TopMenu_Home" => ["Главная", 'Home'],
             "TopMenu_News" => ["Новости", "News"],
             "TopMenu_Structure" => ["Структура", "Structure"],
-            "TopMenu_Structure_Departments" => ["Научные центры и отделы", "Research centers and departments"],
+            "TopMenu_Structure_Departments" => ["Отделы", "departments"],
             "TopMenu_Structure_Laboratories" => ["Лаборатории", "Laboratories"],
             "TopMenu_Production" => ["Продукция & Услуги", "Our production & services"],
             "TopMenu_Productionandservices" => ["Продукция и услуги", "Our production and services"],
