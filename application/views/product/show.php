@@ -1,3 +1,4 @@
+<br><br>
 <?php
 $ph->include_css('product-view.css');
 $currentLang = $ph->lang->getLangCapitalised();
