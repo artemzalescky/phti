@@ -44,7 +44,9 @@
 
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">RU<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <?= strtoupper($ph->lang->getLang()) ?><span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu" role="menu">
                             <li> <?php $ph->system_link('English', '/locale/change/en') ?> </li>
                             <li class="divider"></li>
