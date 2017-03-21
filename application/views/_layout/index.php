@@ -45,7 +45,6 @@
         ->include_system_js_lib('validator.min.js')
         ->include_system_js_lib('form-scripts.js')
     ?>
-    <style></style>
 </head>
 
 <body>
@@ -60,9 +59,9 @@
         width: 100%;
         height: 100%;
         background-color: #f9f9f9;
-        margin-top: -40px;
-        border-bottom-left-radius: 400px 50px;
-        border-bottom-right-radius: 400px 50px;
+        margin-top: -55px;
+        border-bottom-left-radius: 500px 60px;
+        border-bottom-right-radius: 500px 60px;
     }
     .title-news {
         color: #033071 !important;
@@ -91,145 +90,33 @@
         <?php $this->renderTemplate('main-news')?>
     </div>
     <br>
-    <div class="container" >
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate ?> </h2>
         <h3 class="title text-center title-news-description"> Наши партнеры сегодня </h3>
-        <br>
         <?php $this->renderTemplate('logotip') ?>
-    </div>
     <br><br>
-
 </div>
+
 <br>
 <div class="container">
     <h2 class="title text-center" style="margin-left: 0px">
         <?php $ph->link( $ph->lang->Label_Managment , '/managment') ?>
     </h2>
-    <div class="ph-infinite-slider management">
-        <div class="data-item" data-image-url="<?= $ph->image_path('struct/zalescky.jpg') ?>">
-            <div class="title">Залесский Виталий Геннадьевич</div>
-            <div class="preview-title">Залесский Виталий Геннадьевич</div>
-            <div class="description">
-                Должность: Директор ФТИ НАН Беларуси<br>
-                Время приема: среда 16.00-17.30<br>
-                Номер кабинета: каб. 301<br>
-                Номер телефона: тел. 267-60-10<br>
-                e-mail: V.Zalesski@mail.ru
-            </div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('struct/biely.jpg') ?>">
-            <div class="title">Белый Алексей Владимирович</div>
-            <div class="preview-title">Белый Алексей Владимирович</div>
-            <div class="description">
-                Должность: Заместитель директора по научной работе<br>
-                Время приема: четверг 16.00-17.30<br>
-                Номер кабинета: каб. 317<br>
-                Номер телефона: тел. 265-07-98
-            </div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('struct/mihluk.jpg') ?>">
-            <div class="title">Михлюк Анатолий Игнатьевич</div>
-            <div class="preview-title">Михлюк Анатолий Игнатьевич</div>
-            <div class="description">
-                Должность: Заместитель директора по научной и инновационной работе<br>
-                Время приема: понедельник 16.00-17.30<br>
-                Номер кабинета: каб. 325<br>
-                Номер телефона: тел. 267-42-75
-            </div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('struct/povarov.jpg') ?>">
-            <div class="title">Поваров Олег Евгеньевич</div>
-            <div class="preview-title">Поваров Олег Евгеньевич</div>
-            <div class="description">
-                Должность: Зам. директора по общим вопросам<br>
-                Номер кабинета: 303 к. 2<br>
-                Номер телефона: 8029 6836474
-            </div>
-        </div>
-        <div class="data-item" data-image-url="<?= $ph->image_path('struct/Poko_mini.jpg') ?>">
-            <div class="title">Поко Ольга Александровна</div>
-            <div class="preview-title">Поко Ольга Александровна</div>
-            <div class="description">
-                Должность: Ученый секретарь<br>
-                Номер телефона: 267-64-53<br>
-                Номер мобильного телефона: 8-0296-19-60-15
-            </div>
-        </div>
-    </div>
+    <?php $this->renderTemplate('rucovodstvo-phti') ?>
 </div>
-<br><br>
-<?php //$this->renderTemplate('callBack') ?>
-
-<script>
-    $(document).ready(function () {
-        $('.ph-infinite-slider.management').ph_infinite_slider({
-            imgHeight: 188,
-            imgWidth: 188,
-            padding: 15,
-            roundImages: true,
-            previewTitleHeight: 55
-        });
-    });
-</script>
-
-<style>
-    .attestat-useful-information-container{
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-color: #f9f9f9;
-    }
-</style>
-
-
-<br>
+<br><br><br>
 <div class="attestat-useful-information-container">
     <div class="container">
         <br>
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Certificate ?> </h2>
-        <h3 class="title text-center title-news-description"> АТТЕСТАТЫ АККРЕДИТАЦИИ, СЕРТИФИКАТЫ, ЛИЦЕНЗИИ </h3>
-        <div class="ph-infinite-slider certificate">
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
-                <div class="title">Аттестат Аккредитации</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/2.jpg') ?>">
-                <div class="title">Аттестат Аккредитации</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/3.jpg') ?>">
-                <div class="title">Сертификат Продукции Собственного Производства</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/4.jpg') ?>">
-                <div class="title">Сертификат о Соответствии</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/5.jpg') ?>">
-                <div class="title">Специальное Разрешение</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/6.jpg') ?>">
-                <div class="title">Специальное Разрешение</div>
-            </div>
-            <div class="data-item" data-image-url="<?= $ph->image_path('attestat/7.jpg') ?>">
-                <div class="title">Специальное Разрешение</div>
-            </div>
-        </div>
-        <hr>
+        <h3 class="title text-center title-news-description"> Аттестаты, аккредитации, сертификаты, лицензии </h3>
+        <?php $this->renderTemplate('attestats') ?>
     </div>
+    <br><br>
     <div class="container">
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Useful_Information ?> </h2>
     <?php $this->renderTemplate('useful-information') ?>
     </div>
 </div>
-
-<script>
-    $(document).ready(function () {
-        $('.ph-infinite-slider.certificate').ph_infinite_slider({
-            imgHeight: 272,
-            imgWidth: 188,
-            padding: 15,
-            arrowsBackgroundColor: '#f9f9f9'
-        });
-    });
-</script>
 
 <?php $this->renderTemplate('pozdravlenie') ?>
 

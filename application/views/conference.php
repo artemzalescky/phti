@@ -7,11 +7,13 @@
     height: 600px;
     }
 </style>
-<div class="conference">
-  <h2 class="title text-center "><?=$ph->lang->Conference_Label ?></h2>
-  <br><br>
-<p style="megin-top: 30px;">
-<?=$ph->lang->Conference_Text ?>
-</p>
+<div class="container">
+    <div class="conference">
+      <h2 class="title text-center "><?=$ph->lang->Conference_Label ?></h2>
+      <br><br>
+    <p style="megin-top: 30px;">
+    <?=$ph->lang->Conference_Text ?>
+    </p>
 
+    </div>
 </div>

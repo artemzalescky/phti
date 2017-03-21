@@ -100,7 +100,6 @@ class DepartmentModel {
     }
 
     // base laboratories
-
     public function getBaseLaboratories() {
         try {
             return DepartmentDAO::getInstance()->getBaseLaboratories();

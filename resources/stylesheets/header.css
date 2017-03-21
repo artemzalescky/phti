@@ -16,7 +16,7 @@
     background-color: white;
 }
 .navbar-nav>li>a {
-    color: #033071 !important;
+    color: #234e7b !important;
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     font-weight: 700;
@@ -27,11 +27,11 @@
 
 .navbar-nav>.open>a {
     background-color: #ffffff !important;
-    color:#033071 ;
+    color:#234e7b ;
 }
 
 .dropdown-menu>li>a {
-    color: #033071 !important;
+    color: #234e7b !important;
     background-color: #ffffff !important;
     padding: 5px 5px 5px 5px !important;
 }

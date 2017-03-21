@@ -1,4 +1,5 @@
 $("#contactForm").validator().on("submit", function (event) {
+    console.log('submit');
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();

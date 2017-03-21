@@ -56,6 +56,21 @@ class Dictionary extends BaseDictionary {
             "Product_Label_Varieties" =>["Разновидности", "Varieties"],
             "Conference_Label" =>["Конференции ФТИ НАН Беларуси", "Conference PHTI NAN Belarus"],
             "Conference" =>["Конференции", "Conference"],
+            "TopMenu_Science" =>["НАУКА", "SCIENCE"],
+            "TopMenu_Productionservices" =>["ПРОДУКЦИЯ УСЛУГИ", "PRODUCTS SERVICES"],
+            "TopMenu_molod" =>["МОЛОДЕЖНАЯ СТРАНИЦА", "YOUTH PAGE"],
+            "TopMenu_Science_1" =>["КОНФЕРЕНЦИИ", "CONFERENCE"],
+            "TopMenu_Science_2" =>["КОНКУРСЫ", ""],
+            "TopMenu_Science_3" =>["ПУБЛИКАЦИИ И МОНОГРАММЫ", ""],
+            "TopMenu_Science_4" =>["СОВЕТ ПО ЗАЩИТЕ НАУЧНЫХ И ДОКТОРСКИХ ДИСЕРТАЦИЙ", ""],
+            "TopMenu_Science_5" =>["МЕЖДУНАРОДНЫЕ ПРОЕКТЫ", "International projects"],
+            "TopMenu_Science_6" =>["ГОСУДАРСТВЕННЫЕ ПРОГРАММЫ", ""],
+            "Label_Competition" =>["Конкурсы", "Competition"],
+            "Label_Cooperate_Science" =>["СОТРУДНИЧЕСТВО", "COOPERATE"],
+            "Label_Conference"=>["КОНФЕРЕНЦИИ", "CONFERENCE"],
+            "Label_International_Project"=>["МЕЖДУНАРОДНЫЕ ПРОЕКТЫ", "INTERNATIONAL PROJECT"],
+
+
             
             
             

@@ -7,8 +7,8 @@
 .slider-box-container{
     display: block;
     position: relative;
-    border-bottom-left-radius: 500px 40px;
-    border-bottom-right-radius: 500px 40px;
+    border-bottom-left-radius: 500px 60px;
+    border-bottom-right-radius: 500px 60px;
     z-index: 999;
 }
 
@@ -47,20 +47,21 @@
     position: absolute;
     height: 120px;
     width: 300px;
-    margin: 100px auto;
+    margin: 136px auto;
     vertical-align: middle;
 }
 .science p a {
     display: block;
     position: relative;
-    color: #033071 !important;
+    color: #234e7b !important;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 24pt !important;
+    font-size: 22pt !important;
     height: 7em;
     vertical-align: middle;
     font-weight: 800 !important;
     text-align: center !important;
     margin: auto;
+	line-height: 30px;
 }
 .science p a:focus{
     text-decoration: none;

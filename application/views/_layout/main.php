@@ -25,12 +25,14 @@
 <body>
 
 <?php $this->renderTemplate('header') ?>
+<!---->
+<!--<div class="container" style="width: 100%">-->
+<!--    <hr>-->
+<!--    -->
+<!--    <hr>-->
+<!--</div>-->
+<?php $this->renderContent() ?>
 
-<div class="container">
-    <hr>
-    <?php $this->renderContent() ?>
-    <hr>
-</div>
 
 <?php $this->renderTemplate('footer') ?>
 

@@ -1,15 +1,17 @@
-<br><br>
-<ol class="breadcrumb custom-breadcrumb">
-    <li>
-        <?php $ph->link($ph->lang->Label_FTI, '/') ?>
-    </li>
-    <li class="active">
-        <?= $ph->lang->Label_Production ?>
-    </li>
-</ol>
+<br><br><br><br>
+<div class="container">
+    <ol class="breadcrumb custom-breadcrumb">
+        <li>
+            <?php $ph->link($ph->lang->Label_FTI, '/') ?>
+        </li>
+        <li class="active">
+            <?= $ph->lang->Label_Production ?>
+        </li>
+    </ol>
 
-<hr>
+    <hr>
 
-<h2 class="title text-center"> <?= $ph->lang->Label_Production ?> </h2>
+    <h2 class="title text-center"> <?= $ph->lang->Label_Production ?> </h2>
 
-<?php $this->renderTemplate('product-list') ?>
+    <?php $this->renderTemplate('product-list') ?>
+</div>

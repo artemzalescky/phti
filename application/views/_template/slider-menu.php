@@ -6,7 +6,7 @@
             <br><br>
                 <div class="science img-menu1-circle img-responsive " >
                     <p>
-                        <a href="#"> Наука</a>
+                        <?php $ph->link($ph->lang->TopMenu_Science, '/department');?>
                     </p>
                 </div>
 
@@ -15,7 +15,7 @@
             <br><br>
             <div class="science img-menu2-circle img-responsive ">
                 <p>
-                    <a href="/phti/product"> Продукция услуги</a>
+                    <?php $ph->link($ph->lang->TopMenu_Productionservices, '/product');?>
                 </p>
             </div>
         </div>
@@ -24,7 +24,7 @@
 
             <div class=" science img-menu3-circle img-responsive ">
                 <p>
-                    <a> Молодежная страница</a>
+                    <?php $ph->link($ph->lang->TopMenu_molod, '/molod_page');?>
                 </p>
             </div>
         </div>
@@ -37,20 +37,20 @@
                     <div class="carousel-inner">
                         <div class="item active mb centered">
                             <p>«НAСТОЯЩИЙ ПРОГРЕСС ЧЕЛОВЕЧЕСТВА ЗАВИСИТ НЕ СТОЛЬКО
-                                ОТ ИЗОБРЕТФТЕЛЬНОГО УМА, СКОЛЬКО ОТ СОЗНАТЕЛЬНОСТИ.»</p>
+                                ОТ ИЗОБРЕТАТЕЛЬНОГО УМА, СКОЛЬКО ОТ СОЗНАТЕЛЬНОСТИ.»</p>
                             <span class="testimonials-title "> А. Эйнштейн  </span>
                         </div>
 
                         <div class="item mb centered">
-                            <p>«НAСТОЯЩИЙ ПРОГРЕСС ЧЕЛОВЕЧЕСТВА ЗАВИСИТ НЕ СТОЛЬКО
-                                ОТ ИЗОБРЕТФТЕЛЬНОГО УМА, СКОЛЬКО ОТ СОЗНАТЕЛЬНОСТИ.»</p>
-                            <span class="testimonials-title "> А. Эйнштейн  </span>
+                            <p>«НАУКА — СИЛА; ОНА РАСКРЫВАЕТ ОТНОШЕНИЯ ВЕЩЕЙ,
+                                ИХ ЗАКОНЫ И ВЗАИМОДЕЙСТВИЯ.»</p>
+                            <span class="testimonials-title "> А. И. Герцен  </span>
                         </div>
 
                         <div class="item mb centered">
-                            <p>«НAСТОЯЩИЙ ПРОГРЕСС ЧЕЛОВЕЧЕСТВА ЗАВИСИТ НЕ СТОЛЬКО
-                                ОТ ИЗОБРЕТФТЕЛЬНОГО УМА, СКОЛЬКО ОТ СОЗНАТЕЛЬНОСТИ.»</p>
-                            <span class="testimonials-title "> А. Эйнштейн  </span>
+                            <p>«НАУКА ЕСТЬ НАИЛУЧШИЙ ПУТЬ ДЛЯ ТОГО,
+                                ЧТОБЫ СДЕЛАТЬ ЧЕЛОВЕЧЕСКИЙ ДУХ ГЕРОИЧЕСКИМ.»</p>
+                            <span class="testimonials-title "> Д. Бруно  </span>
                         </div>
 
                     </div>
