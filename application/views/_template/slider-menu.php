@@ -1,14 +1,15 @@
-<?php $ph->include_css('slider-menu.css') ?>
+<?php $ph->include_css('new_slider_menu.css') ?>
 
-<div style="margin-top: 62px;  " class="slider-box-container">
+<div style="margin-top: 62px;  " class="slider-box-container" data-type="background" data-speed="10" class="pages">
     <div style="margin-top: 15px" class="container">
         <div class="col-lg-4">
             <br><br>
-                <div class="science img-menu1-circle img-responsive " >
-                    <p>
-                        <?php $ph->link($ph->lang->TopMenu_Science, '/department');?>
-                    </p>
-                </div>
+
+            <div class="science img-menu1-circle img-responsive ">
+                <p>
+                    <?php $ph->link($ph->lang->TopMenu_Science, '/science/show');?>
+                </p>
+            </div>
 
         </div>
         <div class="col-lg-4">

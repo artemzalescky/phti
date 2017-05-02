@@ -8,9 +8,6 @@
             <?= $ph->lang->Label_Production ?>
         </li>
     </ol>
-
-    <hr>
-
     <h2 class="title text-center"> <?= $ph->lang->Label_Production ?> </h2>
 
     <?php $this->renderTemplate('product-list') ?>

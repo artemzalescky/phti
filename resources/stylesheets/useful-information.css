@@ -6,7 +6,7 @@
 .useful-block{
     display: block;
     position: relative;
-    height:410px;
+    height:420px;
     float: left;
 }
 
@@ -33,4 +33,29 @@ ul#contact-info li{
 }
 ul#contact-info li a{
     color: #033071;
+}
+
+
+
+
+/* Landscape phones and portrait tablets */
+
+@media (min-width: 1200px) {
+    .useful-block:first-child{
+        height: 420px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+    .useful-block:first-child{
+        height: 420px;
+
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 400px) {
+    .useful-block:first-child {
+        height: 560px;
+    }
 }

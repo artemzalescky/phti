@@ -1,5 +1,5 @@
 <?php $ph->include_css('about.css'); ?>
-
+<br><br><br>
 <div id="phti-description">
     <div class="panel-group" id="collapse-group">
         <div class="panel panel-default">

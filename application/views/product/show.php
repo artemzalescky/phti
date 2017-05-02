@@ -1,10 +1,10 @@
-<br><br>
+<br><br><br>
 <?php
 $ph->include_css('product-view.css');
 $currentLang = $ph->lang->getLangCapitalised();
 $defaultLang = $ph->lang->getDefaultLangCapitalised();
 ?>
-
+<div class="container">
 
     <ol class="breadcrumb custom-breadcrumb">
     <li>
@@ -25,56 +25,57 @@ $defaultLang = $ph->lang->getDefaultLangCapitalised();
 </ol>
 
 <hr>
-<div id="product-container">
-    <h3><?= $ph->localisedField($currentProduct, 'name') ?></h3>
 
-    <hr>
+    <div id="product-container">
+        <h3><?= $ph->localisedField($currentProduct, 'name') ?></h3>
 
-    <div class="row">
-        <div class="col-md-5">
-            <?php $ph->image("product/{$currentProduct['id']}.jpeg" , [
-                'class' => 'product-image',
-                'alt' => $ph->localisedField($currentProduct, 'name')
-            ]) ?>
-        </div>
-        <div class="col-md-7">
-            <?php $localisedShortDescription = $ph->localisedField($currentProduct, 'shortDescription');
-            if (!empty($localisedShortDescription)) {
-                $ph->tag_open('blockquote')
-                    ->tag_open('p')
-                    ->text($localisedShortDescription)
-                    ->tag_close('p')
-                    ->tag_close('blockquote')
-                    ->single_tag('hr');
-            }
-            if (!empty($parentDepartment)) {
-                $ph->tag_open('div', ['style' => 'padding-left: 25px']);
-                $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
-                    ->single_tag('br');
-                $departmentContacts = $ph->localisedField($parentDepartment, 'contact');
-                if (!empty($departmentContacts)) {
-                    $ph->text($departmentContacts);
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <?php $ph->image("product/{$currentProduct['id']}.jpeg" , [
+                    'class' => 'product-image',
+                    'alt' => $ph->localisedField($currentProduct, 'name')
+                ]) ?>
+            </div>
+            <div class="col-md-7">
+                <?php $localisedShortDescription = $ph->localisedField($currentProduct, 'shortDescription');
+                if (!empty($localisedShortDescription)) {
+                    $ph->tag_open('blockquote')
+                        ->tag_open('p')
+                        ->text($localisedShortDescription)
+                        ->tag_close('p')
+                        ->tag_close('blockquote')
+                        ->single_tag('hr');
                 }
-                $ph->tag_close('div')->single_tag('hr');
-            }
-            ?>
-            <?php foreach ($currentProduct['extraFields'] as $i => $field) { ?>
-                <?php if($i != 0) {
-                    $ph->single_tag('hr');
-                } ?>
-                <div class="row">
-                    <div class="col-md-3 text-right">
-                        <?= !empty($field["key$currentLang"]) ? $field["key$currentLang"] : $field["key$defaultLang"] ?>
+                if (!empty($parentDepartment)) {
+                    $ph->tag_open('div', ['style' => 'padding-left: 25px']);
+                    $ph->link($ph->localisedField($parentDepartment, 'name'), "/department/{$parentDepartment['url']}")
+                        ->single_tag('br');
+                    $departmentContacts = $ph->localisedField($parentDepartment, 'contact');
+                    if (!empty($departmentContacts)) {
+                        $ph->text($departmentContacts);
+                    }
+                    $ph->tag_close('div')->single_tag('hr');
+                }
+                ?>
+                <?php foreach ($currentProduct['extraFields'] as $i => $field) { ?>
+                    <?php if($i != 0) {
+                        $ph->single_tag('hr');
+                    } ?>
+                    <div class="row">
+                        <div class="col-md-3 text-right">
+                            <?= !empty($field["key$currentLang"]) ? $field["key$currentLang"] : $field["key$defaultLang"] ?>
+                        </div>
+                        <div class="col-md-9">
+                            <?= !empty($field["value$currentLang"]) ? $field["value$currentLang"] : $field["value$defaultLang"] ?>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <?= !empty($field["value$currentLang"]) ? $field["value$currentLang"] : $field["value$defaultLang"] ?>
-                    </div>
-                </div>
-            <?php } ?>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </div>
-
 <?php if (!empty($products)) {
     $ph->single_tag('hr')
         ->tag('h2', $ph->lang->Product_Label_Varieties, ['class' => 'text-center title']);

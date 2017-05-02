@@ -23,8 +23,9 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label for="tema" class="h4">Тема</label>
-                        <input type="text" class="form-control" id="tema" placeholder="Введите вашу тему" required>
+                        <label for="thema" class="h4">Тема</label>
+                        <input type="text" class="form-control" id="thema" placeholder="Введите вашу тему" required data-error="Введите корректную тему">
+                        <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-sm-4">
                         <label for="email" class="h4">Email</label>
@@ -44,3 +45,61 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    $("#contactForm").validator().on("submit", function (event) {
+        if (event.isDefaultPrevented()) {
+            // handle the invalid form...
+            formError();
+            submitMSG(false, "Вы правильно заполнили форму?");
+        } else {
+            // everything looks good!
+            event.preventDefault();
+            submitForm();
+        }
+    });
+
+
+    function submitForm(){
+        // Initiate Variables With Form Content
+        var name = $("#name").val();
+        var thema = $("#thema").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+
+        $.ajax({
+            type: "POST",
+            url: "php/form-process.php",
+            data: "name=" + name + "&thema=" + thema +"&email=" + email + "&message=" + message,
+            success : function(text){
+                if (text == "success"){
+                    formSuccess();
+                } else {
+                    formError();
+                    submitMSG(false,text);
+                }
+            }
+        });
+    }
+
+    function formSuccess(){
+        $("#contactForm")[0].reset();
+        submitMSG(true, "Письмо отправлено")
+    }
+
+    function formError(){
+        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass();
+        });
+    }
+
+    function submitMSG(valid, msg){
+        if(valid){
+            var msgClasses = "h3 text-center tada animated text-success";
+        } else {
+            var msgClasses = "h3 text-center text-danger";
+        }
+        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    }
+</script>

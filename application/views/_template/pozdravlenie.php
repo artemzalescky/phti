@@ -1,19 +1,30 @@
 <?php $ph->include_css('about-us.css') ?>
 <style>
-.pozravlenie-container {
-background: url("resources/images/main/fon_.png");
-min-height: 550px;
-width: 100%;
-}
     .about-us{
        background:none !important;
     }
+
+#home {
+    background: url(resources/images/main/new_fone2.jpg) center 0 repeat fixed; min-height: 550px;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+#home article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    width: 100%;
+}
+
 </style>
 
-<div class="pozravlenie-container">
+<section id="home" data-type="background" data-speed="10" class="pages">
     <div class="container">
         <br><br>
-        <h2 class="title text-center title-news">Поздравляем с Юбилеем  АНАТОЛИЯ ИЛЛАРИОНОВИЧА ГОРДИЕНКО</h2>
+        <h2 class="title text-center title-news" style="color: #ffffff !important;">Поздравляем с Юбилеем  АНАТОЛИЯ ИЛЛАРИОНОВИЧА ГОРДИЕНКО</h2>
 
         <h3 style="color: #ffffff; margin-top: 5px" class="title text-center title-news-description">АНАТОЛИЙ ИЛЛАРИОНОВИЧ ГОРДИЕНКО</h3>
 
@@ -53,4 +64,5 @@ width: 100%;
             </div>
         </div>
     </div>
-</div>
+</section>
+

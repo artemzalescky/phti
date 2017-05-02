@@ -1,11 +1,5 @@
 <?php $ph->include_css('header.css') ?>
 <style>
-    #top-menu-logo{
-        width: 300px;
-        display:block;
-        margin-top: 6px;
-
-    }
     .navbar-toggle{
         background: #033071 !important;
     }

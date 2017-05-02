@@ -18,11 +18,8 @@
                     <br>
                     <?php $ph->link('8 017 267-60-10', '/contacts')
                               ->single_tag('br')
-                              ->link('8 017 267 42 75', '/contacts')
+                              ->link('Тел/Факс: (017) 369-76-93', '/contacts')
                               ->single_tag('br')
-                              ->link('Факс: (017) 369-76-93', '/contacts')
-                              ->single_tag('br')
-                              ->link('Факс: (017) 267-42-75', '/contacts')
                               ?>
                 </li>
                 <li>
@@ -30,8 +27,6 @@
                     <span class="field">Email:</span>
                     <br>
                     phti@belhost.by
-                    <br>
-                    market_phti@belhost.by
                 </li>
                 <li>
                     <span class="glyphicon glyphicon-home"></span>

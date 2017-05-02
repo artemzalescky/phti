@@ -1,5 +1,6 @@
 <?php use \application\models\DepartmentModel as DepartmentModel; ?>
 <?php $ph->include_css('useful-information.css') ?>
+<div class="both"></div>
 <div class="useful">
     <div style="margin-top: 15px" class="container">
         <div class="col-lg-4 useful-block">
@@ -68,11 +69,7 @@
                         <br>
                         <?php $ph->link('8 017 267-60-10', '/contacts')
                             ->single_tag('br')
-                            ->link('8 017 267 42 75', '/contacts')
-                            ->single_tag('br')
-                            ->link('Факс: (017) 369-76-93', '/contacts')
-                            ->single_tag('br')
-                            ->link('Факс: (017) 267-42-75', '/contacts')
+                            ->link('Тел/Факс: (017) 369-76-93', '/contacts')
                         ?>
                     </li>
                     <li>
@@ -81,7 +78,6 @@
                         <br>
                         <?php $ph->link('phti@belhost.by', '/contacts')
                             ->single_tag('br')
-                            ->link('market_phti@belhost.by', '/contacts')
                         ?>
                     </li>
                     <li>

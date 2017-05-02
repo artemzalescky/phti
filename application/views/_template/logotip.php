@@ -1,3 +1,5 @@
+<?php $ph->include_js_lib('ph-infinite-slider.js') ?>
+
 <div class="logotip-useful-information-container">
     <div class="container">
         <div class="ph-infinite-slider logotip">
@@ -92,7 +94,6 @@
                 <div class="title">УПП «Нива» ОАО «ЛМЗ Универсал»</div>
             </div>
         </div>
-        <hr>
     </div>
 </div>
 

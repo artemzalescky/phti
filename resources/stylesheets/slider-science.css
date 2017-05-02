@@ -1,5 +1,5 @@
 .slider-box-container-science {
-    background: url("../images/main/fon_.png");
+    background: url("../images/main/new_fone4.jpg");
     min-height: 700px;
     width: 100%;
 }
@@ -7,16 +7,30 @@
 .slider-box-container-science{
     display: block;
     position: relative;
-    border-bottom-left-radius: 500px 60px;
-    border-bottom-right-radius: 500px 60px;
+    border-bottom-left-radius: 1500px 300px;
+    border-bottom-right-radius: 1500px 300px;
     z-index: 999;
 }
+
+.main-circle-container{
+    display: block;
+    position: absolute;
+    height: 300px !important;
+    width: 300px !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: 190px auto !important;
+}
+
 .little-circle-container{
     display: block;
     position: relative;
+    width: 200px;
+    height: 400px;
     margin: 170px auto;
-    margin-left: 400px;
-
+    /*margin-left: 400px;*/
 }
 .img-science-circle{
     background: url("../images/main/little-menu1.png");;
@@ -39,7 +53,7 @@
 .science-little p{
     display: block;
     position: relative;
-    height: 80px;
+    height: 70px !important;
     width: 150px;
     margin: 115px auto;
     vertical-align: middle;
@@ -83,6 +97,7 @@
     text-align: center !important;
     margin: auto;
     line-height: 30px;
+    text-decoration: none;
 }
 .science p a:focus{
     text-decoration: none;

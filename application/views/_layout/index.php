@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="FnWScgRAEl5rRwf0QXoUuoYDUBrglKx85MlyO4sf0i4" />
     <?php
     $ph->include_system_css('/themes/flatly-bootstrap.min.css')
         ->include_system_css('glyphicon.css')
@@ -43,7 +44,6 @@
         ->include_css('lib/ph-infinite-slider.css')
         /* forma */
         ->include_system_js_lib('validator.min.js')
-        ->include_system_js_lib('form-scripts.js')
     ?>
 </head>
 
@@ -59,9 +59,9 @@
         width: 100%;
         height: 100%;
         background-color: #f9f9f9;
-        margin-top: -55px;
-        border-bottom-left-radius: 500px 60px;
-        border-bottom-right-radius: 500px 60px;
+        margin-top: -130px;
+        border-bottom-left-radius: 1500px 300px;
+        border-bottom-right-radius: 1500px 300px;
     }
     .title-news {
         color: #033071 !important;
@@ -70,18 +70,21 @@
         font-weight: 800 !important;
     }
     .title-news-description{
-        margin-top: -5px;
-        margin-bottom: 10px;
+        margin-top: -10px;
+        margin-bottom: 15px;
         font-family: 'Roboto', sans-serif;
         color: #303030;
         font-size: 0.85em;
         font-weight: 200;
+        font-weight: bold;
+        text-transform: uppercase;
+
     }
 
 </style>
 
 <div class="news-logo-container" >
-    <br><br><br>
+    <br><br><br><br><br><br><br>
     <div class="container" >
         <h2 class="title text-center title-news">
             <?php $ph->link( $ph->lang->Label_News , '/news') ?>
@@ -93,7 +96,7 @@
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate ?> </h2>
         <h3 class="title text-center title-news-description"> Наши партнеры сегодня </h3>
         <?php $this->renderTemplate('logotip') ?>
-    <br><br>
+    <br><br><br><br><br><br>
 </div>
 
 <br>

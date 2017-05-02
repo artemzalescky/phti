@@ -18,8 +18,9 @@
 .navbar-nav>li>a {
     color: #234e7b !important;
     font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    font-weight: 700;
+    font-size: 10pt;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 .navbar-nav>li>a:focus{
     text-decoration: underline;
@@ -38,3 +39,49 @@
 .dropdown-menu>li>a:focus{
     text-decoration: underline !important;
 }
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 120px) {
+    #top-menu-logo{
+        width: 300px;
+        margin-top: 4px ;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #top-menu-logo{
+        width: 300px;
+        margin-top: 4px;
+        margin-right: 15px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    #top-menu-logo{
+        width: 300px;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 400px) and (max-width: 767px) {
+    #top-menu-logo{
+        width: 230px;
+        margin-top: 12px ;
+        margin-right: 15px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 400px) {
+    #top-menu-logo{
+        width: 190px ;
+        margin-top: 14px;
+        margin-right: 15px;
+    }
+}
+
