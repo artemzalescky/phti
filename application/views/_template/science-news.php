@@ -61,10 +61,10 @@ $ph->include_css('news/new_news.css')
                 ?>
                 <br>
                 <?php
-                $ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
-                    ->tag('span', null, ['class' => ''])
-                    ->text(' Подробнее')
-                    ->link_close('a');
+                //$ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
+                //    ->tag('span', null, ['class' => ''])
+                //    ->text(' Подробнее')
+                //    ->link_close('a');
                 ?>
             </p>
         </div>
@@ -81,10 +81,10 @@ $ph->include_css('news/new_news.css')
                 ?>
                 <br>
                 <?php
-                $ph->link_open('/science/show', ['btn class' => 'read-more'])
-                    ->tag('span', null, ['class' => ''])
-                    ->text(' Подробнее')
-                    ->link_close('a');
+                //$ph->link_open('/science/show', ['btn class' => 'read-more'])
+                //    ->tag('span', null, ['class' => ''])
+                //    ->text(' Подробнее')
+                //    ->link_close('a');
                 ?>
             </p>
         </div>
@@ -103,10 +103,10 @@ $ph->include_css('news/new_news.css')
                 ?>
                 <br>
                 <?php
-                $ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
-                    ->tag('span', null, ['class' => ''])
-                    ->text(' Подробнее')
-                    ->link_close('a');
+                //$ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
+                //    ->tag('span', null, ['class' => ''])
+                //    ->text(' Подробнее')
+                //    ->link_close('a');
                 ?>
             </p>
 
@@ -125,10 +125,10 @@ $ph->include_css('news/new_news.css')
                 ?>
                 <br>
                 <?php
-                $ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
-                    ->tag('span', null, ['class' => ''])
-                    ->text(' Подробнее')
-                    ->link_close('a');
+                //$ph->link_open('/science/show', ['class' => 'read-more','style' => 'target="_blank'])
+                //    ->tag('span', null, ['class' => ''])
+                //    ->text(' Подробнее')
+                //    ->link_close('a');
                 ?>
             </p>
         </div>

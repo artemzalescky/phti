@@ -1,5 +1,5 @@
 .slider-box-container {
-    background: url('../images/main/new_fone2.jpg') center 0 repeat fixed; min-height: 550px;
+    background: url('../images/main/main_fon.png') center 0 repeat fixed; min-height: 550px;
     width: 100%;
     display: block;
     position: relative;
@@ -10,7 +10,7 @@
 
 
 #home {
-    background: url(resources/images/main/new_fone2.jpg) center 0 repeat fixed; min-height: 550px;
+    background: url(resources/images/main/main_fon.png) center 0 repeat fixed; min-height: 550px;
     height: 500px;
     margin: 0 auto;
     width: 100%;
@@ -21,9 +21,9 @@
     max-width: 100%;
     height: auto;
 }
-
+/*меню(круг) наука*/
 .img-menu1-circle{
-    background: url("../images/main/menu1.png");
+    background: url("../images/main/menu/nauka.png");
     overflow:hidden;
     background-position: center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
@@ -38,6 +38,7 @@
 }
 
 .img-menu1-circle:hover{
+    background: url("../images/main/menu/nauka_hover.png");
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -46,7 +47,7 @@
 
 
 .img-menu2-circle{
-    background: url("../images/main/menu2.png");
+    background: url("../images/main/menu/produkcia.png");
     background-position: center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
     height:300px;
@@ -60,13 +61,14 @@
 }
 
 .img-menu2-circle:hover{
+    background: url("../images/main/menu/produkcia_hover.png");
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
 .img-menu3-circle{
-    background: url("../images/main/menu3.png");;
+    background: url("../images/main/menu/molodej.png");
     background-position: center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
     height:300px;
@@ -80,6 +82,7 @@
 }
 
 .img-menu3-circle:hover{
+    background: url("../images/main/menu/molodej_hover.png");;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);

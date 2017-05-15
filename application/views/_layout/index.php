@@ -89,14 +89,14 @@
         <h2 class="title text-center title-news">
             <?php $ph->link( $ph->lang->Label_News , '/news') ?>
         </h2>
-        <h3 class="title text-center title-news-description"> Самые актуальные новости деятельности ФТИ </h3>
+        <!-- <h3 class="title text-center title-news-description"> Самые актуальные новости деятельности ФТИ </h3> -->
         <?php $this->renderTemplate('main-news')?>
     </div>
     <br>
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate ?> </h2>
-        <h3 class="title text-center title-news-description"> Наши партнеры сегодня </h3>
+        <!--<h3 class="title text-center title-news-description"> Наши партнеры сегодня </h3> -->
         <?php $this->renderTemplate('logotip') ?>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
 </div>
 
 <br>
@@ -111,7 +111,7 @@
     <div class="container">
         <br>
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Certificate ?> </h2>
-        <h3 class="title text-center title-news-description"> Аттестаты, аккредитации, сертификаты, лицензии </h3>
+        <!-- <h3 class="title text-center title-news-description"> Аттестаты, аккредитации, сертификаты, лицензии </h3> -->
         <?php $this->renderTemplate('attestats') ?>
     </div>
     <br><br>

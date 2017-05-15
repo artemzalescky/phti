@@ -41,15 +41,15 @@ $Body .= "\n";
 $Body .= "Тема: ";
 $Body .= $thema;
 $Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
 $Body .= "Сообщение: ";
 $Body .= $message;
 $Body .= "\n";
 
+$headers = 
+    'Reply-To:'. $email;
+
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, $headers);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
@@ -57,6 +57,7 @@ if ($success && $errorMSG == ""){
 }else{
     if($errorMSG == ""){
         echo "Возникли некоторые проблемы";
+
     } else {
         echo $errorMSG;
     }

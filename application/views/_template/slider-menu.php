@@ -1,4 +1,4 @@
-<?php $ph->include_css('new_slider_menu.css') ?>
+<?php $ph->include_css('main_slider_menu.css') ?>
 
 <div style="margin-top: 62px;  " class="slider-box-container" data-type="background" data-speed="10" class="pages">
     <div style="margin-top: 15px" class="container">

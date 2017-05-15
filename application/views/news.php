@@ -31,6 +31,16 @@
         right: 10px;
     }
 
+    .panel-default>.panel-heading{
+        background-color: #2c3e50; !important;
+    }
+    .panel-default>.panel-title{
+        color: #ffffff;
+    }
+    .news_title_hidden {
+        color: #ffffff !important;
+    }
+
 </style>
 <br>
 <div class="container">
@@ -285,20 +295,16 @@
     <div id="phti-description">
     <div class="panel-group" id="collapse-group">
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
+        <div class="panel-heading" >
+            <h4 class="panel-title" >
                 <a data-toggle="collapse"  data-parent="#collapse-group" href="#el49" class="news_title_hidden">01.02.2017 года в Физико-техническом институте прошел семинар, посвященный теме «Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси»</a>
             </h4>
         </div>
         <div id="el49" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="day" class="panel-title">01.02.2017 года в Физико-техническом институте прошел семинар, посвященный теме «Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси»</h3>
-                    </div>
                     <div class="panel-body">
                         <div class="row">
-
                             <div class="col-lg-12 main-news">
                                 <?php $ph->link_open('news')
                                     ->image('news/seminar2.jpg', [
@@ -356,15 +362,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el50">Физико-технический институт отметил День науки</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el50" class="news_title_hidden">Физико-технический институт отметил День науки</a>
             </h4>
         </div>
         <div id="el50" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="day" class="panel-title">Физико-технический институт отметил День науки</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -414,15 +418,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el51">В малом актовом зале ФТИ (комн 303) состоится семинар на тему <strong>"Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси"</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el51" class="news_title_hidden">В малом актовом зале ФТИ (комн 303) состоится семинар на тему <strong>"Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси"</a>
             </h4>
         </div>
         <div id="el51" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="seminar_fti" class="panel-title"> В малом актовом зале ФТИ (комн 303) состоится семинар на тему <strong>"Перспективы использования аустенито-бейнитного чугуна (ADI) в Беларуси"</strong></h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div style="clear: both;"></div>
@@ -466,15 +468,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el53"></a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el53" class="news_title_hidden">Мы уже встретили Новый год!</a>
             </h4>
         </div>
         <div id="el53" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="new_year" class="panel-title">Мы уже встретили Новый год! </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -507,15 +507,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el54">Лабораторией электрофизики НИЦ электронно-лучевых технологий и физики плазмы введена в эксплуатацию еще одна установка ионного азотирования.</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el54" class="news_title_hidden">Лабораторией электрофизики НИЦ электронно-лучевых технологий и физики плазмы введена в эксплуатацию еще одна установка ионного азотирования.</a>
             </h4>
         </div>
         <div id="el54" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="lab_elt" class="panel-title">Лабораторией электрофизики НИЦ электронно-лучевых технологий и физики плазмы введена в эксплуатацию еще одна установка ионного азотирования.</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -548,15 +546,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el55">Cостоялось подписание договора о научно-техническом сотрудничестве между Белорусским государственным технологическим университетом и Физико-техническим институтом.</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el55" class="news_title_hidden">Cостоялось подписание договора о научно-техническом сотрудничестве между Белорусским государственным технологическим университетом и Физико-техническим институтом.</a>
             </h4>
         </div>
         <div id="el55" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="bgu" class="panel-title">Cостоялось подписание договора о научно-техническом сотрудничестве между Белорусским государственным технологическим университетом и Физико-техническим институтом.</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -594,15 +590,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el56">Представители ФТИ посетили Пекинский институт авиационных материалов</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el56" class="news_title_hidden">Представители ФТИ посетили Пекинский институт авиационных материалов</a>
             </h4>
         </div>
         <div id="el56" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="china2" class="panel-title">Представители ФТИ посетили Пекинский институт авиационных материалов</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -638,15 +632,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el57">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el57" class="news_title_hidden">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</a>
             </h4>
         </div>
         <div id="el57" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="china1" class="panel-title">Cостоялся Международный семинар по междисциплинарным проблемам в Томске</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -683,15 +675,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el58">ФТИ НАН Беларуси посетил руководитель компании MDT (Республика Корея) Moon Hee Lee</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el58" class="news_title_hidden">ФТИ НАН Беларуси посетил руководитель компании MDT (Республика Корея) Moon Hee Lee</a>
             </h4>
         </div>
         <div id="el58" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="muni" class="panel-title"> ФТИ НАН Беларуси посетил руководитель компании MDT (Республика Корея) Moon Hee Lee</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -725,15 +715,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el59">Участие ФТИ в молодежном инновационном проекте «100 идей для Беларуси» и ярмарке инновационных идей «Smart Patent ‘16»</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el59" class="news_title_hidden">Участие ФТИ в молодежном инновационном проекте «100 идей для Беларуси» и ярмарке инновационных идей «Smart Patent ‘16»</a>
             </h4>
         </div>
         <div id="el59" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="100idej" class="panel-title"> Участие ФТИ в молодежном инновационном проекте «100 идей для Беларуси» и ярмарке инновационных идей «Smart Patent ‘16»</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -770,15 +758,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el60">Cостоялся Белорусско-Китайский молодежный инновационный форум «Новые горизонты – 2016» </a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el60" class="news_title_hidden">Cостоялся Белорусско-Китайский молодежный инновационный форум «Новые горизонты – 2016» </a>
             </h4>
         </div>
         <div id="el60" class="panel-collapse collapse ">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="bc_forum" class="panel-title"> Cостоялся Белорусско-Китайский молодежный инновационный форум «Новые горизонты – 2016» </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -816,15 +802,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el61">1 декабря 2016 года на здании Физико-технического института открыта мемориальная доска памяти академика НАН Беларуси Станислава Александровича АСТАПЧИКА</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el61" class="news_title_hidden">1 декабря 2016 года на здании Физико-технического института открыта мемориальная доска памяти академика НАН Беларуси Станислава Александровича АСТАПЧИКА</a>
             </h4>
         </div>
         <div id="el61" class="panel-collapse collapse ">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="memo" class="panel-title"> 1 декабря 2016 года на здании Физико-технического института открыта мемориальная доска памяти академика НАН Беларуси Станислава Александровича АСТАПЧИКА</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -860,15 +844,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el62"> Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el62" class="news_title_hidden"> Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics</a>
             </h4>
         </div>
         <div id="el62" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3  id="LG" class="panel-title"> Физико-технический институт НАН Беларуси посетила делегация из компании LG Electronics </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -903,15 +885,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el63">Физико-технический институт НАН Беларуси посетили представители предприятий г. Калуга  </a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el63" class="news_title_hidden">Физико-технический институт НАН Беларуси посетили представители предприятий г. Калуга  </a>
             </h4>
         </div>
         <div id="el63" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 id="kaluga" class="panel-title"> Физико-технический институт НАН Беларуси посетили представители предприятий г. Калуга  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -948,15 +928,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el64">Физико-технический институт посетила делегация Института исследования металлов Китайской Академии наук</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el64" class="news_title_hidden">Физико-технический институт посетила делегация Института исследования металлов Китайской Академии наук</a>
             </h4>
         </div>
         <div id="el64" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 id="Delegation-From-China" class="panel-title"> Физико-технический институт посетила делегация Института исследования металлов Китайской Академии наук  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -990,15 +968,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el65">АЭМ-технологии</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el65" class="news_title_hidden">АЭМ-технологии</a>
             </h4>
         </div>
         <div id="el65" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> АЭМ-технологии  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
 
@@ -1035,17 +1011,14 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el66">Вышел в свет сборник научных трудов
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el66" class="news_title_hidden">Вышел в свет сборник научных трудов
                     «Современные методы и технологии создания и обработки материалов» в 3-х томах. </a>
             </h4>
         </div>
         <div id="el66" class="panel-collapse collapse ">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Вышел в свет сборник научных трудов
-                            «Современные методы и технологии создания и обработки материалов» в 3-х томах.  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -1079,15 +1052,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el67">Cостоялась XI Международная научно-техническая конференция</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el67" class="news_title_hidden">Cостоялась XI Международная научно-техническая конференция</a>
             </h4>
         </div>
         <div id="el67" class="panel-collapse collapse ">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 id="International-Scientific-and-Technical-Conference" class="panel-title"> Cостоялась XI Международная научно-техническая конференция</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -1123,16 +1094,14 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el68">Институт посетила делегация представителей научных организаций РФ</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el68" class="news_title_hidden">Институт посетила делегация представителей научных организаций РФ</a>
             </h4>
         </div>
         <div id="el68" class="panel-collapse collapse ">
             <div class="panel-body">
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Институт посетила делегация представителей научных организаций РФ </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -1166,15 +1135,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el69">Постановлением Бюро Президиума НАН Беларуси назначен новый директор</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el69" class="news_title_hidden">Постановлением Бюро Президиума НАН Беларуси назначен новый директор</a>
             </h4>
         </div>
         <div id="el69" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Постановлением Бюро Президиума НАН Беларуси назначен новый директор  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <blockquote style="margin-left: 15px; padding-top: 0px">
@@ -1197,15 +1164,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el70">Лаборатория электрофизики НИЦ организует научно-практический семинар</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el70" class="news_title_hidden">Лаборатория электрофизики НИЦ организует научно-практический семинар</a>
             </h4>
         </div>
         <div id="el70" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Лаборатория электрофизики НИЦ организует научно-практический семинар  </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <blockquote style="margin-left: 15px; padding-top: 0px">
@@ -1234,15 +1199,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el71">Командировка специалистов г. Красногорск, Московская обл., Российская Федерация</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el71" class="news_title_hidden">Командировка специалистов г. Красногорск, Московская обл., Российская Федерация</a>
             </h4>
         </div>
         <div id="el71" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Командировка специалистов г. Красногорск, Московская обл., Российская Федерация </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <blockquote style="margin-left: 15px; padding-top: 0px">
@@ -1265,16 +1228,14 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el72"> Успешно завершено выполнение договора</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el72" class="news_title_hidden"> Успешно завершено выполнение договора</a>
             </h4>
         </div>
         <div id="el72" class="panel-collapse collapse">
             <div class="panel-body">
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">  Успешно завершено выполнение договора</h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -1309,15 +1270,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el73">Как в «ФТИ НАН Беларуси» прошли торжества, посвященные 85-летию со дня основания института</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el73" class="news_title_hidden">Как в «ФТИ НАН Беларуси» прошли торжества, посвященные 85-летию со дня основания института</a>
             </h4>
         </div>
         <div id="el73" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Как в «ФТИ НАН Беларуси» прошли торжества, посвященные 85-летию со дня основания института </h3>
-                    </div>
+
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-lg-12 main-news">
@@ -1348,15 +1307,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el74">Внедрение технологии и установки ионно-плазменного азотирования</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el74" class="news_title_hidden">Внедрение технологии и установки ионно-плазменного азотирования</a>
             </h4>
         </div>
         <div id="el74" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">  Внедрение технологии и установки ионно-плазменного азотирования </h3>
-                    </div>
+
                     <div class="panel-body">
                         <blockquote>
                             <p style="font-size: 0.9em">
@@ -1380,15 +1337,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el75"> Оборудование для ионной химико-термической обработки</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el75" class="news_title_hidden"> Оборудование для ионной химико-термической обработки</a>
             </h4>
         </div>
         <div id="el75" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">  Оборудование для ионной химико-термической обработки </h3>
-                    </div>
+
                     <div class="panel-body">
                         <blockquote>
                             <p style="font-size: 0.9em">
@@ -1411,15 +1366,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el76">Юбилей ФТИ</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el76" class="news_title_hidden">Юбилей ФТИ</a>
             </h4>
         </div>
         <div id="el76" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Юбилей ФТИ </h3>
-                    </div>
+
                     <div class="panel-body">
                         <blockquote>
                             <p style="font-size: 0.9em">
@@ -1441,15 +1394,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el77">Мобильная версия сайта</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el77" class="news_title_hidden">Мобильная версия сайта</a>
             </h4>
         </div>
         <div id="el77" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Мобильная версия сайта </h3>
-                    </div>
+
                     <div class="panel-body">
                         <blockquote>
                             <p style="font-size: 0.9em">
@@ -1471,15 +1422,13 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#collapse-group" href="#el78">Новый дизайн сайта</a>
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el78" class="news_title_hidden">Новый дизайн сайта</a>
             </h4>
         </div>
         <div id="el78" class="panel-collapse collapse">
             <div class="panel-body">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Новый дизайн сайта </h3>
-                    </div>
+
                     <div class="panel-body">
                         <blockquote>
                             <p style="font-size: 0.9em">

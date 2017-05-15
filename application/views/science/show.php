@@ -15,7 +15,6 @@
 <br>
 
 <?php $this->renderTemplate('slider-science'); ?>
-
 <style>
     .news-science-container{
         display: block;
@@ -50,30 +49,35 @@
     <br><br><br><br><br><br><br><br>
     <div class="container" >
         <h2 class="title text-center title-news">
-            <?php $ph->link( $ph->lang->Label_Competition, '/') ?>
+            <a id="konkursy" > <?= $ph->lang->Label_Competition ?></a>
         </h2>
-        <h3 class="title text-center title-news-description"> Внутренние конкурсы ФТИ </h3>
+        <!--<h3 class="title text-center title-news-description"> Внутренние конкурсы ФТИ </h3> -->
         <?php $this->renderTemplate('science-news')?>
     </div>
     <br>
     <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate_Science ?> </h2>
-    <h3 class="title text-center title-news-description"> ФТИ НАН Беларуси сотрудничает со следующими институтами: </h3>
+    <!-- <h3 class="title text-center title-news-description"> ФТИ НАН Беларуси сотрудничает со следующими институтами: </h3> -->
     <?php $this->renderTemplate('logotip-university') ?>
     <br><br><br><br><br>
     <br><br>
 </div>
 
-
+<script>
+    /* перемещение к разделу конкурсы */
+    $('.konkursy').on('click', function () {
+        $a = $($(this).attr('href'));
+        $('html,body').animate({ scrollTop: $a.offset().top - 64}, 150);
+        return false;
+    });
+</script>
 
 <br>
 <div class="container">
-
-
     <h2 class="title text-center" style="margin-left: 0px">
-        <?php $ph->link( $ph->lang->Label_Conference , '/') ?>
+        <a id="conference" > <?= $ph->lang->Label_Conference ?></a>
     </h2>
-    <h3 class="title text-center title-news-description"> Самая актуальная информация о предстоящей конференции<br>
-    итоги предстоящихконференций<br>ссылки</h3>
+    <!--<h3 class="title text-center title-news-description"> Самая актуальная информация о предстоящей конференции<br>
+    итоги предстоящихконференций<br>ссылки</h3> -->
 
     <style>
         .conference {
@@ -89,14 +93,33 @@
         <p style="megin-top: 30px;">
             <?=$ph->lang->Conference_Text ?>
         </p>
-
     </div>
+
+    <script>
+        /* перемещение к разделу Конференции  */
+        $('.conference').on('click', function () {
+            $a = $($(this).attr('href'));
+            $('html,body').animate({ scrollTop: $a.offset().top - 64}, 150);
+            return false;
+        });
+    </script>
 
     <div class="container">
-        <h2 class="title text-center title-news"><?= $ph->lang->Label_PHTI_GOS_Programs ?> </h2>
-        <h3 class="title text-center title-news-description"> Государственная программа научных исследований «Физическое материаловедение, новые материалы и технологии» (2016–2020 гг.) </h3>
+        <h2  class="title text-center title-news">
+            <a id="gos_program" > <?= $ph->lang->Label_PHTI_GOS_Programs ?></a>
+        </h2>
+
+        <!--<h3 class="title text-center title-news-description"> Государственная программа научных исследований «Физическое материаловедение, новые материалы и технологии» (2016–2020 гг.) </h3>-->
         <?php $this->renderTemplate('gos_programs') ?>
     </div>
+    <script>
+        /* перемещение к разделу Гос программы  */
+        $('.gos_program').on('click', function () {
+            $a = $($(this).attr('href'));
+            $('html,body').animate({ scrollTop: $a.offset().top - 64}, 150);
+            return false;
+        });
+    </script>
 </div>
 <br><br>
 <?php //$this->renderTemplate('callBack') ?>
@@ -105,13 +128,20 @@
     <div class="container">
     <br>
     <h2 class="title text-center" style="margin-left: 0px">
-        <?php $ph->link( $ph->lang->Label_Publication_Monogram , '/') ?>
+        <a id="publication_and_monography" > <?= $ph->lang->Label_Publication_Monogram ?></a>
     </h2>
-    <h3 class="title text-center title-news-description"> Скачать самое актуальное на сайте </h3>
+    <!-- <h3 class="title text-center title-news-description"> Скачать самое актуальное на сайте </h3> -->
     <?php $this->renderTemplate('publication'); ?>
-
-
 </div>
+
+    <script>
+        /* перемещение к разделу Публикации и монографии  */
+        $('.publication_and_monography').on('click', function () {
+            $a = $($(this).attr('href'));
+            $('html,body').animate({ scrollTop: $a.offset().top - 64}, 150);
+            return false;
+        });
+    </script>
 
 
     <div style="background-color: #f9f9f9">
@@ -124,7 +154,7 @@
             <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DAdsbfJghUyx8ZFu4-cRWa5of7IlvN9Y&width=100%&height=270&lang=ru_RU&sourceType=constructor"></script>
         </div>
 
-        <?php $this->renderTemplate('forma') ?>
+        <?php //$this->renderTemplate('forma') ?>
 
         <br>
     </div>

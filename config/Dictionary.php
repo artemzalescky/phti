@@ -9,7 +9,7 @@ class Dictionary extends BaseDictionary {
     public function __construct() {
         parent::__construct(["ru", "en"], [
             "Label_FTI" => ["ФТИ", "FTI"],
-            "Label_Departments" => ["отделы", "departments"],
+            "Label_Departments" => ["Отделы", "departments"],
             "Label_Laboratories" => ["Лаборатории", "Laboratories"],
             "Label_Production" => ["Продукция и услуги", "Production and services"],
             "Label_Catalog" => ["Каталог продукции", "Product Catalog"],
@@ -17,7 +17,7 @@ class Dictionary extends BaseDictionary {
             "Label_OurProduction" => ["Наша продукция", "Our production"],
             "Label_Managment" => ["Руководство ФТИ","Managment PHTI"],
             "Label_Cooperate" => ["Мы сотрудничаем","We cooperate"],
-            "Label_Certificate" => ["Аттестаты","Certificates"],
+            "Label_Certificate" => ["Cертификаты","Certificates"],
             "Label_Location" => ["Местоположение","Location"],
             "Label_News" => ["Новости","PHTI News"],
             "Label_About_US" => ["Коротко о ФТИ","About PHTI"],
@@ -61,16 +61,16 @@ class Dictionary extends BaseDictionary {
             "TopMenu_molod" =>["МОЛОДЕЖНАЯ СТРАНИЦА", "YOUTH PAGE"],
             "TopMenu_Science_1" =>["КОНФЕРЕНЦИИ", "CONFERENCE"],
             "TopMenu_Science_2" =>["КОНКУРСЫ", ""],
-            "TopMenu_Science_3" =>["ПУБЛИКАЦИИ И МОНОГРАММЫ", ""],
-            "TopMenu_Science_4" =>["СОВЕТ ПО ЗАЩИТЕ НАУЧНЫХ И ДОКТОРСКИХ ДИСЕРТАЦИЙ", ""],
+            "TopMenu_Science_3" =>["ПУБЛИКАЦИИ И МОНОГРАФИИ", ""],
+            "TopMenu_Science_4" =>["СОВЕТ ПО ЗАЩИТЕ ДИССЕРТАЦИЙ", ""],
             "TopMenu_Science_5" =>["МЕЖДУНАРОДНЫЕ ПРОЕКТЫ", "International projects"],
             "TopMenu_Science_6" =>["ГОСУДАРСТВЕННЫЕ ПРОГРАММЫ", ""],
             "Label_Competition" =>["Конкурсы", "Competition"],
             "Label_Cooperate_Science" =>["СОТРУДНИЧЕСТВО", "COOPERATE"],
             "Label_Conference"=>["КОНФЕРЕНЦИИ", "CONFERENCE"],
             "Label_International_Project"=>["МЕЖДУНАРОДНЫЕ ПРОЕКТЫ", "INTERNATIONAL PROJECT"],
-            "Label_Publication_Monogram"=>["ПУБЛИКАЦИИ И МОНОГРАММЫ", "PUBLICATIONS AND MONOGRAMS"],
-            "Label_Sovet_Nayki"=>["СОВЕТ ПО ЗАЩИТЕ НАУЧНЫХ И ДОКТОРСКИХ ДИСЕРТАЦИЙ", "SOVET"],
+            "Label_Publication_Monogram"=>["ПУБЛИКАЦИИ И МОНОГРАФИИ", "PUBLICATIONS AND MONOGRAMS"],
+            "Label_Sovet_Nayki"=>["СОВЕТ ПО ЗАЩИТЕ ДИССЕРТАЦИЙ", "SOVET"],
             "Label_PHTI_GOS_Programs"=>["ФТИ НАН БЕЛАРУСИ В ГОСПРОГРАММАХ", "PHTI NAN BELARUSI"],
 
 

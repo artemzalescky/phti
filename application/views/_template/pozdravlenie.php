@@ -5,7 +5,7 @@
     }
 
 #home {
-    background: url(resources/images/main/new_fone2.jpg) center 0 repeat fixed; min-height: 550px;
+    background: url(resources/images/main/main_fon.png) center 0 repeat fixed; min-height: 550px;
     height: 500px;
     margin: 0 auto;
     width: 100%;
@@ -55,7 +55,7 @@
                             новые производства – беспилотных летательных аппаратов, оборудования
                             ионно-плазменной химико-термической обработки, индукционных установок
                             для нагрева металла под пластическую деформацию и термообработку.
-                            <a href="/garfienko" style="color: #ffffff"">Подробнее</a>
+                            <a href="/garfienko" style="color: #ffffff !important">Подробнее</a>
                         </p>
                         <!-- <div class="getstart"><a href="#">Подробнее</a></div> -->
                     </div>

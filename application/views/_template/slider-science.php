@@ -3,6 +3,7 @@
 
 <div style="margin-top: 40px;  " class="slider-box-container-science">
     <div class="container">
+            <!--Наука-->
             <br><br>
             <div style="z-index: 9999" class="main-circle-container">
                 <div class="science img-science img-responsive " >
@@ -12,34 +13,40 @@
                 </div>
             </div>
             <div class="little-circle-container">
+                <!--КОНФЕРЕНЦИИ-->
                 <div class="little-circle science-little img-science-circle">
                     <p>
-                        <?php $ph->link($ph->lang->TopMenu_Science_1, '/science/show');?>
+                        <a href="#conference" class="conference"><?= $ph->lang->TopMenu_Science_1 ?> </a>
                     </p>
                 </div>
+                <!--КОНКУРСЫ-->
                 <div class="little-circle science-little img-science-circle " >
                     <p>
-                        <?php $ph->link($ph->lang->TopMenu_Science_2, '/science/show');?>
+                        <a href="#konkursy" class="konkursy"><?= $ph->lang->TopMenu_Science_2 ?> </a>
                     </p>
                 </div>
+                <!--ПУБЛИКАЦИИ И МОНОГРАФИИ-->
                 <div class="little-circle science-little img-science-circle img-responsive " >
                     <p style="margin-top: 108px">
-                        <?php $ph->link($ph->lang->TopMenu_Science_3, '/science/show');?>
+                        <a href="#publication_and_monography" class="publication_and_monography"><?= $ph->lang->TopMenu_Science_3 ?> </a>
                     </p>
                 </div>
+                <!--СОВЕТ ПО ЗАЩИТЕ ДИССЕРТАЦИЙ-->
                 <div class="little-circle science-little img-science-circle img-responsive" >
-                    <p style="margin-top: 90px">
+                    <p style="margin-top: 107px">
                         <?php $ph->link($ph->lang->TopMenu_Science_4, '/science/sovet-nayki');?>
                     </p>
                 </div>
+                <!--МЕЖДУНАРОДНЫЕ ПРОЕКТЫ-->
                 <div class="little-circle science-little img-science-circle img-responsive " >
                     <p style="margin-top: 108px">
                         <?php $ph->link($ph->lang->TopMenu_Science_5, '/science/show');?>
                     </p>
                 </div>
+                <!--ГОСУДАРСТВЕННЫЕ ПРОГРАММЫ-->
                 <div class="little-circle science-little img-science-circle img-responsive " >
                     <p style="margin-top: 108px">
-                        <?php $ph->link($ph->lang->TopMenu_Science_6, '/science/show');?>
+                        <a href="#gos_program" class="gos_program"><?= $ph->lang->TopMenu_Science_6 ?> </a>
                     </p>
                 </div>
             </div>
