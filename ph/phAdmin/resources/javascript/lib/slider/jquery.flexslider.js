@@ -574,7 +574,7 @@
       if (slider.syncExists) methods.sync("play");
     }
     slider.canAdvance = function(target, fromNav) {
-      // ASNAV:
+      // ASNAV:zz
       var last = (asNav) ? slider.pagingCount - 1 : slider.last;
       return (fromNav) ? true :
              (asNav && slider.currentItem === slider.count - 1 && target === 0 && slider.direction === "prev") ? true :

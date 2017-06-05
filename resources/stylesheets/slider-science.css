@@ -1,16 +1,21 @@
 .slider-box-container-science {
-    background: url("../images/main/main_fon.png");
-    min-height: 700px;
+    background: url("../images/main/main_fon.png") center 0 repeat fixed; min-height: 770px;
     width: 100%;
-}
-
-.slider-box-container-science{
     display: block;
     position: relative;
     border-bottom-left-radius: 1500px 300px;
     border-bottom-right-radius: 1500px 300px;
     z-index: 999;
+    margin-top: 40px;
 }
+
+@media (min-width: 768px) and (max-width: 939px) {
+    .slider-box-container-science{
+        margin-top: 50px;
+    }
+}
+
+
 
 .main-circle-container{
     display: block;
@@ -32,19 +37,200 @@
     margin: 170px auto;
     /*margin-left: 400px;*/
 }
-.img-science-circle{
-    background: url("../images/main/little-menu1.png");;
+
+
+.img-science-sovet-circle p a {
+    text-decoration: none   ;
+}
+
+.img-science-sovet-circle{
+    background: url("../images/science/slider/science_sovet.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    overflow:hidden;
+    height:250px;
+    width:250px;
+}
+
+.img-science-sovet-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-science-sovet-circle:hover{
+    background: url("../images/science/slider/science_sovet_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+.img-monography-circle p a {
+    text-decoration: none   ;
+}
+
+.img-monography-circle{
+    background: url("../images/science/slider/monography.png");;
     background-position: center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
     height:250px;
     width:250px;
 }
+
+.img-monography-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-monography-circle:hover{
+    background: url("../images/science/slider/monography_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+
+
+.img-konkurs-circle p a {
+    text-decoration: none   ;
+}
+
+.img-konkurs-circle{
+    background: url("../images/science/slider/konkurs.png");;
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    height:250px;
+    width:250px;
+}
+
+.img-konkurs-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-konkurs-circle:hover{
+    background: url("../images/science/slider/konkurs_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+.img-international-project-circle p a {
+    text-decoration: none   ;
+}
+.img-international-project-circle{
+    background: url("../images/science/slider/international_project.png");;
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    height:250px;
+    width:250px;
+}
+
+.img-international-project-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-international-project-circle:hover{
+    background: url("../images/science/slider/international_project_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+.img-conferences-circle p a {
+    text-decoration: none   ;
+}
+.img-conferences-circle{
+    background: url("../images/science/slider/conferences.png");;
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    height:250px;
+    width:250px;
+}
+
+.img-conferences-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-conferences-circle:hover{
+    background: url("../images/science/slider/conferences_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+
+.img-gos-program-circle p a {
+    text-decoration: none   ;
+}
+
+.img-gos-program-circle{
+    background: url("../images/science/slider/gos_programms.png");;
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    height:250px;
+    width:250px;
+}
+
+.img-gos-program-circle{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-gos-program-circle:hover{
+    background: url("../images/science/slider/gos_programms_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+
 .img-science{
-    background: url("../images/main/menu1.png");;
+    background: url("../images/science/slider/nauka.png");
     background-position: center; /* Положение фона */
     background-repeat: no-repeat; /* Отменяем повторение фона */
     height:300px;
     width:300px;
+}
+
+.img-science{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img-science:hover{
+    background: url("../images/science/slider/nauka_hover.png");
+    background-position: center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .science-little{

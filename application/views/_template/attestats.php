@@ -1,4 +1,7 @@
 <div class="ph-infinite-slider certificate">
+    <div class="data-item" data-image-url="<?= $ph->image_path('attestat/0.jpg') ?>">
+        <div class="title">Аттестат Аккредитации</div>
+    </div>
     <div class="data-item" data-image-url="<?= $ph->image_path('attestat/1.jpg') ?>">
         <div class="title">Аттестат Аккредитации</div>
     </div>

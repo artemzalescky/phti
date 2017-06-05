@@ -45,6 +45,91 @@ $ph->include_css('news/new_news.css')
 
 <div class="row">
         <div class="blog-section-grids" class="owl-carousel">
+        
+            <div class="col-md-12 blog-section-grid">
+                <?php $ph->image("news/main_news/china_akademia_nayk_mini.jpg" , ['class' => 'product-image']) ?>
+                <div class="blog-title">
+                    <h4 class="text-center">ФТИ НАН Беларуси посетила делегация из Института исследования металлов Китайской академии наук  </h4>
+                </div>
+
+                <p class="news-description">
+                    <?php
+                    $ph->cut_text('С 22.05.2017г. по 31.05.2017г. ФТИ НАН Беларуси посетила делегация из Института исследования металлов Китайской академии наук (г.Шэньян). В рамках визита обсужден вопрос создания совместной белорусско-китайской лаборатории исследования материалов', 158)
+                        ->text('...');
+                    ?>
+                    <br>
+                    <?php
+                    $ph->link_open('news#china_akademia_nayk  ', ['class' => 'read-more','style' => 'target="_blank'])
+                        ->tag('span', null, ['class' => ''])
+                        ->text(' Подробнее')
+                        ->link_close('a');
+                    ?>
+                </p>
+            </div>
+        
+            <div class="col-md-12 blog-section-grid">
+                <?php $ph->image("news/main_news/bolgarija_akademia_nayk_mini.jpg" , ['class' => 'product-image']) ?>
+                <div class="blog-title">
+                    <h4 class="text-center">ФТИ НАН Беларуси посетила делегация из Центральной лаборатории прикладной физики Болгарской академии наук. </h4>
+                </div>
+
+                <p class="news-description">
+                    <?php
+                    $ph->cut_text('С 23.05.2017г. по 27.05.2017г. ФТИ НАН Беларуси посетила делегация из Центральной лаборатории прикладной физики Болгарской академии наук. В рамках визита подписан акт сдачи-приемки работ по лицензионному договору о предоставлении права использования технологии нанесения слоя оксида алюминия', 98)
+                        ->text('...');
+                    ?>
+                    <br>
+                    <?php
+                    $ph->link_open('news#bolgarija_akademia_nayk  ', ['class' => 'read-more','style' => 'target="_blank'])
+                        ->tag('span', null, ['class' => ''])
+                        ->text(' Подробнее')
+                        ->link_close('a');
+                    ?>
+                </p>
+            </div>
+            
+        
+            <div class="col-md-12 blog-section-grid">
+                <?php $ph->image("news/main_news/delegacijaJLTech-mini.jpg" , ['class' => 'product-image']) ?>
+                <div class="blog-title">
+                    <h4 class="text-center">ФТИ НАН Беларуси посетила делегация из компании J&L Tech Co., Ltd. (Республика Корея). </h4>
+                </div>
+
+                <p class="news-description">
+                    <?php
+                    $ph->cut_text('С 11.05.2017 по 12.05.2017 ФТИ НАН Беларуси посетила делегация из компании J&L Tech Co., Ltd. (Республика Корея). В ходе визита обсужден вопрос о создания маркетингового центра продукции компании J&L Tech на базе ФТИ НАН Беларуси.', 148)
+                        ->text('...');
+                    ?>
+                    <br>
+                    <?php
+                    $ph->link_open('news#delegacijaJLTech  ', ['class' => 'read-more','style' => 'target="_blank'])
+                        ->tag('span', null, ['class' => ''])
+                        ->text(' Подробнее')
+                        ->link_close('a');
+                    ?>
+                </p>
+            </div>
+        
+             <div class="col-md-12 blog-section-grid">
+                <?php $ph->image("news/main_news/company_diamond_mini.jpg" , ['class' => 'product-image']) ?>
+                <div class="blog-title">
+                    <h4 class="text-center">ФТИ НАН Беларуси подписал договор с компании Diamond InnoTech Co., Ltd. (Тайвань)</h4>
+                </div>
+
+                <p class="news-description">
+                    <?php
+                    $ph->cut_text('По итогам визита делегации компании Diamond InnoTech Co., Ltd. (Тайвань) в ФТИ НАН Беларуси 07.05.2017г. подписан договор о проектировании, изготовлении и поставке вакуумного оборудования для нанесения алмазоподобных покрытий.', 148)
+                        ->text('...');
+                    ?>
+                    <br>
+                    <?php
+                    $ph->link_open('news#company_diamond  ', ['class' => 'read-more','style' => 'target="_blank'])
+                        ->tag('span', null, ['class' => ''])
+                        ->text(' Подробнее')
+                        ->link_close('a');
+                    ?>
+                </p>
+            </div>
 
             <div class="col-md-12 blog-section-grid">
                 <?php $ph->image("news/main_news/belaz19042017_mini.jpg" , ['class' => 'product-image']) ?>

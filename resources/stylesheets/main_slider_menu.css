@@ -8,7 +8,6 @@
     z-index: 999;
 }
 
-
 #home {
     background: url(resources/images/main/main_fon.png) center 0 repeat fixed; min-height: 550px;
     height: 500px;
@@ -43,8 +42,6 @@
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-
-
 
 .img-menu2-circle{
     background: url("../images/main/menu/produkcia.png");

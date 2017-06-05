@@ -30,8 +30,6 @@
             </div>
         </div>
     </div>
-
-
             <div class="col-lg-12 mt">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
