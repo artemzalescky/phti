@@ -90,7 +90,7 @@
             <?php $ph->link( $ph->lang->Label_News , '/news') ?>
         </h2>
         <!-- <h3 class="title text-center title-news-description"> Самые актуальные новости деятельности ФТИ </h3> -->
-        <?php $this->renderTemplate('main-news')?>
+        <?php //$this->renderTemplate('main-news')?>
     </div>
     <br>
         <h2 class="title text-center title-news"><?= $ph->lang->Label_Cooperate ?> </h2>

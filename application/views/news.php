@@ -1,8 +1,7 @@
 <?php $ph->include_css('news.css') ?>
-
 <br><br><br>
 <div class="container">
-    <h4 style="text-align: center"> Новости ФТИ НАН Беларуси </h4>
+    <h4 class="title text-center"> Новости ФТИ НАН Беларуси </h4>
 
     <div class="panel panel-primary">
         <div class="panel-heading">

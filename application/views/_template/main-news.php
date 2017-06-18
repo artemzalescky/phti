@@ -38,13 +38,13 @@ $ph->include_css('news/new_news.css')
             navigation:true,
             navigationText:["",""],
             pagination:true,
-            autoPlay:true
+            autoPlay:15000
         });
     });
 </script>
 
 <div class="row">
-        <div class="blog-section-grids" class="owl-carousel">
+        <div class="blog-section-grids" class="owl-carousel" class="carousel slide" data-ride="carousel" data-interval="15000">
         
             <div class="col-md-12 blog-section-grid">
                 <?php $ph->image("news/main_news/china_akademia_nayk_mini.jpg" , ['class' => 'product-image']) ?>
